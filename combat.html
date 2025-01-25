@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quick Reference</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="interface.js"></script>
+  </head>
+  <body>
+	<div id="navi">
+	</div>
+    <div id="content" class="content">	
+		<div id="infoPane">
+			<div id="armor" class = "info">
+				<div class="info-hdr">
+					<section id="actions"></section>
+					<h2>Actions</h2>
+				</div>
+				<div class="d-4cols">
+					<table class ="t-4cols">
+						 <colgroup class="cg-4-a">
+						  <col class="col-4-a1">
+						  <col class="col-4-a2">
+						  <col class="col-4-a3">
+						  <col class="col-4-a4">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Type</th>
+								<th>Action</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Aim (half)</td>
+								<td>Concentration</td>
+								<td>Half</td>
+								<td>Grants a +10 Bonus to the next attack Action. Using a Reaction cancels the this bonus.</td>
+							</tr>
+							<tr>
+								<td>Aim (full)</td>
+								<td>Concentration</td>
+								<td>Full</td>
+								<td>Grants a +20 Bonus to the next attack Action. Using a Reaction cancels the this bonus.</td>
+							</tr>
+							<tr>
+								<td>All out Attack</td>
+								<td>Attack, Melee</td>
+								<td>Full</td>
+								<td>Perform a Melee Attack with +30 WS. You can not evade until your next turn. Does not benefit from Aim actions.</td>
+							</tr>
+							<tr>
+								<td>Brace Heavy Weapon</td>
+								<td>Misc</td>
+								<td>Half</td>
+								<td>Support a Heavy weapon. Unbraced heavy weapons incur -30 to BS. May pivot 45-degrees in any direction without losing bracing.</td>
+							</tr>
+							<tr>
+								<td>Called Shot</td>
+								<td>Attack, Concentration, Melee or Ranged</td>
+								<td>Full</td>
+								<td>Attack a specific location on a target. -20 to BS/WS on the Attack.</td>
+							</tr>
+							<tr>
+								<td>Charge</td>
+								<td>Attack, Melee, Movement</td>
+								<td>Full</td>
+								<td>Move up to 3x Agility Bonus and perform a melee Attack with +20 to WS. Llast 4m must be in straight line towards the enemy.</td>
+							</tr>
+							<tr>
+								<td>Defensive Stance</td>
+								<td>Concentration, Melee</td>
+								<td>Full</td>
+								<td>Until the start of next turn you have +1 Reaction, but you can only use your reaction to evade melee attacks.</td>
+							</tr>
+							<tr>
+								<td>Delay</td>
+								<td>Misc</td>
+								<td>Full</td>
+								<td>May take any Half Action at any time before character's next turn. Attacks count as being part of the next turn.</td>
+							</tr>
+							<tr>
+								<td>Disengage</td>
+								<td>Movement</td>
+								<td>Full</td>
+								<td>Disengage from melee combat without provoking attacks of opportunity. Move up to your Agility Bonus</td>
+							</tr>
+							<tr>
+								<td>Evasion</td>
+								<td>Movement(Dodge) or Melee(Parry)</td>
+								<td>Full</td>
+								<td>Use either the Dodge (Melee or Ranged) or Parry(Melee) skill to avoid and attack.</td>
+							</tr>
+							<tr>
+								<td>Feint</td>
+								<td>Melee</td>
+								<td>Half</td>
+								<td>Opposed WS test. On Success your next Melee attack against the target can not be evaded.</td>
+							</tr>
+							<tr>
+								<td>Focus Power</td>
+								<td>Varies</td>
+								<td>Varies</td>
+								<td>Use a Psychich Power.</td>
+							</tr>
+							<tr>
+								<td>Full Auto Burst</td>
+								<td>Attack, Ranged</td>
+								<td>Half</td>
+								<td>Fire your weapon in Full Auto Burst mode. -10 to BS. +1 Hit for every DoS. Additional hits can be applied to targets within 2m. Weapon Jams on 94+</td>
+							</tr>
+							<tr>
+								<td>Grapple</td>
+								<td>Attack, Melee</td>
+								<td>Varies</td>
+								<td>Affect a Grappled opponent or escape from a Grapple.</td>
+							</tr>
+							<tr>
+								<td>Guarded Action</td>
+								<td>Concetration, Melee or Ranged</td>
+								<td>Half</td>
+								<td>-10 to WS/BS and +10 to your evasion test until the start of your next turn.</td>
+							</tr>
+							<tr>
+								<td>Jump or Leap</td>
+								<td>Movement</td>
+								<td>Full</td>
+								<td>Jump vertically or leap horizontally.</td>
+							</tr>
+							<tr>
+								<td>Knock Down</td>
+								<td>Attack, Melee</td>
+								<td>Half</td>
+								<td>Opposed Strength Test. On success: target knocked down. On 2+ DoS: deal optional 1d5-3+[Strenght Bonus] damage and 1 level of fatigue. Can be used as part of the charge action (for +10). If the target wins by 2+DoS you are knocked down insead.</td>
+							</tr>
+							<tr>
+								<td>Lightning Attack</td>
+								<td>Attack, Melee</td>
+								<td>Half</td>
+								<td>Requires Talent. Attack with -10 WS. +1 Hit for every DoS.</td>
+							</tr>
+							<tr>
+								<td>Manoeuvre</td>
+								<td>Melee, Movement</td>
+								<td>Half</td>
+								<td>Opposed WS Test. Push target 1m in any direction (must be free space). You can choose to follow.</td>
+							</tr>
+							<tr>
+								<td>Move (Half)</td>
+								<td>Movement</td>
+								<td>Half</td>
+								<td>Move up to you Agility Bonus.</td>
+							</tr>
+							<tr>
+								<td>Move (Full)</td>
+								<td>Movement</td>
+								<td>Full</td>
+								<td>Move up to you 2x Agility Bonus.</td>
+							</tr>
+							<tr>
+								<td>Overwatch</td>
+								<td>Attack, Concentration, Ranged</td>
+								<td>Full</td>
+								<td>Declare a 45° kill zone and attack type (standard, semi auto or full auto) and an optional criteria. Cancelled if you take a non free action. Target must make a pinning test or becomes pinned.</td>
+							</tr>
+							<tr>
+								<td>Ready</td>
+								<td>Misc</td>
+								<td>Half</td>
+								<td>Retrieve or Store any item, weapon, ... Dropping something does not require a ready action.</td>
+							</tr>
+							<tr>
+								<td>Reload</td>
+								<td>Misc</td>
+								<td>Varies</td>
+								<td>Reload a weapon.</td>
+							</tr>
+							<tr>
+								<td>Run</td>
+								<td>Movement</td>
+								<td>Full</td>
+								<td>Move 6x Agility bonus, enemies have -20 BS and +20 WS to hit agains yout until your next turn.</td>
+							</tr>
+							<tr>
+								<td>Semi-Auto Burst</td>
+								<td>Attack, Ranged</td>
+								<td>Half</td>
+								<td>Fire your weapon in Semi-Auto Burst mode. +1 Hit for every 2DoS. Additional hits can be applied to targets within 2m. Weapon Jams on 94+</td>
+							</tr>
+							<tr>
+								<td>Stand/Mount/Dismount</td>
+								<td>Movement</td>
+								<td>Half</td>
+								<td>Stand up from being Prone, enter ,leave or move within a vehicle, mount or dismount a riding beast.</td>
+							</tr>
+							<tr>
+								<td>Standard Attack</td>
+								<td>Attack, Melee or Ranged</td>
+								<td>Half</td>
+								<td>Perform a single attack with +10 WS/BS. Weapon jams on 96+</td>
+							</tr>
+							<tr>
+								<td>Stun</td>
+								<td>Attack, Melee</td>
+								<td>Full</td>
+								<td>Perform a single attack with -20 WS. On success: Compare 1d10+Strength Bonus] vs Targets AP(Head) + [Toughness Bonus]. Stun for the difference in rounds. Target gains one level of fatigue.</td>
+							</tr>
+							<tr>
+								<td>Supressing Fire</td>
+								<td>Attack, Ranged</td>
+								<td>Full</td>
+								<td>Fires a semi-auto (in 30 degree arc) or full-auto (in 45 degree arc) burst at -20 to BS. Enemies in the arc must make a -10 (if semi-auto) or -20 (if full-auto) Pinning save or become pinned.</td>
+							</tr>
+							<tr>
+								<td>Swift Attack</td>
+								<td>Attack, Melee</td>
+								<td>Full</td>
+								<td>Requires Talent. 1 additional hit for every 2 DoS</td>
+							</tr>
+							<tr>
+								<td>Tactical Advance</td>
+								<td>Concentration, Movement</td>
+								<td>Full</td>
+								<td>Move up to your Agility Bonus. From cover to cover. During the whole time you are considered "in cover"</td>
+							</tr>
+							<tr>
+								<td>Use Skill</td>
+								<td>Concentration, Misc</td>
+								<td>varies</td>
+								<td>Use a specific skill</td>
+							</tr>
+					</tbody>
+				</table>
+				<div class="info-hdr">
+					<section id="combat_circ"></section>
+					<h2>Combat Circumstances</h2>
+				</div>
+				<div class="d-2cols">
+					<table class ="t-2cols">
+						 <colgroup class="cg-2-a">
+						  <col class="col-2-a1">
+						  <col class="col-2-a2">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Circumstance</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Cover</td>
+								<td>Cover increases your effective AP(Better cover = more AP). Cover AP can be decreased after being hit. Covers certain body parts. Usually legs and body.</td>
+							</tr>
+							<tr>
+								<td>Darkness</td>
+								<td>-20 to WS, -30 to BS. +20 to Stealth</td>
+							</tr>
+							<tr>
+								<td>Difficult Terrain</td>
+								<td>Can reduce Movement (and movement related actions). Certain terrain may also reduce WS.</td>
+							</tr>
+							<tr>
+								<td>Engaged in Melee</td>
+								<td>-20 BS to targets engaged in melee Combat.</td>
+							</tr>
+							<tr>
+								<td>Extreme Range</td>
+								<td>Targets at a distance of more than 3x the range of a weapon are considered to be at Extreme Range. Ballistic Skill tests to hit targets at Extreme Range suffer a -30 penalty.</td>
+							</tr>
+							<tr>
+								<td>Fog, Mist, Shadow or Smoke</td>
+								<td>+10 to Stealth tests. -20 to BS</td>
+							</tr>
+							<tr>
+								<td>Ganging Up</td>
+								<td>Melee attackers gain a bonus when outnumbering a target. +10WS for each additional ally engaged in melee combat.</td>
+							</tr>
+							<tr>
+								<td>Helpless Targets</td>
+								<td>Melee attacks against unconscious or otherwise Helpless targets automatically succeed. The Degrees of Success are the same as the attacker's Weapon Skill bonus. When rolling for damage, roll twice and add the two results. Prone and Stunned targets are not automatically considered helpless.</td>
+							</tr>
+							<tr>
+								<td>High Ground</td>
+								<td>Characters standing on higher ground gain a +10 bonus to Weapon Skill.</td>
+							</tr>
+							<tr>
+								<td>Long Range</td>
+								<td>Targets at a distance of more than 2x the range of a weapon are considered to be at Long Range. Ballistic Skill tests to hit targets at Long Range suffer a -10 penalty.</td>
+							</tr>
+							<tr>
+								<td>Long Range</td>
+								<td>While pinned you may only take a half action. -20 to BS. You must use your turn to seek cover or move away from the attacker if none is available. At the end of the turn make a WP Test (+30 if in cover) to overcome being pinned.</td>
+							</tr>
+							<tr>
+								<td>Point-Blank Range</td>
+								<td>Targets at a distance of 2 metres or closer are considered to be at Point-Blank Range. Ballistic Skill tests to hit Point-Blank targets gain a +30 modifier. This modifier is lost if the attacker is engaged in melee combat with the target. For weapons with a Short Range of less than 3 metres, Point-Blank is considered to be 1 metre instead.</td>
+							</tr>
+							<tr>
+								<td>Prone</td>
+								<td>A character is considered Prone any time he is lying on the ground. Weapon Skill tests gain +10 bonus to hit Prone characters, but Ballistic Skill tests suffer a -10 penalty. A character who is Prone suffers a -10 penalty to Weapon Skill tests, and a -20 penalty to Evasion tests.</td>
+							</tr>
+							<tr>
+								<td>Short Range</td>
+								<td>Targets at a distance of less than half the range of a weapon are considered to be at Short Range. Ballistic Skill tests to hit targets at Short Range gain a +10 bonus.</td>
+							</tr>
+							<tr>
+								<td>Stunned Targets</td>
+								<td>Weapon Skill and Ballistic Skill tests to hit Stunned targets gain a +20 bonus.</td>
+							</tr>
+							<tr>
+								<td>Unaware Targets</td>
+								<td>Weapon Skill and Ballistic Skill tests to hit Unaware targets gain a +30 bonus.</td>
+							</tr>
+							<tr>
+								<td>Weather and Unnatural Conditions</td>
+								<td>Certain weather or other unnatural conditions may cause penalties to attacks.</td>
+							</tr>
+					</tbody>
+				</table>
+				<div class="info-hdr">
+					<section id="conditions"></section>
+					<h2>Special Conditions</h2>
+				</div>
+				<div class="d-2cols">
+					<table class ="t-2cols">
+						 <colgroup class="cg-2-a">
+						  <col class="col-2-a1">
+						  <col class="col-2-a2">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Condition</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Amputated Limbs</td>
+								<td>When a character loses a limb he also suffers Blood Loss and must be treaded by someone with the Medicae skill. If not treated roll 1d10. on 9+ you survive, else you die from an infection ofe rthe next 1d10 days. No natural healing for 10+2 days.</td>
+							</tr>
+							<tr>
+								<td>Blinded</td>
+								<td>Automatically fail all vision related tests (including BS). -30 to WS or other tests that would benefit from vision.</td>
+							</tr>
+							<tr>
+								<td>Blood Loss</td>
+								<td>Take 1 Fatigue every turn. Any character can attempt a free-10  Medicae Test to staunch the bleeding.</td>
+							</tr>
+							<tr>
+								<td>Deafened</td>
+								<td>Automatically fail all hearing related tests. You can not communicate verbally.</td>
+							</tr>
+							<tr>
+								<td>Falling</td>
+								<td>1d10 + meters fallen - Toughness Bonus damage. Only apllies to heights within reason.</td>
+							</tr>
+							<tr>
+								<td>Fatigue</td>
+								<td>A character's Fatigue Threshold is his Toughness Bonus + Willpower Bonus. If Fatigue passes this threshold you fall unconcious for 10-[Toughness Bonus] minutes. After waking up the fatigue level is set to the threshhold. If Fatigue reaches 2x the threshold you die. 6 hours of uninterrupted rest removes all Fatigue. Every hour of low activity also removes 1 level. </td>
+							</tr>
+							<tr>
+								<td>Fire</td>
+								<td>Characters on fire suffer 1d10 - Toughness Bonus Energy damage and 1 fatigue each round. WP test in order to take any action. Attemt to extinguish by falling prone and making a -20 Agility Test.</td>
+							</tr>
+							<tr>
+								<td>Lost Arm/Hand</td>
+								<td>-20 to all Tests requiring two hands. Unable to wield two-handed weapons.</td>
+							</tr>
+							<tr>
+								<td>Lost Eye</td>
+								<td>Permanent -10 BS. -20 to vision related tests. If you lose both eyes your are blind.</td>
+							</tr>
+							<tr>
+								<td>Lost Foot</td>
+								<td>All Movment reduced to half (rounded up). -20 to all movment actions and tests.</td>
+							</tr>
+							<tr>
+								<td>Lost Leg</td>
+								<td>All Movment reduced to half (rounded up). -20 to all movment actions and tests. Unable to dodge.</td>
+							</tr>
+							<tr>
+								<td>Stunned</td>
+								<td>Unable to use Actions or Reactions.</td>
+							</tr>
+							<tr>
+								<td>Suffocation</td>
+								<td>You can hold your breath for [Toughness Bonus] minutes. In combat this is reduced to 2x [Toughness Bonus] rounds. Each Minute/Round Toughness test or get 1 level of fatigue. You fall unconscious after holding your breath for the maximum duration and die if you are deprived of oxygen for another [Toughness Bonus] rouinds.</td>
+							</tr>
+							<tr>
+								<td>Unconsciousness</td>
+								<td>Can not take actions or reactions. Considered as a Helpless Target. If no specific duration is given, Unconsciousness defaults to 10 minutes.</td>
+							</tr>
+					</tbody>
+				</table>
+				<div class="info-hdr">
+					<section id="hit_loc"></section>
+					<h2>Hit locations</h2>
+				</div>
+				<div class="d-6cols">
+					<table class ="t-6cols">
+						 <colgroup class="cg-6-a">
+						  <col class="col-6-a1">
+						  <col class="col-6-a2">
+						  <col class="col-6-a3">
+						  <col class="col-6-a4">
+						  <col class="col-6-a5">
+						  <col class="col-6-a6">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>d100 Roll</th>
+								<th>1st Hit</th>
+								<th>2nd Hit</th>
+								<th>3rd Hit</th>
+								<th>4th Hit</th>
+								<th>5th Hit</th>
+								<th>6th Hit+</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>01-10</td>
+								<td>Head</td>
+								<td>Head</td>
+								<td>Arm</td>
+								<td>Body</td>
+								<td>Arm</td>
+								<td>Head</td>
+							</tr>
+							<tr>
+								<td>11-20</td>
+								<td>Right Arm</td>
+								<td>Arm</td>
+								<td>Body</td>
+								<td>Head</td>
+								<td>Body</td>
+								<td>Arm</td>
+							</tr>
+							<tr>
+								<td>21-30</td>
+								<td>Left Arm</td>
+								<td>Arm</td>
+								<td>Body</td>
+								<td>Head</td>
+								<td>Body</td>
+								<td>Arm</td>
+							</tr>
+							<tr>
+								<td>31-70</td>
+								<td>Body</td>
+								<td>Body</td>
+								<td>Arm</td>
+								<td>Head</td>
+								<td>Arm</td>
+								<td>Body</td>
+							</tr>
+							<tr>
+								<td>71-85</td>
+								<td>Right Leg</td>
+								<td>Leg</td>
+								<td>Body</td>
+								<td>Arm</td>
+								<td>Head</td>
+								<td>Body</td>
+							</tr>
+							<tr>
+								<td>86-100</td>
+								<td>Left Leg</td>
+								<td>Leg</td>
+								<td>Body</td>
+								<td>Arm</td>
+								<td>Head</td>
+								<td>Body</td>
+							</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
+

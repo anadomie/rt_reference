@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quick Reference</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="interface.js"></script>
+</head>
+
+<body>
+	<div id="naviDe">
+	</div>
+	<div id="content" class="content">
+		<div id="infoPane">
+			<div id="skills" class="info">
+				<div class="info-hdr">
+					<section id="skills"></section>
+					<h2>Fertigkeiten</h2>
+				</div>
+				<div class="d-5cols">
+					<table class="t-5cols-b">
+						<colgroup class="cg-5-s">
+							<col class="col-5-s1">
+							<col class="col-5-s2">
+							<col class="col-5-s3">
+							<col class="col-5-s4">
+							<col class="col-5-s5">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Charakteristik</th>
+								<th>Dauer</th>
+								<th>Beschreibung</th>
+								<th>Spezial Aktionen</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Akrobatik</td>
+								<td>Agilität</td>
+								<td>Volle Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Akrobatik kann sein Gleichgewicht halten oder einen
+									Sturz vermeiden. Sie ermöglicht es, von oder auf eine Höhe zu springen und
+									Hindernisse zu überwinden, ohne zu fallen.</td>
+								<td><ul><li><b>Akrobat:</b> Kann seinen Akrobatik-Fähigkeitswert verwenden, um sich als Vollaktion aus
+									Fesseln zu befreien. Kann sich auch aus einem Griff befreien, indem er seinen
+									Akrobatik-Fähigkeitswert anstelle von Beweglichkeit oder Stärke beim Greifen
+									verwendet.</li>
+
+									<li><b>Manövrierfähigkeit:</b> Der Charakter kann eine Rückzugsaktion als Halbe Aktion
+									durchführen, wenn er einen Herausfordernden (+0) Akrobatik-Test besteht.
+									Springen: Beim Springen oder Hüpfen kann der Akrobatik-Fähigkeitswert anstelle von
+									WS und S Tests verwendet werden. Bei der Ermittlung von Fallschaden kann ein
+									Akrobatik-Test durchgeführt werden, um die effektive Fallhöhe um eine Anzahl von
+									Metern zu verringern, die seiner BW entspricht.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Athletik</td>
+								<td>Stärke</td>
+								<td>Volle Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Athletik kann durch Wasser schwimmen, seine
+									körperlichen Grenzen überschreiten oder schwieriges Gelände erklimmen. Diese
+									Fertigkeit hilft dabei, herausfordernde physische Hindernisse zu überwinden und
+									Ausdauer zu beweisen.</td>
+								<td><ul><li><b>Ausdauer:</b> Als Freie Aktion kann ein Schwierigkeitsgrad (-10) Athletik-Test
+									durchgeführt werden, wenn der Charakter durch Laufen, Schwimmen oder Klettern einen
+									Ermüdungsgrad erleidet, um dessen Auswirkungen zu ignorieren. Sie können weiterhin
+									Tests durchführen und gewonnene Ermüdung unbegrenzt ignorieren; wenn jedoch ein Test
+									fehlschlägt, müssen sie sich mindestens 4 Stunden ausruhen und können ihre
+									Athletikfähigkeit während dieser Zeit nicht erneut nutzen.</li>
+
+									<li><b>Tragen:</b> Als Freie Aktion kann der Charakter einen Herausfordernden (+0)
+									Athletik-Test machen, um seine Tragfähigkeit für eine einzelne Begegnung zu erhöhen.
+									Für jeden Erfolgsgrad wird die Stärke um 10 erhöht, wie viel Gewicht er tragen,
+									heben oder ziehen kann, bis zu einem Maximum von 100 Stärke. Das Tragen kann nur
+									einmal pro Begegnung versucht werden.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Wahrnehmung</td>
+								<td>Wahrnehmung</td>
+								<td>Freie Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Wahrnehmung kann Hinterhalte erkennen, nach
+									Hinweisen oder versteckten Gegenständen suchen und Gespräche belauschen. Diese
+									Fertigkeit ist nützlich, um verborgene Details in der Umgebung wahrzunehmen und sich
+									einen taktischen Vorteil zu verschaffen.</td>
+								<td><ul><li><b>Lippenlesen:</b> Die Schwierigkeit dieses Tests wird für jede 10 Meter Abstand zwischen
+									dem Charakter und dem Sprecher um -10 modifiziert. Ein erfolgreicher
+									Wahrnehmungs-Test enthüllt den allgemeinen Inhalt des Gesprächs.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Charme</td>
+								<td>Charisma</td>
+								<td>1 Minute</td>
+								<td>Ein Charakter mit der Fertigkeit Charme kann das Ansehen einer Person verbessern,
+									jemanden ablenken, indem er dessen Aufmerksamkeit auf sich zieht, oder Informationen
+									von Einheimischen und Fremden sammeln. Diese Fertigkeit ist hilfreich, um soziale
+									Beziehungen zu beeinflussen und nützliche Informationen zu gewinnen.</td>
+								<td><ul><li>Das Ziel macht einen Willenskraft-Wurf gegen den Charme-Charakteristik-Test.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Führung</td>
+								<td>Charisma</td>
+								<td>Halbe Aktion für einfache, Volle aktion für komplexe Aktionen.</td>
+								<td>Ein Charakter mit der Fertigkeit Führung kann einen Verbündeten in eine äußerst
+									gefährliche Situation oder direkt in den Kampf schicken. Er kann auch verbündete
+									Streitkräfte sammeln und sie inmitten eines Überraschungsangriffs organisieren.
+									Diese Fertigkeit ist entscheidend, um Truppen zu koordinieren und Moral sowie
+									Disziplin aufrechtzuerhalten.</td>
+								<td><ul><li><b>Inspirieren:</b> Als Vollaktion kann der Charakter einen Herausfordernden (+0)
+									Führung-Test durchführen, um einen oder mehrere seiner Anhänger zu inspirieren.
+									Inspirierte Anhänger erhalten +10 auf ihren nächsten Fertigkeits- oder
+									Charakteristik-Test.</li>
+
+									<li><b>Einschüchtern:</b> Als Reaktion versuchen, die Auswirkungen von Angst in seinen
+									Verbündeten zu kontern, falls diese ihre WK-Probe nicht bestehen. Einen
+									Führungs-Test gegen die WK des furchterregenden Wesens durchführen. Sowohl der
+									Charakter als auch das Wesen addieren +10 zu ihren Würfen für jede Stufe der Furcht,
+									die sie besitzen. Wenn der Charakter erfolgreich ist, ignorieren seine Verbündeten
+									die Auswirkungen der Angst.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Handel</td>
+								<td>Intelligenz</td>
+								<td>1 Minute oder mehr für komplexe Geschäfte.</td>
+								<td>Ein Charakter mit der Fertigkeit Handel kann einen Bonus auf Anforderungswürfe
+									erhalten, seltene Gegenstände aufspüren oder den Wert eines Objekts bestimmen. Diese
+									Fertigkeit ist nützlich, um Ressourcen effizient zu beschaffen und Handelsvorteile
+									zu erzielen.</td>
+								<td><ul><li>Das Ziel macht einen Handels- oder Willenskraft-Wurf, um zu widerstehen. Bewerten:
+									Ein Erfolg gibt dem Charakter die Verfügbarkeit des Gegenstandes an, den er
+									bewertet, während ein Fehlschlag ihm nichts sagt. Wenn er um mehr als 3 Fehlgrade
+									fehlschlägt, sollte der SL eine falsche Verfügbarkeit angeben.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Allgemeinwissen</td>
+								<td>Intelligenz</td>
+								<td>Freie Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Allgemeinwissen kann Informationen über eine
+									Situation, einen Ort, eine Person oder ein Objekt sammeln, abhängig von seiner
+									Spezialisierung. Diese Fertigkeit ermöglicht es, fundiertes Wissen über verschiedene
+									Themengebiete zu erlangen und nützliche Schlussfolgerungen zu ziehen.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Täuschen</td>
+								<td>Charisma</td>
+								<td>1 Minute oder mehr für komplexe Täuschungen.</td>
+								<td>Ein Charakter mit der Fertigkeit Täuschen kann eine überzeugende Lüge erzählen,
+									jemanden mit unsinnigem Gerede ablenken oder versuchen, sich zu verkleiden. Diese
+									Fertigkeit ist nützlich, um andere zu manipulieren, Verfolgung zu entgehen oder sich
+									unauffällig in einer Menge zu bewegen.</td>
+								<td><ul><li><b>Verkleiden:</b> Kann mit Zeit und Rohmaterialien eine Verkleidung erstellen. Der
+									Zeitaufwand hängt stark von der Komplexität der Verkleidung ab. Zusätzliche
+									Täuschungstests können notwendig sein, wenn man genau untersucht wird.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Sprengkunde</td>
+								<td>Intelligenz</td>
+								<td>Abhängig von Komplexität</td>
+								<td>Ein erfolgreicher Fertigkeitswurf auf Sprengkunde bedeutet, dass ein Charakter eine
+									Sprengladung erfolgreich platziert und einen Auslöser seiner Wahl eingestellt hat.
+									Das Entschärfen von Sprengsätzen fällt ebenfalls unter diese Fertigkeit und
+									erfordert eine Gegenprobe gegen den ursprünglichen Sprengkunde -Wurf der Person, die
+									die Sprengladung platziert hat. Ein gewonnener Wurf entschärft die Bombe. Ein
+									einfacher Fehlschlag bedeutet, dass die Ladung zwar nicht entschärft wurde, aber
+									auch nicht detoniert ist. Vier oder mehr Fehlschlagsgrade führen dazu, dass der
+									Charakter das Gerät auslöst und die Folgen der Explosion erleidet.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Ausweichen</td>
+								<td>Agilität</td>
+								<td>Reaktion</td>
+								<td>Ein Charakter mit der Fertigkeit Ausweichen kann einem Nah- oder Fernkampfangriff
+									entgehen oder Gefahren ausweichen. Diese Fertigkeit ist entscheidend, um Schaden zu
+									vermeiden und die eigene Überlebensfähigkeit in gefährlichen Situationen zu erhöhen.
+								</td>
+								<td><ul><li><b>Deckung suchen:</b> Wenn es Deckung innerhalb einer Anzahl von Metern gibt, die der
+									Beweglichkeit des Charakters entspricht, und er nicht am Boden liegt, kann er als
+									Reaktion auf einen Fernangriff Deckung suchen, anstatt auszuweichen. Erfordert einen
+									Gewöhnlichen (+10) Ausweichen-Test; bei Erfolg springt der Charakter hinter die
+									Deckung und geht in die Bauchlage. Er wird trotzdem vom Angriff getroffen,
+									profitiert jedoch vom AP der Deckung.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Verbotenes Wissen</td>
+								<td>Intelligenz</td>
+								<td>Freie Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Verbotenes Wissen kann Informationen über mögliche
+									Kultaktivitäten sammeln, die Machenschaften von Xenos verstehen oder die richtigen
+									Rituale zur Beschwörung eines Dämons ermitteln. Diese Fertigkeit erlaubt es,
+									tiefgehendes und oft gefährliches Wissen über verbotene Themen zu erlangen.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Ermittlung</td>
+								<td>Charisma</td>
+								<td>Eine Stunde oder mehr.</td>
+								<td>Ein Charakter mit der Fertigkeit Ermittlung kann versuchen, einen lokalen
+									Verbrecherboss aufzuspüren, die Einstellung der örtlichen Bevölkerung zu verstehen
+									oder Informationen über bestimmte Orte zu sammeln. Diese Fertigkeit ist nützlich, um
+									gezielt Wissen über Personen, Orte oder soziale Strukturen zu erlangen.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Verhör</td>
+								<td>Willenskraft</td>
+								<td>Eine Stunde oder mehr.</td>
+								<td>Ein Charakter mit der Fertigkeit Verhör kann versuchen, einem Kommandanten
+									Schlachtpläne zu entlocken, einen imperialen Adepten zur Preisgabe geheimer
+									Informationen zu zwingen oder einen Kultisten dazu zu bringen, ein verborgenes
+									Treffen zu offenbaren. Diese Fertigkeit ist nützlich, um durch gezielte Verhöre und
+									Druck wichtige Informationen zu gewinnen.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Einschüchtern</td>
+								<td>Stärke</td>
+								<td>Volle Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Einschüchtern kann jemanden dazu zwingen, sich auf
+									eine bestimmte Weise zu verhalten, oder versuchen, einen Gegner dazu zu bringen, von
+									einem Kampf abzusehen. Diese Fertigkeit ist nützlich, um durch Furcht Kontrolle
+									auszuüben und Konflikte ohne direkte Gewalt zu lösen.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Linguistik</td>
+								<td>Intelligenz</td>
+								<td>Freie Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Linguistik kann einen archaischen Text
+									entschlüsseln, ein bewegendes Prosastück verfassen oder eine Nachricht mit
+									begrenztem Wortschatz übermitteln. Diese Fertigkeit ist nützlich, um komplexe oder
+									fremdartige Sprachen zu verstehen und effektiv zu kommunizieren.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Logik</td>
+								<td>Intelligenz</td>
+								<td>1 Minute oder mehr für komplexe Probleme.</td>
+								<td>Ein Charakter mit der Fertigkeit Logik kann ein Rätsel lösen, Hinweise in großen
+									Mengen scheinbar unzusammenhängender Informationen finden oder versuchen, ein
+									Glücksspiel zu gewinnen. Diese Fertigkeit ist nützlich, um analytisches Denken
+									anzuwenden und rationale Entscheidungen zu treffen.</td>
+								<td><ul><li><b>Glücksspiel:</b> Bei einem typischen Spiel setzt jeder Teilnehmer einen Betrag,
+									normalerweise denselben, und macht einen Oppositions-Test mit der Logikfertigkeit.
+									Der Charakter mit den meisten Erfolgsgraden oder den wenigsten Fehlgraden gewinnt
+									den Pot.</li>
+
+									<li><b>Chiffren und Dekodierung:</b> Ein Charakter kann die Logikfertigkeit nutzen, um Chiffren
+									und Codes zu entschlüsseln. Dies dauert normalerweise sehr lange. Im Allgemeinen
+									sollten diese Tests schwierig (-10) sein, es sei denn, die Chiffre ist bereits
+									teilweise entschlüsselt oder der Charakter hat einen Schlüssel zur Verfügung, der
+									seine Bemühungen unterstützt.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Medicae</td>
+								<td>Intelligenz</td>
+								<td>Volle Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Medicae kann einem verletzten Verbündeten Erste
+									Hilfe leisten, eine Krankheit diagnostizieren und eine Behandlung entwickeln oder
+									einen chirurgischen Eingriff zur Entfernung eines Organs oder zur Implantation einer
+									Kybernetik durchführen. Diese Fertigkeit ist unerlässlich für die medizinische
+									Versorgung und lebensrettende Maßnahmen.</td>
+								<td><ul><li><b>Erste Hilfe:</b> Mache einen +0 Medizin-Test mit -10 Malus, wenn schwer verletzt, oder
+									-10 Malus für jeden Punkt kritischer Schaden. Bei Erfolg entferne Schaden in Höhe
+									von IB plus einen Punkt Schaden pro Erfolgsgrad (kritischen Schaden zuerst). Ein
+									Charakter kann nur einmal alle 24 Stunden behandelt werden und nur, wenn er sich
+									nicht unter langfristiger Pflege befindet.</li>
+
+									<li><b>Langfristige Pflege: Kann eine Anzahl von Patienten gleich IB behandeln, plus einen
+									pro Assistent. Für jeden Patienten über diese Anzahl hinaus erleidet er -10 Malus
+									auf Medizin-Tests. Für jeden Assistenten, der in der Medizinfertigkeit geschult ist,
+									erhält er +10. Am Ende jedes 24-Stunden-Zeitraums der langfristigen Pflege führt der
+									Hauptheiler einen (+10) Medizin-Test durch. Bei Erfolg heilen die Patienten doppelt
+									so viele Wunden wie bei ihrer natürlichen Heilrate.</b></li>
+
+									<li><b>Diagnose:</b> Ein erfolgreicher Fertigkeitstest ergibt den Namen der Krankheit und
+									grundlegende Behandlungen. Wenn er bei Gruppen verwendet wird, kann ein
+									erfolgreicher Fertigkeitstest die Ausbreitung von Krankheiten verhindern oder die
+									Auswirkungen von Unterernährung mildern.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Navigieren (Oberfläche oder Weltraum oder Warp)</td>
+								<td>Intelligenz</td>
+								<td>1 Minute für eine einfache Ortsbestimmung; 1d5 Stunden für das Planen von Kursen
+									oder Routen.</td>
+								<td>Ein Charakter mit der Fertigkeit Navigieren kann eine Reise durch unbekanntes
+									Gelände unternehmen, sich an einem fremden Ort orientieren oder eine Karte
+									erstellen, die den schnellsten Weg von einem Punkt zum anderen zeigt. Diese
+									Fertigkeit ist entscheidend für das sichere Reisen und die Planung von Routen in
+									unbekannten Gebieten.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Fahrzeugführen (Boden oder Luft oder Raumschiff)</td>
+								<td>Agilität</td>
+								<td>Halbe Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Fahren kann ein Fahrzeug im Kampf steuern, es über
+									seine normalen Grenzen hinaus belasten oder versuchen, es durch eine überfüllte
+									Straße zu manövrieren. Diese Fertigkeit ist essenziell, um Fahrzeuge unter
+									schwierigen Bedingungen sicher und effektiv zu kontrollieren.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Parieren</td>
+								<td>Nahkampf Skill</td>
+								<td>Reaktion</td>
+								<td>Ein Charakter mit der Fertigkeit Parieren kann versuchen, Schläge im Nahkampf
+									abzuwehren. Diese Fertigkeit ist entscheidend, um Angriffe abzufangen und den
+									erlittenen Schaden zu minimieren.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Psyniszienz
+									/Psychische Wahrnehmung</td>
+								<td>Wahrnehmung</td>
+								<td>Halbe Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Psyniscience kann den Aufenthaltsort von Dämonen
+									aufspüren, die Auswirkungen von psionischen Kräften erkennen oder dünne Stellen im
+									Schleier zwischen Materium und Warp bestimmen. Diese Fertigkeit ist unerlässlich für
+									den Umgang mit übernatürlichen Bedrohungen und psionischen Phänomenen.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Scholastisches Wissen</td>
+								<td>Intelligenz</td>
+								<td>Freie Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Scholastisches Wissen kann Legenden aus der
+									Vergangenheit wiedergeben, ein obskures Gesetz verstehen oder ein seltenes Wesen
+									identifizieren. Diese Fertigkeit ist nützlich, um tiefgehendes Wissen in
+									spezialisierten Bereichen zu erlangen und fundierte Entscheidungen zu treffen.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Beobachtung</td>
+								<td>Intelligenz</td>
+								<td>Halbe Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Beobachtung kann erkennen, ob jemand lügt,
+									Informationen aus einem Bericht zusammenfassen und Schlussfolgerungen ziehen oder
+									Augur- und Auspex-Daten interpretieren. Diese Fertigkeit ist wertvoll, um fundierte
+									Entscheidungen zu treffen und Täuschungen aufzudecken.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Sicherheit</td>
+								<td>Intelligenz</td>
+								<td>1 Minute, um 10 Sekunden pro Erfolgsgrad reduziert.</td>
+								<td>Ein Charakter mit der Fertigkeit Sicherheit kann eine verschlossene Tür öffnen oder
+									in einen Cogitator eindringen, um dessen Geheimnisse zu enthüllen. Diese Fertigkeit
+									ist entscheidend für das Umgehen von Sicherheitsvorkehrungen und das Erlangen von
+									geschützten Informationen.</td>
+								<td><ul><li><b>Fallen:</b> Kann Fallen herstellen und aufstellen. Der Zeitaufwand und die Ressourcen,
+									sowie der verursachte Schaden dieser Fallen hängen vom Ermessen des SL und der
+									beabsichtigten Komplexität und Wirkung der Fallen ab.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Fingerfertigkeit</td>
+								<td>Agilität</td>
+								<td>Halbe Aktion oder als Freie Aktion mit einem zusätzlichen Malus von -10
+									durchführbar.</td>
+								<td>Ein Charakter mit der Fertigkeit Fingerfertigkeit kann versuchen, einem Ziel
+									unbemerkt etwas aus der Tasche zu stehlen, Beweise an einem Tatort verschwinden zu
+									lassen oder illegale Substanzen in die Gewänder eines Verdächtigen zu schmuggeln.
+									Diese Fertigkeit ist essenziell für subtile Manipulationen und heimliche Aktionen.
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Schleichen</td>
+								<td>Agilität</td>
+								<td>Freie Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Schleichen kann eine feindliche Streitmacht
+									unentdeckt auskundschaften, sich an einen Gegner heranschleichen und ihn lautlos
+									töten oder jemanden verfolgen, ohne Verdacht zu erregen. Diese Fertigkeit ist
+									essenziell für verdeckte Operationen und unauffällige Bewegungen.</td>
+								<td><ul><li><b>Beschatten:</b> Schleichen kann verwendet werden, um andere zu beschatten und ihnen
+									ungesehen zu folgen, sei es zu Fuß, in Fahrzeugen oder sogar in Shuttles und
+									Raumschiffen. Schleichen-Tests für Beschatten sind immer Oppositions-Tests gegen
+									die Wahrnehmung des Gegners. Ein einzelner Beschatten-Test reicht aus, um den
+									Gegner ungesehen für 5 Minuten pro Erfolgsgrad zu verfolgen.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Überleben</td>
+								<td>Wahrnehmung</td>
+								<td>Volle Aktion</td>
+								<td>Ein Charakter mit der Fertigkeit Überleben kann in einer feindlichen Umgebung
+									Nahrung und Wasser finden, mit selbstgemachten Werkzeugen ein Feuer entfachen oder
+									einen Gegner durch ein Makropol suchen und verfolgen. Diese Fertigkeit ist
+									entscheidend für das Überleben unter extremen Bedingungen und die Orientierung in
+									schwierigen Gebieten.</td>
+								<td><ul><li><b>Handwerk:</b> Überleben kann genutzt werden, um alle Arten primitiver Geräte
+									herzustellen, von Umhängen und Steinbauten bis hin zu Speeren und Rüstungen.</li>
+
+									<li><b>Verfolgung:</b> Ein Charakter kann die Überlebens-Fertigkeit verwenden, um die Spuren
+									seiner Beute zu verfolgen. Eine clevere oder gerissene Beute könnte versuchen,
+									Spuren zu verwischen oder zu löschen; in Fällen, in denen ein Gegner dies getan hat,
+									sollte der Verfolger einen Oppositions-Test gegen die Heimlichkeit des Gegners
+									durchführen.</li>
+
+									<li><b>Umgang mit Tieren:</b> Charaktere können Tiere zähmen, trainieren und möglicherweise
+									reiten, die sie auf ihren Reisen treffen. Sowohl das Zähmen als auch das Trainieren
+									von Tieren sind ausgedehnte Tests, deren Dauer von der Natur und dem Temperament der
+									beteiligten Kreatur abhängt. Umgang mit Tieren ist gegen Cyber- oder Psy-gebundene
+									Tiere sowie gegen Kreaturen mit echter Intelligenz nutzlos.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Technologie-Nutzung</td>
+								<td>Intelligenz</td>
+								<td>1 Minute oder mehr für komplexere Systeme.</td>
+								<td>Ein Charakter mit der Fertigkeit Technologie-Nutzung kann eine beschädigte Waffe
+									oder ein Fahrzeug reparieren, ein technisches Gerät über seine normalen Grenzen
+									hinaus belasten oder die Funktionsweise unbekannter Technologie bestimmen. Diese
+									Fertigkeit ist unerlässlich für die Wartung, Modifikation und das Verständnis
+									technischer Ausrüstung.</td>
+								<td><ul><li><b>Handwerk:</b> Kann genutzt werden, um technische Geräte herzustellen, von einfachen
+									Uhrwerken und Dampfmaschinen bis hin zu fortschrittlicher Bewaffnung und Rüstung.
+									Die Zeit, Schwierigkeit und Materialien, die zur Herstellung dieser Gegenstände
+									benötigt werden, hängen stark von ihrer Komplexität ab.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Handwerk</td>
+								<td>Intelligenz</td>
+								<td>Variabel je nach Aufgabe und Komplexität.</td>
+								<td>Ein Charakter mit der Fertigkeit Handwerk kann eine Mahlzeit für hochrangige
+									Offiziere zubereiten, sein persönliches Siegel in eine Kettenschwertklinge gravieren
+									oder die Überreste einer verlorenen Kolonie freilegen. Diese Fertigkeit ist nützlich
+									für spezialisierte handwerkliche Arbeiten und kreative Aufgaben.</td>
+								<td><ul><li>Handwerk hat mehrere Spezialisierungen; diese sind im Charakterbogen detailliert.</li></ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

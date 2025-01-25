@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quick Reference</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="interface.js"></script>
+  </head>
+  <body>
+	<div id="naviDe">
+	</div>
+    <div id="content" class="content">	
+		<div id="infoPane">
+			<div id="armor" class = "info">
+				<div class="info-hdr">
+					<section id="armor"></section>
+					<h2>Rüstungen</h2>
+				</div>
+				<div class="d-5cols">
+					<table class ="t-5cols">
+						 <colgroup class="cg-5-a">
+						  <col class="col-5-a1">
+						  <col class="col-5-a2">
+						  <col class="col-5-a3">
+						  <col class="col-5-a4">
+						  <col class="col-5-a5">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Rüstung</th>
+								<th>Trefferzone  &amp; AP</th>
+								<th>Max-Agi</th>
+								<th>Gewicht(kg)</th>
+								<th>Bonus Effekt</th>
+							</tr>
+						</thead>
+						<tbody>            <tr>
+								<td>Schwere Lederkleidung</td>
+								<td>Körper(1), Arme(1)</td>
+								<td></td>
+								<td>5</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Imperiale Gewänder</td>
+								<td>Körper(1), Arme(1), Beine(1)</td>
+								<td></td>
+								<td>4</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Gepanzerter Körperanzug</td>
+								<td>Körper(2), Arme(2), Beine(2)</td>
+								<td></td>
+								<td>5</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Kettenpanzeranzug</td>
+								<td>Körper(3), Arme(3), Beine(3)</td>
+								<td>35</td>
+								<td>15</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Plattenrüstung der Feudalwelt</td>
+								<td>Körper(5), Kopf(5), Arme(5), Beine(5)</td>
+								<td>25</td>
+								<td>30</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Weste aus Xenos-Haut</td>
+								<td>Körper(6)</td>
+								<td>50</td>
+								<td>20</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Prätor-Rüstung</td>
+								<td>Körper(6), Kopf(6), Arme(6), Beine(6)</td>
+								<td>50</td>
+								<td>16</td>
+								<td>Enthält Atemmaske, Kommlink, Photovisor, Zielerfassungseinheit, Rückstoßhandschuhe und einen Magnetholster. Träger ohne einen Hintergrund im Adeptus Mechanicus erhalten Feind (Adeptus Mechanicus), solange sie diese Rüstung tragen.</td>
+							</tr>            <tr>
+								<td>Obsidianplattenrüstung</td>
+								<td>Körper(6)</td>
+								<td>35</td>
+								<td>35</td>
+								<td>Resitenz (Psionische Kräfte) oder +10 auf Proben zum Widerstand gegen psionische Kräfte, falls du das Talent bereits besitzt. Zählt als Rüstung mit 18 AP gegen Psionische Geschosse. Verringert den Psy Rating von Psykern um 3 (Minimum 1).</td>
+							</tr>            <tr>
+								<td>Schuppenrüstung (Monrass)</td>
+								<td>Körper(3), Arme(3), Beine(3)</td>
+								<td>45</td>
+								<td>15</td>
+								<td>Gewährt +10 auf Agilitätstests, um ein Entflammen zu vermeiden.</td>
+							</tr>            <tr>
+								<td>Flakhelm</td>
+								<td>Kopf(2)</td>
+								<td></td>
+								<td>2</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Flakhandschuhe</td>
+								<td>Arme(2)</td>
+								<td></td>
+								<td>1</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Leichter Flakmantel</td>
+								<td>Körper(2), Arme(2), Beine(2)</td>
+								<td>55</td>
+								<td>4</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Flakweste</td>
+								<td>Körper(3)</td>
+								<td>60</td>
+								<td>5</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Flakmantel</td>
+								<td>Körper(3), Arme(3), Beine(3)</td>
+								<td>55</td>
+								<td>8</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Flakjacke</td>
+								<td>Körper(3), Arme(3)</td>
+								<td>60</td>
+								<td>5</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Flakrüstung der Imperialen Garde</td>
+								<td>Körper(4), Kopf(4), Arme(4), Beine(4)</td>
+								<td>50</td>
+								<td>11</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Flak-Großmantel</td>
+								<td>Körper(4), Arme(4)</td>
+								<td></td>
+								<td>9</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Maschenweste</td>
+								<td>Körper(4)</td>
+								<td>60</td>
+								<td>2</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Maschenumhang</td>
+								<td>Körper(4), Arme(4), Beine(4)</td>
+								<td>60</td>
+								<td>3</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Maschenkapuze</td>
+								<td>Kopf(3)</td>
+								<td>60</td>
+								<td>0.5</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Maschenhandschuhe</td>
+								<td>Arme(3)</td>
+								<td>60</td>
+								<td>0.5</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Maschenhosen</td>
+								<td>Beine(3)</td>
+								<td>60</td>
+								<td>1</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Carapace-Helm</td>
+								<td>Kopf(4)</td>
+								<td></td>
+								<td>2</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Carapace-Handschuhe</td>
+								<td>Arme(5)</td>
+								<td></td>
+								<td>2</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Carapace-Gamaschen</td>
+								<td>Beine(5)</td>
+								<td></td>
+								<td>3</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Leichte Carapace-Rüstung der Vollstrecker</td>
+								<td>Körper(5), Kopf(5), Arme(5), Beine(5)</td>
+								<td>45</td>
+								<td>15</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Carapace-Brustplatte</td>
+								<td>Körper(6)</td>
+								<td>55</td>
+								<td>7</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Carapace-Rüstung der Sturmtruppen</td>
+								<td>Körper(6), Kopf(6), Arme(6), Beine(6)</td>
+								<td>45</td>
+								<td>15</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Purpurrote Rüstung</td>
+								<td>Körper(6), Kopf(6), Arme(6), Beine(6)</td>
+								<td>40</td>
+								<td>6</td>
+								<td>Unnatürliche Stärke (+1), gilt als versiegelt, wenn der Helm getragen wird. Enthält einen hochwertig verarbeiteten Photovisor.</td>
+							</tr>            <tr>
+								<td>Kasrkin-Sturmtruppen-Carapace, Kadia-Muster</td>
+								<td>Körper(6), Kopf(6), Arme(6), Beine(6)</td>
+								<td>50</td>
+								<td>15</td>
+								<td>Enthält Kommlink, Atemgerät und Photovisor. Eingebauter Void-Anzug. Bietet Schutz vor Umweltgefahren.</td>
+							</tr>            <tr>
+								<td>Richter-Carapace, Hydraphur-Muster</td>
+								<td>Körper(5), Kopf(5), Arme(5), Beine(5)</td>
+								<td>45</td>
+								<td>15.5</td>
+								<td>anzerung, die häufig von Richtern getragen wird. Enthält Komm-Link, Atemgerät und Photovisor. Eingebautes Holster für Schrotflinten oder Schockknüppel. Bietet Schutz vor Umweltgefahren. Diese Rüstung strahlt eine einschüchternde Präsenz aus und ist oft mit dem Aquila oder dem Siegel des Adeptus Arbites verziert.</td>
+							</tr>            <tr>
+								<td>Carapace-Rüstung der Adeptus Arbites</td>
+								<td>Körper(6), Kopf(6), Arme(6), Beine(6)</td>
+								<td>45</td>
+								<td>14</td>
+								<td>Eingebauter Komm-Link und ein Paar Rückstoßhandschuhe. Macht den Träger immun gegen Photonblitz-Granaten. Befestigungspunkte für Schutzschilde, Schockknüppel und Kampfschrotflinten. Verziert mit dem Aquila oder anderen Symbolen des Adeptus Arbites, ist diese Rüstung ebenso ein Symbol für das imperiale Gesetz wie ein Schutzmittel.</td>
+							</tr>            <tr>
+								<td>Cameleoline-Kampfrüstung</td>
+								<td>Körper(5), Kopf(5), Arme(5), Beine(5)</td>
+								<td>50</td>
+								<td>17</td>
+								<td>+20 auf Schleichen-Proben in geeigneten Umgebungen; du zählst als eine Reichweitenkategorie weiter entfernt, solange du dich nicht bewegst.</td>
+							</tr>            <tr>
+								<td>Schock-Carapace</td>
+								<td>Körper(6), Arme(6), Beine(6)</td>
+								<td>45</td>
+								<td>19</td>
+								<td>Leitende Nahkampfwaffen erhalten die Eigenschaft Schockend.</td>
+							</tr>            <tr>
+								<td>Carapace-Rüstung der Hospitaller</td>
+								<td>Körper(5), Kopf(4), Arme(5), Beine(5)</td>
+								<td>55</td>
+								<td>20</td>
+								<td>+20 auf Widerstandsproben gegen Gifte und Krankheiten, die die Rüstung nicht durchdringen, +10 auf Furcht-Proben, die mit Geruch zu tun haben. Der Helm verfügt über ein eingebautes Atemgerät.</td>
+							</tr>            <tr>
+								<td>Magistratum-Kampf-Carapace, Hax-Orthlack Mk II</td>
+								<td>Körper(5), Kopf(5), Arme(5), Beine(5)</td>
+								<td>40</td>
+								<td>16</td>
+								<td>Eingebautes Atemgerät, Kommlink und Photovisor.</td>
+							</tr>            <tr>
+								<td>Enterrüstung</td>
+								<td>Körper(5), Kopf(5), Arme(3), Beine(3)</td>
+								<td>40</td>
+								<td>17</td>
+								<td>Eingebauter Void-Anzug und Photovisor.</td>
+							</tr>            <tr>
+								<td>Verispex-Rüstung</td>
+								<td>Körper(2), Arme(2)</td>
+								<td>55</td>
+								<td>5.5</td>
+								<td>Eingebauter Auspex, Chronometer, Kombi-Werkzeug und Datenkristall. Gewährt einen Bonus von +10 auf Wahrnehmung und Medicae, um Informationen im Einsatz zu finden.</td>
+							</tr>            <tr>
+								<td>Verispex-Helm</td>
+								<td>Kopf(4)</td>
+								<td></td>
+								<td>2.5</td>
+								<td>Eingebaute Beutesichtbrille und Photovisor. Gewährt einen Bonus von +10 auf Durchsuchen- und Verfolgungsproben.</td>
+							</tr>            <tr>
+								<td>Leichte Servorüstung (2)</td>
+								<td>Körper(7), Kopf(7), Arme(7), Beine(7)</td>
+								<td>40</td>
+								<td>40</td>
+								<td>Unnatürliche Stärke (+1), erhöht die Größe um 1, gilt als versiegelt, wenn der Helm getragen wird. Geht nach 1W5 Stunden die Energie aus.</td>
+							</tr>            <tr>
+								<td>Servorüstung der Adepta Sororitas (3)</td>
+								<td>Körper(7), Kopf(7), Arme(7), Beine(7)</td>
+								<td>50</td>
+								<td>35</td>
+								<td>Unnatürliche Stärke (+1), der Träger zählt immer als abgestützt.</td>
+							</tr>            <tr>
+								<td>Schwere Servorüstung (3)</td>
+								<td>Körper(8), Kopf(8), Arme(8), Beine(8)</td>
+								<td>35</td>
+								<td>65</td>
+								<td>Unnatürliche Stärke (+1), automatisch stabilisiert, erhöht die Größe um 1, gilt als versiegelt, wenn der Helm getragen wird. Geht nach 2W5 Stunden die Energie aus.</td>
+							</tr>            <tr>
+								<td>Servorüstung (3)</td>
+								<td>Körper(8), Kopf(8), Arme(8), Beine(8)</td>
+								<td>35</td>
+								<td>65</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Synskin</td>
+								<td>Körper(2), Kopf(2), Arme(2), Beine(2)</td>
+								<td></td>
+								<td>2</td>
+								<td>+10 auf Verbergen- und Lautlos-Bewegen-Proben. Unsichtbar für Infrarot- und Dunkelsicht.</td>
+							</tr>            <tr>
+								<td>Schleichstiefel</td>
+								<td>Beine(3)</td>
+								<td></td>
+								<td>6</td>
+								<td>+10 auf Agilitätsproben, um in tückischen oder glatten Bedingungen das Gleichgewicht zu halten. 6 AP gegen ätzende Substanzen.</td>
+							</tr>            <tr>
+								<td>Gepanzerter Körperanzug</td>
+								<td>Körper(3), Arme(3), Beine(3)</td>
+								<td></td>
+								<td>5</td>
+								<td>Kann unter Kleidung (versteckt) getragen werden</td>
+							</tr>            <tr>
+								<td>Eldar-Raider-Rüstung</td>
+								<td>Körper(5), Kopf(5), Arme(5), Beine(5)</td>
+								<td></td>
+								<td>4</td>
+								<td>Zählt im Umbewaffneten Nahkampf immer so, als würde ein Messer getragen.</td>
+							</tr>            <tr>
+								<td>Flexstahlanzug</td>
+								<td>Körper(4), Arme(4), Beine(4)</td>
+								<td></td>
+								<td>7</td>
+								<td></td>
+							</tr>            <tr>
+								<td>Kabalitenrüstung</td>
+								<td>Körper(4), Kopf(4), Arme(4), Beine(4)</td>
+								<td></td>
+								<td>5</td>
+								<td>Träger, die nicht daran gewöhnt sind, müssen eine Probe auf Aushaltevermögen oder Willenskraft ablegen, sonst erleiden sie eine Stufe Erschöpfung beim Anlegen der Rüstung. Eingebauter Void-Anzug</td>
+							</tr>            <tr>
+								<td>Void-Schattenpanzer</td>
+								<td>Körper(5), Kopf(5), Arme(5), Beine(5)</td>
+								<td></td>
+								<td>6</td>
+								<td>+20 auf Schleichen. Andere Verbündete innerhalb von 3 Metern erhalten +10 auf Schleichen. Träger, die nicht an die Rüstung gewöhnt sind, müssen eine Probe auf Aushaltevermögen oder Willenskraft ablegen, sonst erleiden sie eine Stufe Erschöpfung beim Anlegen der Rüstung. Eingebauter Void-Anzug</td>
+							</tr>            <tr>
+								<td>Stachelpanzer-Rüstung</td>
+								<td>Körper(5), Kopf(5), Arme(5), Beine(5)</td>
+								<td></td>
+								<td></td>
+								<td>Wird der Träger im Nahkampf getroffen, erleidet der Angreifer 1W5 Schaden (Reißend).Träger, die nicht an die Rüstung gewöhnt sind, müssen eine Probe auf Aushaltevermögen oder Willenskraft ablegen, sonst erleiden sie eine Stufe Erschöpfung beim Anlegen der Rüstung. Eingebauter Void-Anzug</td>
+							</tr>        
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content" class="content">	
+		<div id="infoPane">
+			<div id="upgrades" class = "info">
+				<div class="info-hdr">
+					<section id="upgrades"></section>
+					<h2>Upgrades</h2>
+				</div>
+				<div class="d-5cols">
+				<table class ="t-5cols">
+					 <colgroup class="cg-5-a">
+						  <col class="col-5-a1">
+						  <col class="col-5-a2">
+						  <col class="col-5-a3">
+						  <col class="col-5-a4">
+						  <col class="col-5-a5">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>Upgrade</th>
+							<th>Rüstungen</th>
+							<th>Agilität</th>
+							<th>Gewicht(Kg)</th>
+							<th>Effekt</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Adamantin-Kettenschutz</td>
+							<td>Alle</td>
+							<td>-5</td>
+							<td>4</td>
+							<td>Kann die Nahkampfwaffe des Angreifers zerstören, wenn die Einerstelle des Angriffswurfs eine 1 ist.</td>
+						</tr>
+						<tr>
+							<td>Automatik-Sensoren</td>
+							<td>Servorüstungen</td>
+							<td>-</td>
+							<td>2</td>
+							<td>Gewährt +5 auf Ballistische Fertigkeiten und +10 auf Wahrnehmungsproben, die auf Sicht oder Gehör basieren.</td>
+						</tr>
+						<tr>
+							<td>Weihrauchgefäß des Heiligen Roberto</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>10</td>
+							<td>Gewährt Boni auf Interaktionsproben (und einen Malus auf Schleichen), während sie beleuchtet ist. Kann den Träger entzünden, wenn er zu Boden geworfen wird.</td>
+						</tr>
+						<tr>
+							<td>Ceramit-Beschichtung</td>
+							<td>Carapace- oder Servorüstungen</td>
+							<td>-</td>
+							<td>2</td>
+							<td>+3 AP gegen Energieangriffe wie Flammen, Melta und andere hitzebasierte Angriffe.</td>
+						</tr>
+						<tr>
+							<td>Andachts-Ikonographie</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>1</td>
+							<td>Gewährt +10 auf Befehlsproben im Umgang mit Loyalisten und -10 auf alle Charisma-Proben gegenüber anderen.</td>
+						</tr>
+						<tr>
+							<td>Hexagrammatische Schutzzeichen</td>
+							<td>Carapace- oder Servorüstungen</td>
+							<td>-</td>
+							<td>-</td>
+							<td>Ignoriert die Eigenschaft Warp-Waffe, bietet doppelte AP gegen psionische Kräfte und gewährt +20 auf Proben, um psionischen Angriffen zu widerstehen.</td>
+						</tr>
+						<tr>
+							<td>Pentagrammatische Schutzzeichen</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>-</td>
+							<td>Verursacht Schaden bei dämonischen Feinden im Nahkampf. Die Schutzzeichen werden zerstört, wenn das Ziel eine Willenskraft-Probe mit -20 und 4+ Erfolgsgraden besteht.</td>
+						</tr>
+						<tr>
+							<td>Geheiligter Weihrauchbrenne</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>3</td>
+							<td>Kann als Halbe Aktion entzündet werden, um Dämonen innerhalb von 3 Metern einen Malus von -10 auf Waffenfertigkeit- und Warp-Instabilitätsproben aufzuerlegen. Brennt für 1 Stunde.</td>
+						</tr>
+						<tr>
+							<td>Echtsilber-Filigran</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>-</td>
+							<td>Verursacht einen Malus von -[Willenskraft-Bonus * 5] auf alle Waffenfertigkeitsproben von Dämonen im Nahkampfreichweite.</td>
+						</tr>
+						<tr>
+							<td>Schutzsalben</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>-</td>
+							<td>Gewährt einen Bonus von +5 auf Furcht-Proben, die durch Dämonen verursacht werden, sowie auf Proben, um psionischen Kräften zu widerstehen. Eine Dosis deckt eine Trefferzone ab; mehrere Trefferzonen sind kumulativ. Hält bis zu 1 Monat an. Das Auftragen dauert pro Trefferzone 1 Stunde, und ein erfolgreicher Auftrag erfordert für jede Zone eine Erschwernis von -20 bei einer Probe auf Scholastisches Wissen (Okkult) oder Allgemeinwissen (Imperialer Glaube).</td>
+						</tr>
+						<tr>
+							<td>Ablative Beschichtung</td>
+							<td>Flak-, Maschen-, Carapace- oder Servorüstungen</td>
+							<td>-</td>
+							<td>2</td>
+							<td>Bietet +5 AP für eine Trefferzone, der bei jedem Treffer um 1 reduziert wird, bis er wieder auf den Normalwert zurückkehrt.</td>
+						</tr>
+						<tr>
+							<td>Isoliert</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>1</td>
+							<td>Aushaltevermögen-Proben aufgrund von Hitze sind, in angemessenem Rahmen, nicht erforderlich.</td>
+						</tr>
+						<tr>
+							<td>Reflex-Beschichtung</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>-</td>
+							<td>+2 AP gegen Angriffe mit Laserwaffen.</td>
+						</tr>
+						<tr>
+							<td>Thermische Verstärkung</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>1</td>
+							<td>Aushaltevermögen-Proben aufgrund von Kälte sind, in angemessenem Rahmen, nicht erforderlich.</td>
+						</tr>
+						<tr>
+							<td>Vakuumversiegelt</td>
+							<td>Ganzkörperrüstungen: Maschen, Carapace oder Servor</td>
+							<td>-</td>
+							<td>2</td>
+							<td>Zählt als Void-Anzug mit einer Luftversorgung für 6 Stunden.</td>
+						</tr>
+						<tr>
+							<td>Werkzeughalterung</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>0.1</td>
+							<td>Erlaubt die Anbringung eines kleinen Werkzeugs, einer kompakten oder mikrogrößigen Fernkampfwaffe an der Außenseite der Rüstung.</td>
+						</tr>
+						<tr>
+							<td>Nachtschleier-Schicht</td>
+							<td>Ganzkörperrüstungen: Alle außer Servo</td>
+							<td>-</td>
+							<td>2</td>
+							<td>+30 auf Schleichen im Dunkeln, selbst wenn es keinen Versteck gibt. Muss jede Stunde eine Aushaltevermögen-Probe bestehen, sonst erleidet der Träger eine Stufe Erschöpfung.</td>
+						</tr>
+						<tr>
+							<td>Kraftunterstützt</td>
+							<td>Ganzkörperrüstungen: Flak, Maschen, Carapace</td>
+							<td>-</td>
+							<td>15</td>
+							<td>+10 Stärke, und die Rüstung zählt als gewichtslos, während sie getragen wird. Benötigt ein Energierucksack; zivile Modelle halten 1W5 Stunden.</td>
+						</tr>
+						<tr>
+							<td>Lumen-Heraldik</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>-</td>
+							<td>+10 auf Einschüchtern und Befehle geben, -30 auf Schleichen. Muss alle 5 Tage aufgeladen werden, es sei denn, die Rüstung verfügt über eine permanente Energiequelle.</td>
+						</tr>
+						<tr>
+							<td>Versteckte Waffe</td>
+							<td>Carapace- oder Servorüstungen oder andere Ganzkörper Rüstungen</td>
+							<td>-</td>
+							<td>-</td>
+							<td>Wähle eine kompakte Pistole, eine Mikro-Waffe oder eine Nahkampfwaffe in der Größe eines Messers. Sie ist in der Rüstung versteckt und kann nur mit einem Malus von -30 entdeckt werden.</td>
+						</tr>
+						<tr>
+							<td>Deflektive Konstruktion</td>
+							<td>Flak-, Maschen-, Carapace- oder Servorüstungen</td>
+							<td>-</td>
+							<td>1</td>
+							<td>+2 AP gegen Explosionsangriffe.</td>
+						</tr>
+						<tr>
+							<td>Stoßgelzellen</td>
+							<td>Flak-, Maschen-, Carapace- oder Servorüstungen</td>
+							<td>-</td>
+							<td>0.5</td>
+							<td>+2 AP gegen Aufprallangriffe.</td>
+						</tr>
+						<tr>
+							<td>Egarischer Geoden-Mesh</td>
+							<td>Flak-, Maschen- oder Carapace-Rüstungen</td>
+							<td>-</td>
+							<td>3</td>
+							<td>+2 AP gegen Energieangriffe.</td>
+						</tr>
+						<tr>
+							<td>Fortschrittliche Helmsysteme</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>-</td>
+							<td>Fügt einem Helm ein oder mehrere neue Systeme hinzu. Diese Systeme können integrierte Funktionen wie verbesserte Optiken, Wärmebildsensoren, Kommunikationsmodule, Zielhilfen und Umweltüberwachung umfassen, Echtzeit-Taktikanzeigen, automatische Signalfilterung und Atemgerätfunktionen bereitstellen.</td>
+						</tr>
+						<tr>
+							<td>Cameleoline-Beschichtung</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>-</td>
+							<td>+20 auf Schleichen-Proben in geeigneten Umgebungen; du zählst als eine Reichweitenkategorie weiter entfernt, solange du dich nicht bewegst.</td>
+						</tr>
+						<tr>
+							<td>Beutesicht-Maske</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>-</td>
+							<td>+20 Bonus auf Schleichen-Proben, wenn diese gegen Infrarotsensoren oder Kreaturen abgelegt werden, deren Sicht auf Wärme basiert.</td>
+						</tr>
+						<tr>
+							<td>Schockfeld</td>
+							<td>Maschen-, Carapace- oder Servorüstungen</td>
+							<td>-</td>
+							<td>-</td>
+							<td>Leitende Nahkampfwaffen erhalten die Eigenschaft Schockend.</td>
+						</tr>
+						<tr>
+							<td>Reißschutz</td>
+							<td>Alle</td>
+							<td>-</td>
+							<td>1</td>
+							<td>+2 AP gegen Reißangriffe.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
+

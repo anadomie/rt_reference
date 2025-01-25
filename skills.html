@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quick Reference</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="interface.js"></script>
+</head>
+
+<body>
+	<div id="navi">
+	</div>
+	<div id="content" class="content">
+		<div id="infoPane">
+			<div id="skills" class="info">
+				<div class="info-hdr">
+					<section id="skills" />
+					<h2>Skills</h2>
+				</div>
+				<div class="d-5cols">
+					<table class="t-5cols-b">
+						<colgroup class="cg-5-s">
+							<col class="col-5-s1">
+							<col class="col-5-s2">
+							<col class="col-5-s3">
+							<col class="col-5-s4">
+							<col class="col-5-s5">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Characteristic</th>
+								<th>Type</th>
+								<th>Description</th>
+								<th>Special Use</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Acrobatics</td>
+								<td>Agility</td>
+								<td>Full Action</td>
+								<td>A character with the Acrobatics skill can maintain balance or avoid falling. It
+									allows them to jump to or from a height and navigate obstacles without falling.</td>
+								<td>
+									<ul>
+									<li><b>Contortionist:</b> Can use his Acrobatics skill to escape from bonds as a
+										Full Action.
+										May also escape from a grapple by using their Acrobatics skill instead of their
+										Agility or Strength when grappling.</li>
+
+									<li><b>Manoeuvring:</b> The character may make a Disengage action as a Half Action
+										if he passes
+										a Challenging (+0) Acrobatics skill test.</li>
+
+									<li><b>Jumping:</b> When jumping or leaping, may use the Acrobatics skill in the
+										place of AG
+										and S tests. When determining Falling damage, can make an Acrobatics skill test
+										to
+										reduce the effective distance fallen by a number of metres equal to his AGB.
+									</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>Athletics</td>
+								<td>Strength</td>
+								<td>Full Action</td>
+								<td>A character with the Athletics skill can swim across water, push beyond their
+									physical limits, or climb difficult terrain. This skill helps overcome challenging
+									physical obstacles and demonstrates endurance.</td>
+								<td><ul><li><b>Endurance:</b> As a Free Action, can make a Dificult (-10) Athletics skill test whenever
+									he suffers a level of Fatigue as a result of running, swimming, or climbing to
+									ignore its effects. They can continue to take tests and ignore Fatigue gained
+									indefinitely; however, if a test fails, they must rest for at least 4 hours and
+									cannot use his Athletics skill again during that time.</li>
+
+									<li><b>Heft:</b> As a Free Action, a character can make a Challenging (+0) Athletics skill test
+									to increase his carrying capability for a single encounter. For every degree of
+									success, Strength is increased by 10 for how much weight can carry, lift, or drag,
+									to a max S of 100. Hefting can only be attempted once per encounter.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Awareness</td>
+								<td>Perception</td>
+								<td>Free Action</td>
+								<td>A character with the Awareness skill can spot ambushes, search for clues or hidden
+									items, and eavesdrop on conversations. This skill is useful for noticing hidden
+									details in the environment and gaining a tactical advantage.</td>
+								<td><ul><li><b>Lip Reading:</b> Dificulty of this test is modified -10 for every 10 metres of distance
+									between the character and the speaker. A successful Awareness skill test reveals the
+									general gist of the conversation.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Charm</td>
+								<td>Fellowship</td>
+								<td>1 minute</td>
+								<td>A character with the Charm skill can improve someone's opinion of them, distract
+									others by drawing their focus away, or gather information from locals and strangers.
+									This skill is useful for influencing social interactions and acquiring valuable
+									information.</td>
+								<td><ul><li>Target makes a Willpower save against Charm's characteristic test.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Command</td>
+								<td>Fellowship</td>
+								<td>Half for Simple, Full for complex</td>
+								<td>A character with the Command skill can send an allied NPC into an extremely
+									dangerous situation or open combat. They can also rally allied fighting forces and
+									organize them in the face of a surprise attack. This skill is crucial for
+									coordinating troops and maintaining morale and discipline.</td>
+								<td><ul><li><b>Inspire:</b> As a Full Action, the character can make a Challenging (+0) Command test to
+									inspire one or more of his followers. Inspired followers receive a +10 on their next
+									skill or characteristic test.</li>
+
+									<li><b>Terrify:</b> As a Reaction, try to counter the effects of Fear in his allies should they
+									fail their WP test. Make a Command skill test opposed by the WP of the Fear-causing
+									creature. Both the character and the creature add +10 to their rolls for each level
+									of Fear they possess. If the character is successful, his allies ignore the effects
+									of Fear</li></ul></td>
+							</tr>
+							<tr>
+								<td>Commerce</td>
+								<td>Intelligence</td>
+								<td>1 minute, or more for complex deals</td>
+								<td>A character with the Commerce skill can gain a bonus when attempting a Requisition
+									test, try to track down a rare item, or ascertain the value of an item. This skill
+									is useful for efficiently acquiring resources and gaining trade advantages.</td>
+								<td>
+									<ul>
+										<li>Target makes a Commerce or Willpower save to oppose.</li>
+									<li><b>Evaluate:</b> A success tells the character the Availability of the item he is
+									evaluating, while a failure tells him nothing. If he fails by more than 3 degrees of
+									failure, the GM should give a false Availability.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Common Lore</td>
+								<td>Intelligence</td>
+								<td>Free Action</td>
+								<td>A character with the Common Lore skill can learn about a situation, location,
+									character, or object, subject to their specialization. This skill allows them to
+									gain well-founded knowledge about various subjects and draw useful conclusions.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Deceive</td>
+								<td>Fellowship</td>
+								<td>1 minute, or more for complex deception</td>
+								<td>A character with the Deceive skill can tell a convincing lie, distract someone with
+									rambling nonsense, or try to disguise themselves. This skill is useful for
+									manipulating others, avoiding pursuit, or blending into a crowd.</td>
+								<td><ul><li><b>Disguise:</b> Can create a disguise, given time and raw materials. The time taken
+									depends greatly on the complexity of the disguise. Additional deception checks may
+									be necessary as one comes under scrutiny.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Demolitions</td>
+								<td>Intelligence</td>
+								<td>Variable</td>
+								<td>Success on a Demolitions skill test indicates a character has successfully planted
+									an explosive charge, and set a trigger of his choice. Defusing charges also falls
+									under the Demolitions skill, with an Opposed test against the Demolitions skill test
+									of the individual who set the explosives. Winning the test defuses the bomb. Simple
+									failure means that while the charge has not been disarmed, neither has it gone off.
+									Four or more degrees of failure indicate the character has set off the device,
+									suffering the consequences of the explosion.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Dodge</td>
+								<td>Agility</td>
+								<td>Reaction</td>
+								<td>A character with the Dodge skill can evade a melee or ranged attack or avoid
+									hazards. This skill is crucial for avoiding damage and enhancing survivability in
+									dangerous situations.</td>
+								<td><ul><li><b>Dive for Cover:</b> If there is cover with a number of metres equal to the character's
+									AGB and they are not Prone, they can Dive for Cover as a Reaction against a ranged
+									attack instead of trying to Evade. This requires an Ordinary (+10) Dodge test; if
+									successful, the character leaps behind cover and goes Prone. They are still hit by
+									the attack, but benefit from the AP of the Cover.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Forbidden Lore</td>
+								<td>Intelligence</td>
+								<td>Free Action</td>
+								<td>A character with the Forbidden Lore skill can seek information about potential cult
+									activity, learn about the operations of xenos, or determine the proper procedure to
+									summon a daemon. This skill allows them to gain deep and often dangerous knowledge
+									about forbidden subjects.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Inquiry</td>
+								<td>Fellowship</td>
+								<td>One hour or more</td>
+								<td>A character with the Inquiry skill can try to track down a local crime lord, attempt
+									to learn the attitudes of the local populace, or gather information about specific
+									locations. This skill is useful for acquiring targeted knowledge about people,
+									places, or social structures.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Interrogation</td>
+								<td>Willpower</td>
+								<td>One hour or more</td>
+								<td>A character with the Interrogation skill can attempt to learn battle plans from a
+									commander, force an Imperial Adept to reveal hidden information, or have a cultist
+									disclose a secret meeting place. This skill is useful for extracting crucial
+									information through focused questioning and pressure.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Intimidate</td>
+								<td>Strength</td>
+								<td>Full Action</td>
+								<td>A character with the Intimidate skill can coerce someone into acting a certain way
+									or try to make an opponent back down from a fight. This skill is useful for exerting
+									control through fear and resolving conflicts without direct violence.</td>
+									<td></td>
+							</tr>
+							<tr>
+								<td>Linguistics</td>
+								<td>Intelligence</td>
+								<td>Free Action</td>
+								<td>A character with the Linguistics skill can decipher an archaic text, compose a
+									moving piece of prose, or convey a message with limited vocabulary. This skill is
+									useful for understanding complex or foreign languages and communicating effectively.
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Logic</td>
+								<td>Intelligence</td>
+								<td>1 minute, or more for complex problem</td>
+								<td>A character with the Logic skill can solve a riddle, look for clues in vast amounts
+									of unrelated information, or try to win a game of chance. This skill is useful for
+									applying analytical thinking and making rational decisions.</td>
+								<td><ul><li><b>Gambling:</b> In a typical game, each participant wagers an amount, though these are
+									typically the same, and makes an Opposed test with the Logic skill. The character
+									with the most degrees of success or fewest degrees of failure wins the pot.</li>
+
+									<li><b>Ciphers and Decoding:</b> A character can use the Logic skill to unravel ciphers and
+									codes. This usually takes a great deal of time. In general, these tests should be
+									Difficult (-10) at the easiest, unless the cipher is already partially decoded or
+									the character has a key available to aid his efforts.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Medicae</td>
+								<td>Intelligence</td>
+								<td>Full Action</td>
+								<td>A character with the Medicae skill can apply first aid to a wounded ally, diagnose
+									an affliction and develop a treatment, or perform a surgical procedure for the
+									removal of an organ or the implantation of a cybernetic. This skill is essential for
+									providing medical care and life-saving interventions.</td>
+								<td><ul><li><b>First Aid:</b> make a +0 Medicae test, with a -10 penalty if Heavily Damaged or a -10
+									penalty for every point of Critical damage. If successful, remove damage equal to
+									IB, plus one point of damage per DoS on the test (removing Critical damage before
+									normal damage). A character can only be treated with first aid once every 24 hours,
+									and only when not also under extended care.</li>
+
+									<li><b>Extended Care:</b> Can treat paitents equal to IB, plus one per assistant. For each
+									patient beyond this number, he suffers a -10 penalty on Medicae tests. For each
+									assistant trained in the Medicae skill, gain +10. At the end of each 24-hour period
+									of extended care, the primary healer performs a (+10) Medicae test. If successful,
+									patients heal double the wounds as with their natural rate of healing.</li>
+
+									<li><b>Diagnose:</b> A successful skill test yields the name of the ailment and basic
+									treatments. When used on groups, a successful skill test can prevent the spread of
+									disease or mitigate the effects of malnutrition.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Navigate (Surface or Stellar or Warp)</td>
+								<td>Intelligence</td>
+								<td>1 minute for simple location; 1d5 hours for plotting courses or routes.</td>
+								<td>A character with the Navigation skill can make a journey across unfamiliar terrain,
+									find their bearings in a strange place, or create a map showing the quickest route
+									from one point to another. This skill is crucial for safe travel and route planning
+									in unfamiliar areas.</td>
+								<td><ul><li><b>Surface:</b> Make a journey across unfamiliar terrain, find one's bearings in a strange
+									place, or create a map showing the quickest route from one point to another.</li>
+
+									<li><b>Stellar:</b> Make a journey within a star system, find a ship stranded in an unknown
+									region of space, or find the quickest route from one location within a system (such
+									as a planet) to another location in the system.</li>
+
+									<li><b>Warp:</b> Guide a starship through the Warp, or convert a journey into a Warp route
+									chart</li></ul></td>
+							</tr>
+							<tr>
+								<td>Operate (Surface or Aeronautica or Voidship)</td>
+								<td>Agility</td>
+								<td>Half Action</td>
+								<td>A character with the Operate skill can drive a vehicle in combat, push it beyond its
+									normal limits, or attempt to maneuver through a crowded highway. This skill is
+									essential for controlling vehicles safely and effectively under challenging
+									conditions.</td>
+								<td><ul><li><b>Surface:</b> Drive a vehicle in combat, push a vehicle beyond its normal limits, or
+									attempt to manoeuvre though a crowded highway.</li>
+
+									<li><b>Aeronautica:</b> Pilot an aero in a combat situation, fly beyond its limit, or try to
+									land on difficult terrain.</li>
+
+									<li><b>Voidship:</b> Manoeuvre a voidship or oversee the use of a macrobattery, orbital laser,
+									or ship's weaponry.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Parry</td>
+								<td>Weapon Skill</td>
+								<td>Reaction</td>
+								<td>A character with the Parry skill can attempt to deflect blows in melee combat. This
+									skill is crucial for intercepting attacks and minimizing incoming damage.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Psyniscience</td>
+								<td>Perception</td>
+								<td>Half Action</td>
+								<td>A character with the Psyniscience skill can hunt for the location of daemons, detect
+									the effects of psychic power, or determine a thin point in the veil between the
+									Materium and the Warp. This skill is essential for dealing with supernatural threats
+									and psychic phenomena.</td>
+									<td></td>
+							</tr>
+							<tr>
+								<td>Scholastic Lore</td>
+								<td>Intelligence</td>
+								<td>Free Action</td>
+								<td>A character with the Scholastic Lore skill can recount legends from the past,
+									understand an obscure law, or identify a rare beast. This skill is useful for
+									gaining deep knowledge in specialized fields and making informed decisions.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Scrutiny</td>
+								<td>Intelligence</td>
+								<td>Half Action</td>
+								<td>A character with the Scrutiny skill can tell if someone is lying, collate
+									information and gather conclusions from a report, or interpret augur or auspex
+									readings. This skill is valuable for making informed decisions and uncovering
+									deception.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Security</td>
+								<td>Intelligence</td>
+								<td>1 minute, reduced by 10 seconds for each degree of success.</td>
+								<td>A character with the Security skill can open a locked door or break into a cogitator
+									to discover its secrets. This skill is crucial for bypassing security measures and
+									accessing restricted information.</td>
+								<td><ul><li><b>Traps:</b> Can fashion and set traps. The time and resources required, and damage caused
+									by, these kinds of traps depend on the GM's discretion and the intended complexity
+									and effects of the traps.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Sleight of Hand</td>
+								<td>Agility</td>
+								<td>Half Action, or can be performed as a Free Action with an additional -10 penalty.
+								</td>
+								<td>A character with the Sleight of Hand skill can attempt to steal something from a
+									target's pocket, palm evidence at a crime scene, or plant illegal narcotics into a
+									suspect's robes. This skill is essential for subtle manipulations and covert
+									actions.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Stealth</td>
+								<td>Agility</td>
+								<td>Free Action</td>
+								<td>A character with the Stealth skill can scout an enemy force without being detected,
+									sneak up on a foe and kill them quietly, or follow someone without arousing
+									suspicion. This skill is essential for covert operations and discreet movement.</td>
+								<td><ul><li><b>Shadowing:</b> Stealth can be used to shadow others and follow them unseen, either on
+									foot, in vehicles, or even in shuttles and starships. Stealth skill tests for
+									shadowing are always Opposed tests against the opponent's Awareness. A single
+									Stealth skill test is sufficient to follow the opponent unseen for 5 minutes per
+									degree of success.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Survival</td>
+								<td>Perception</td>
+								<td>Full Action</td>
+								<td>A character with the Survival skill can find food or water in a hostile environment,
+									start a fire with homemade tools, or track a foe across a hive. This skill is
+									crucial for enduring extreme conditions and navigating challenging environments.
+								</td>
+								<td><ul><li><b>Crafting:</b> Survival can be used to make all kinds of primitive devices, from cloaks
+									and stone buildings to spears and armour.
+									Tracking: A character can use the Survival skill to follow the signs left by his
+									quarry. A cunning or devious quarry might attempt to conceal or erase any tracks; in
+									cases where an opponent has done this, the tracker should make an Opposed test
+									against the prey's Stealth.</li>
+
+									<li><b>Wrangling:</b> Characters can tame, train, and potentially ride animals encountered in
+									their travels. Both taming and training beasts are Extended tests, the duration of
+									which is determined by the nature and temperament of the creature involved.
+									Wrangling is of no use against cyber or psy-bonded animals, nor against any
+									creatures with true sentience.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Tech-Use</td>
+								<td>Intelligence</td>
+								<td>1 minute, or more for more complex systems.</td>
+								<td>A character with the Tech-Use skill can repair a broken weapon or vehicle, push a
+									piece of technology beyond its normal limits, or determine how to use unknown
+									technology. This skill is essential for maintaining, modifying, and understanding
+									technical equipment.</td>
+								<td><ul><li><b>Crafting:</b> can be used to make technical devices, from simple clockwork and steam
+									engines to advanced weaponry and armour. The time, difficulty, and materials it
+									takes to create these items are greatly dependent on their complexity.</li></ul></td>
+							</tr>
+							<tr>
+								<td>Trade</td>
+								<td>Intelligence</td>
+								<td>Variable depending on task and complexity.</td>
+								<td>A character with the Trade skill can prepare a meal for high-ranking officers, carve
+									their sigil on a chainsword, or uncover the remains of a lost colony. This skill is
+									useful for specialized craftsmanship and creative tasks.</td>
+								<td><ul><li>Trade has multiple specializations; these are detailed on the character sheet.</li></ul></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

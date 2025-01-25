@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quick Reference</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="interface.js"></script>
+  </head>
+  <body>
+	<div id="naviDe">
+	</div>
+    <div id="content" class="content">	
+		<div id="infoPane">
+			<div id="armor" class = "info">
+				<div class="info-hdr">
+					<section id="actions"></section>
+					<h2>Aktionen</h2>
+				</div>
+				<div class="d-4cols">
+					<table class ="t-4cols">
+						 <colgroup class="cg-4-a">
+						  <col class="col-4-a1">
+						  <col class="col-4-a2">
+						  <col class="col-4-a3">
+						  <col class="col-4-a4">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Art</th>
+								<th>Aktion</th>
+								<th>Beschreibung</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Zielen (halb)</td>
+								<td>Konzentration</td>
+								<td>Halbe</td>
+								<td>Gewährt +10 Bonus auf die nächste Angriff-Aktion. Reaktionen heben diesen Bonus auf.</td>
+							</tr>
+							<tr>
+								<td>Zielen (voll)</td>
+								<td>Konzentration</td>
+								<td>Volle</td>
+								<td>Gewährt +20 Bonus auf die nächste Angriff-Aktion. Reaktionen heben diesen Bonus auf.</td>
+							</tr>
+							<tr>
+								<td>Voller Angriff</td>
+								<td>Angriff, Nahkampf</td>
+								<td>Voll</td>
+								<td>Führe einen Angriff mit +30 WS aus. Bis zum Ende des nächsten Zuges kannst du nicht ausweichen. Kein Bonus durch die Zielenaktion.</td>
+							</tr>
+							<tr>
+								<td>Schwere Waffe stützen</td>
+								<td>Sonstige</td>
+								<td>Halbe</td>
+								<td>Stützt eine schwere Waffe. Ungestützte schwere Waffen haben einen -30 Malus zu BS. Die Waffe kann innerhalb eines 45° Radius gefeuert werden,</td>
+							</tr>
+							<tr>
+								<td>Gezielter Angriff</td>
+								<td>Angriff, Konzentration, Nahkampf oder Fernkampf</td>
+								<td>Volle</td>
+								<td>Angriff auf ein bestimmtes Körperteil (oder Objekt) mit -20WS/BS</td>
+							</tr>
+							<tr>
+								<td>Anstrum</td>
+								<td>Angriff, Nahkampf, Bewegung</td>
+								<td>Volle</td>
+								<td>Laufe auf ein Ziel zu und führe einen Angriff mit +20 WS durch. Die letzten 4 Metern müssen in einer geraden Linie gelaufen werden.</td>
+							</tr>
+							<tr>
+								<td>Verteidigungshaltung</td>
+								<td>Konzentration, Nahkampf</td>
+								<td>Volle</td>
+								<td>Bis zum Beginn deines nächsten Zuges hast du +1 Reaktion. Kannst jedoch nur Nahkampfangriffe ausweichen.</td>
+							</tr>
+							<tr>
+								<td>Verzögern</td>
+								<td>Sonstige</td>
+								<td>Volle</td>
+								<td>Bis zum Beginn deines nächsten Zuges kannst du jederzeit eine halbe Aktion durchführen. Sollte es sich dabei um einen Angriff handeln, so wird dieser als Teil der nächsten Runde betrachtet.</td>
+							</tr>
+							<tr>
+								<td>Rückzug</td>
+								<td>Bewegung</td>
+								<td>Volle</td>
+								<td>Ziehe dich aus dem Nahkampf zurück, ohne dabei angegriffen werden zu können. Bewege dich bis zu [Agilitäts Bonus] .</td>
+							</tr>
+							<tr>
+								<td>Ausweichen</td>
+								<td>Bewegung(Ausweichen) or Nahkampf(Parieren)</td>
+								<td>Volle</td>
+								<td>Verwende die Ausweichen (Nah- oder Fernkampf) oder Parieren (Nahkampf) Fähigkeit.</td>
+							</tr>
+							<tr>
+								<td>Täuschungs Manöver</td>
+								<td>Nahkampf</td>
+								<td>Halbe</td>
+								<td>Entgegengesetzter WS Test. Bei einem Erfolg kann dein Ziel deinen nächsten Angriff nicht ausweichen.</td>
+							</tr>
+							<tr>
+								<td>Kraft Manifestieren</td>
+								<td>Von Psyker Fähigkeit</td>
+								<td>Von Psyker Fähigkeit</td>
+								<td>Verwende eine Psyker Fähigkeit.</td>
+							</tr>
+							<tr>
+								<td>Vollautomatisches Feuer</td>
+								<td>Angriff, Fernkampf</td>
+								<td>Halbe</td>
+								<td>Feuere deine Waffe im Vollautomatikmodus mit -10 zu BS. Für jeden DoS triffst du ein weiteres Mal. Weitere Treffer können auch auf andere Ziele innerhalb von 2 m erfolgen. Bei 94+ blockiert die Waffe.</td>
+							</tr>
+							<tr>
+								<td>Festhalten/Ringen</td>
+								<td>Angriff, Nahkampf</td>
+								<td>Anhängig</td>
+								<td>Einen Gegner festhalten zu versuchen, sich von einem Griff lösen versuchen bzw. mit einen festgehaltenen Gegner interagieren.</td>
+							</tr>
+							<tr>
+								<td>Vorsichtige Aktion</td>
+								<td>Konzentration, Nahkampf oder Fernkampf</td>
+								<td>Halbe</td>
+								<td>-10 zu WS/BS und +10 auf Ausweichen bis zum Beginn deines nächsten Zuges.</td>
+							</tr>
+							<tr>
+								<td>Springen</td>
+								<td>Bewegung</td>
+								<td>Volle</td>
+								<td>Sprung Manöver durchführen.</td>
+							</tr>
+							<tr>
+								<td>Zu Boden werfen.</td>
+								<td>Angriff, Nahkampf</td>
+								<td>Halbe</td>
+								<td>Entgegengesetzter Stärketest. Bei einem Erfolg fällt der Gegner zu Boden. Bei 2+ DoS kannst du zusätzlich 1d5-3+[Stärke Bonus] Schaden und 1 Erschöpfungslevel zufügen. Sollte der Gegner mit 2+ DoS  gewinnen  fällst du Stadtessen zu Boden.</td>
+							</tr>
+							<tr>
+								<td>Blitzschneller Angriff</td>
+								<td>Angriff, Nahkampf</td>
+								<td>Halbe</td>
+								<td>Erfordert entsprechendes Talent. Angriff mit -10 WS. Weitere Treffer für jeden DoS.</td>
+							</tr>
+							<tr>
+								<td>Manövrieren</td>
+								<td>Nahkampf, Bewegung</td>
+								<td>Halbe</td>
+								<td>Entgegengesetzter WS Test. Stoße den Gegner 1 m in eine Richtung deiner Wahl (es muss Platz sein). Optional kannst du nachrücken.</td>
+							</tr>
+							<tr>
+								<td>Bewegen (Halb)</td>
+								<td>Bewegung</td>
+								<td>Halbe</td>
+								<td>Bewege dich bis zu deinem Agilitätsbonus in Metern..</td>
+							</tr>
+							<tr>
+								<td>Bewegen (Voll)</td>
+								<td>Bewegung</td>
+								<td>Volle</td>
+								<td>Bewege dich bis zu 2x deinem Agilitätsbonus in Metern.</td>
+							</tr>
+							<tr>
+								<td>Feuerbereitschaft</td>
+								<td>Angriff, Konzentration, Fernkampf</td>
+								<td>Volle</td>
+								<td>Deklariere eine Zone mit 45 Grad, einen Angriff (Semi-, Automatik oder Standard) und einen optionalen Trigger. Wenn die Bedingung erfüllt wird, feuerst du auf ein Ziel in der Zone. Das Ziel muss zusätzlich einen Pinning-Test ablegen. Solltest du eine Reaktion nutzen, wird diese Aktion aufgehoben.</td>
+							</tr>
+							<tr>
+								<td>Vorbereiten</td>
+								<td>Sonstige</td>
+								<td>Halbe</td>
+								<td>Ziehe eine Waffe, rüste etwas aus, stecke etwas ein, ... Etwas fallen zu, kann jederzeit als freie Aktion erfolgen.</td>
+							</tr>
+							<tr>
+								<td>Nachladen</td>
+								<td>Sonstige</td>
+								<td>Anhängig von Waffe</td>
+								<td>Lade eine Waffe nach.</td>
+							</tr>
+							<tr>
+								<td>Laufen</td>
+								<td>Bewegung</td>
+								<td>Volle</td>
+								<td>Bewege dich bis zu 6x deinem Agilitätsbonus in Metern. Bis zum Beginn deines nächsten Zuges haben Gegner -20 BS und +20 zu auf Angriffe auf dich.</td>
+							</tr>
+							<tr>
+								<td>Halbautomatisches  Feuer</td>
+								<td>Angriff, Fernkampf</td>
+								<td>Halbe</td>
+								<td>Feuere deine Waffe im Halbautomatik Modus. Für alle 2 DoS triffst du ein weiteres Mal. Weitere Treffer können auch auf andere Ziele innerhalb von 2 m erfolgen. Bei 94+ blockiert die Waffe.</td>
+							</tr>
+							<tr>
+								<td>Aufstehen/Ein-Aussteigen</td>
+								<td>Bewegung</td>
+								<td>Halbe</td>
+								<td>Stehe auf oder Steige in ein Fahrzeug ein oder aus bzw. steige auf/von einem Reittier.</td>
+							</tr>
+							<tr>
+								<td>Standard Angriff</td>
+								<td>Angriff, Nahkampf oder Fernkampf</td>
+								<td>Halbe</td>
+								<td>Einzelner Angriff mit +10 auf WS/BS. Bei 96+ blockiert die Waffe.</td>
+							</tr>
+							<tr>
+								<td>Betäuben</td>
+								<td>Angriff, Nahkampf</td>
+								<td>Volle</td>
+								<td>Führe einen einzelnen Angriff mit -20 auf Waffenfertigkeit durch. Bei Erfolg: Vergleiche 1d10 + Stärkebonus mit der AP (Kopf) + Aushaltevermögen-Bonus des Ziels. Das Ziel ist für die Differenz in Runden betäubt und erleidet eine Stufe an Erschöpfung.</td>
+							</tr>
+							<tr>
+								<td>Unterdrückungsfeuer</td>
+								<td>Angriff, Fernkampf</td>
+								<td>Volle</td>
+								<td>Feuert einen halbautomatischen Feuerstoß (in einem 30-Grad-Winkel) oder einen vollautomatischen Feuerstoß (in einem 45-Grad-Winkel) mit -20 auf Ballistische Fertigkeit. Feinde im Wirkungsbereich müssen eine Pinning-Probe mit -10 (bei halbautomatischem Feuer) oder -20 (bei vollautomatischem Feuer) bestehen oder werden gepinnt.</td>
+							</tr>
+							<tr>
+								<td>Schneller Angriff</td>
+								<td>Angriff, Nahkampf</td>
+								<td>Volle</td>
+								<td>Erfordert entsprechendes Talent. Weitere Treffer für alle 2 DoS.</td>
+							</tr>
+							<tr>
+								<td>Taktisches Vorrücken</td>
+								<td>Konzentration, Bewegung</td>
+								<td>Volle</td>
+								<td>Bewege dich bis zu deinem Agilitätsbonus von Deckung zu Deckung. Während der gesamten Bewegung giltst du als "in Deckung".</td>
+							</tr>
+							<tr>
+								<td>Fähigkeit Verwenden</td>
+								<td>Konzentration, Sonstige</td>
+								<td>Anhängig</td>
+								<td>Verwende eine Fähigkeit.</td>
+							</tr>
+					</tbody>
+				</table>
+				<div class="info-hdr">
+					<section id="combat_circ"></section>
+					<h2>Besonder Umstände</h2>
+				</div>
+				<div class="d-2cols">
+					<table class ="t-2cols">
+						 <colgroup class="cg-2-a">
+						  <col class="col-2-a1">
+						  <col class="col-2-a2">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Umstand</th>
+								<th>Beschreibung</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Deckung</td>
+								<td>Deckung erhöht die effektiven AP. (Je besser die Deckung, desto mehr AP) . Deckung kann über Zeit beschädigt werden, dass die AP reduziert. Deckung verbirgt diverse Körperteile. Idr. Beine und Körper.</td>
+							</tr>
+							<tr>
+								<td>Dunkelheit</td>
+								<td>-20 WS, -30 BS. +20 zu Schleichen</td>
+							</tr>
+							<tr>
+								<td>Schieriges Terrain</td>
+								<td>Kann Bewegung und WS reduzieren. Ausmaß abhängig vom Terrain.</td>
+							</tr>
+							<tr>
+								<td>Im Nahkampf verwickelt</td>
+								<td>-20 BS auf Ziele, die im Nahkampf verwickelt sind.</td>
+							</tr>
+							<tr>
+								<td>Extreme Reichweite</td>
+								<td>Ziele, die weiter als die 3-fache Waffenreichweite entfernt sind, zählen als "in extremer Reichweite". Alle Schüsse auf diese Ziele haben einen Malus von -30.</td>
+							</tr>
+							<tr>
+								<td>Rauch, Nebel,.../td>
+								<td>+10 zu Schleichen. -20 to BS</td>
+							</tr>
+							<tr>
+								<td>Überzahl</td>
+								<td>Im Nahkampf erhält man einen Bonus, wenn man in der Überzahl ist. +10 WS für jeden im Nahkamp verwickelten Verbündeten.</td>
+							</tr>
+							<tr>
+								<td>Hilfloses Ziel</td>
+								<td>Nahkampf Angriffe gegen hilflose Ziele gelingen automatisch mit einem DoS gleich dem WS Bonus. Bei Schadenwürfen wird zweimal gewürfelt und die Ergebnisse addiert.</td>
+							</tr>
+							<tr>
+								<td>Höhenvorteil</td>
+								<td>Wenn du auf einer Anhöhe stehst, erhältst du +10 WS</td>
+							</tr>
+							<tr>
+								<td>Lange Reichweite</td>
+								<td>Ziele, die weiter als die 2-fache Waffenreichweite entfernt sind, zählen als "in langer Reichweite". Alle Schüsse auf diese Ziele haben einen Malus von -10.</td>
+							</tr>
+							<tr>
+								<td>Gepinnt</td>
+								<td>Während man gepinnt ist, kann man nur eine halbe Aktion je Runde durchführen. Sollte man sich nicht in Deckung befinden, so muss man diese Aktion nutzen, um in Deckung zu gelangen, bzw. wenn dies nicht möglich ist, muss man vom Angreifer weglaufen. Am Ende des Zuges kann man einen Willenskrafttest machen (+30 wenn am in Deckung ist), um nicht mehr als gepinnt zu gelten.</td>
+							</tr>
+							<tr>
+								<td>Auf nächster Nähe</td>
+								<td>Ziele innerhalb von 2 m gelten als "auf nächster Nähe". Auf diese Ziele erhält man einen +30 BS Bonus. Dieser Bonus zählt nur, wenn man selbst nicht im Nahkampf verwickelt ist. </td>
+							</tr>
+							<tr>
+								<td>Am Boden</td>
+								<td>Wenn ein Charakter am Boden liegt, haben Angreifer +10 WS und -10 BS auf ihn. Der am Boden liegende Charakter hat selbst auch -10 WS auf Angriffe und -20 aus Ausweichen.</td>
+							</tr>
+							<tr>
+								<td>Kurze Reichweite</td>
+								<td>Ziele, die näher als die halbe Waffenreichweite entfernt sind, zählen als in "kurzer Reichweite". Alle Angriffe auf Ziele in kurzer Reichweite haben einen +10 BS Bonus.</td>
+							</tr>
+							<tr>
+								<td>Bedäupte Ziele./td>
+								<td>Angriffe auf betäubte Ziele haben einen +20 Bonus.</td>
+							</tr>
+							<tr>
+								<td>Ahnungslose Ziele</td>
+								<td>Angriffe auf ahnungslose Ziele haben einen +30 Bonus.</td>
+							</tr>
+							<tr>
+								<td>Wetter und unnatürliche Zustände</td>
+								<td>Wetterbedingt bzw. Zustandsbedingt können Mali auf Angriffe vergeben werden.</td>
+							</tr>
+					</tbody>
+				</table>
+				<div class="info-hdr">
+					<section id="conditions"></section>
+					<h2>Besondere Zustände</h2>
+				</div>
+				<div class="d-2cols">
+					<table class ="t-2cols">
+						 <colgroup class="cg-2-a">
+						  <col class="col-2-a1">
+						  <col class="col-2-a2">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Zustand</th>
+								<th>Beschreibung</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Amputierte Gliedmaßen</td>
+								<td>Wenn ein Charakter eine Gliedmaße verliert, leidet er auch unter Blutverlust und muss von jemanden mit einer Medizin Fertigkeit behandelt werden. Wenn diese nicht passiert, würfle 1d10. Bei 9+ überlebst du, andernfalls stirbst du innerhalb von 1d10 Tagen an einer Infektion. Nach dem Verlust einer Gliedmaße erfolgt keine natürliche Heilung für die nächsten 10+2 Tage.</td>
+							</tr>
+							<tr>
+								<td>Blind</td>
+								<td>Alle auf Sicht basierenden Test scheitern automatisch. -30 auf WS oder andere Tests, die indirekt von Sicht profitieren könnten.</td>
+							</tr>
+							<tr>
+								<td>Blutverlust</td>
+								<td>Erhalte 1 Erschöpfungspunkt pro Runde. Du oder ein verbündeter Charakter können eine freie Medizin Aktion (-10) versuchen, um die Blutung zu stoppen.</td>
+							</tr>
+							<tr>
+								<td>Taub</td>
+								<td>Alle auf Gehör basierenden Tests schlagen fehl. Keine verbale Kommunikation möglich.</td>
+							</tr>
+							<tr>
+								<td>Fallen</td>
+								<td>1d10 + Meter gefallen - Aushaltevermögen Bonus schaden. Ab Fall aus sinnhafter Höhe.</td>
+							</tr>
+							<tr>
+								<td>Erschöpfung</td>
+								<td>Jeder Charakter hat eine Erschöpfungsgrenze (Aushaltevermögen Bonus + Willenskraft Bonus). Sollte das Erschöpfungslevel diese Schwelle überschreiten, wird man für 10-[Aushaltevermögen Bonus] Minuten bewusstlos. Nach dem Aufwachen wird das Erschöpfungslevel auf den Schwellwert reduziert. Sollte jemals der doppelte Schwellwert erreicht werden, stirbt der Charakter. Abbau 1 Punkt für jede Stunde mit geringer Aktivität bzw. voller Abbau nach 6 Stunden ungestörter Ruhe.</td>
+							</tr>
+							<tr>
+								<td>Brennen</td>
+								<td>Brennende Charaktere erleiden 1d10 - Aushaltevermögen Bonus Energie, Schaden und 1 Erschöpfungslevel pro Runde. Es muss ein erfolgreicher Willenskraft-Test abgelegt werden, um in der Runde eine Aktion durchzuführen können. Löschversuch = zu Boden fallen und -20 Agilitätstest.</td>
+							</tr>
+							<tr>
+								<td>Verlorene/r Arm/Hand</td>
+								<td>-20 auf alle Tests, die zwei Hände erfordern würden. Es können keine Zweihand Waffen verwendet werden.</td>
+							</tr>
+							<tr>
+								<td>Verlorene Auge</td>
+								<td>Permanent -10 BS. -20 auf Sicht-basierende Tests. Sollten beide Augen verloren gehen, bist du blind.</td>
+							</tr>
+							<tr>
+								<td>Verlorener Fuß</td>
+								<td>Alle Bewegungen werden um die Hälfte reduziert (aufgerundet). -20 auf alle Bewegungstests.</td>
+							</tr>
+							<tr>
+								<td>Verlorenes Bein</td>
+								<td>Alle Bewegungen werden um die Hälfte reduziert (aufgerundet). -20 auf alle Bewegungstests. Ausweichen ist nicht mehr möglich.</td>
+							</tr>
+							<tr>
+								<td>Betäübt.</td>
+								<td>Es können keine Aktionen oder Reaktionen genutzt werden.</td>
+							</tr>
+							<tr>
+								<td>Ersticken.</td>
+								<td>Man kann für [Aushaltevermögen Bonus] Minuten die Luft anhalten. Im Kampf reduziert auf 2x [Aushaltevermögen Bonus] Runden. Jede Minute/Runde Aushaltevermögen, Test oder 1 Erschöpfungslevel. Sollte innerhalb die maximal dauer überschritten werden, wird der Charakter bewusstlos und stirbt, wenn er nicht innerhalb von [Aushaltevermögen Bonus] runden Sauerstoff erhält.</td>
+							</tr>
+							<tr>
+								<td>Bewusstlosigkeit</td>
+								<td>Es können keine Aktionen oder Reaktionen genutzt werden. Man zählt als hilfloses Ziel. Wenn nicht näher spezifiziert ist man für 10 Minuten bewusstlos.</td>
+							</tr>
+					</tbody>
+				</table>
+				<div class="info-hdr">
+					<section id="hit_loc"></section>
+					<h2>Trefferzonen</h2>
+				</div>
+				<div class="d-6cols">
+					<table class ="t-6cols">
+						 <colgroup class="cg-6-a">
+						  <col class="col-6-a1">
+						  <col class="col-6-a2">
+						  <col class="col-6-a3">
+						  <col class="col-6-a4">
+						  <col class="col-6-a5">
+						  <col class="col-6-a6">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>d100 Wurf</th>
+								<th>1. Treffer</th>
+								<th>2. Treffer</th>
+								<th>3. Treffer</th>
+								<th>4. Treffer</th>
+								<th>5. Treffer</th>
+								<th>Weitere Treffer</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>01-10</td>
+								<td>Kopf</td>
+								<td>Kopf</td>
+								<td>Arm</td>
+								<td>Körper</td>
+								<td>Arm</td>
+								<td>Kopf</td>
+							</tr>
+							<tr>
+								<td>11-20</td>
+								<td>Rechtes Bein</td>
+								<td>Arm</td>
+								<td>Körper</td>
+								<td>Kopf</td>
+								<td>Körper</td>
+								<td>Arm</td>
+							</tr>
+							<tr>
+								<td>21-30</td>
+								<td>Linker Arm</td>
+								<td>Arm</td>
+								<td>Körper</td>
+								<td>Kopf</td>
+								<td>Körper</td>
+								<td>Arm</td>
+							</tr>
+							<tr>
+								<td>31-70</td>
+								<td>Körper</td>
+								<td>Körper</td>
+								<td>Arm</td>
+								<td>Kopf</td>
+								<td>Arm</td>
+								<td>Körper</td>
+							</tr>
+							<tr>
+								<td>71-85</td>
+								<td>Reches Bein</td>
+								<td>Bein</td>
+								<td>Körper</td>
+								<td>Arm</td>
+								<td>Kopf</td>
+								<td>Körper</td>
+							</tr>
+							<tr>
+								<td>86-100</td>
+								<td>Linkes Bein</td>
+								<td>Bein</td>
+								<td>Körper</td>
+								<td>Arm</td>
+								<td>Kopf</td>
+								<td>Körper</td>
+							</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
+

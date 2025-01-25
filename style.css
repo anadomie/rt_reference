@@ -1,0 +1,231 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #202124;
+}
+
+.languageEN {
+	background: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg') no-repeat;
+}
+.languageDE {
+	background: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg') no-repeat;
+}
+
+.top {
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+} 
+	 
+.tophr{
+	 color: black;
+	 margin-bottom: 0px;
+	 padding: 0px;
+	 border: 1px solid grey;
+}
+	  
+.language{		  
+	cursor:pointer;
+	border: none;
+	width: 76px;
+	height: 40px;
+	background-size: cover;
+}
+
+.flags {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+
+h1 {
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 20px;
+	color: white;
+	font-size: 1.5em;
+}
+	  
+.tHead {
+	text-align: center;
+	padding-top: 170px;
+	margin-top: 0px;
+	color: black;
+}
+	  
+hr {
+	margin-bottom: 10px;
+	padding: 1px;
+}
+	  
+.stats{
+	text-align: center;
+	font-size: 14px;
+}
+	  
+.navbar {
+	position: sticky; /* Keeps the navbar sticky at the top */
+	top: 0; /* Aligns the navbar at the viewport's top */
+	background-color: #333;
+	color: white;
+	text-align: center;
+	z-index: 1000; /* Ensures it stays above other elements */
+	display: flex;
+	height: 50px; /* Fixed height for the navbar */
+	justify-content: center;
+	gap: 15px; /* Space between navbar items */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for visibility */
+  }
+
+  .navButton {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	background-color: #333;
+	height: 50px; /* Fixed height for the navbar */
+	border: none;
+  }
+  
+  .navButton:hover {
+	background-color: #575757;
+  }
+
+  .dtBt:after {
+    content: ''; /* Adds the triangle */
+    display: inline-block;
+    margin-left: 8px; /* Space between text and triangle */
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white; /* Color of the triangle */
+  }
+  
+
+.info {
+	width: 80%;
+	margin: auto;
+	color: white;
+}
+
+.info-hdr {
+	text-align: center;
+	color: #AA0000;
+}
+
+h2{
+	font-weight: 700;
+	font-size: 2.5em;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: none;
+	line-height: 1.5;
+}
+
+th, td {
+	border: none !important;
+	padding: 15px;
+}
+
+	/* Style the header row */
+thead th {
+	position: sticky; /* Makes the table header sticky */
+    top: 50px; /* Adjust to match the navbar's height */
+    z-index: 999; /* Keeps it above the table content */
+	background-color: #AA0000;
+	color: white;
+	font-family: 'Cinzel', serif; /* Header font: classical and thematic */
+	font-weight: 700; /* Bold style */
+	font-size: 22px;
+	line-height: 1.8;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	vertical-align: middle;
+	text-align: left; /* Horizontally centers the text (optional) */
+}
+
+tbody {
+	font-family: 'Oswald', sans-serif; /* Body font: industrial and clean */
+	font-size: 18px;
+	font-weight: 400;
+}
+	/* Alternate column colors */
+tr:nth-child(odd) {
+	background-color: #4E4E4E; 
+	color: white;
+}
+tr:nth-child(even) {
+	background-color: #3B3B3B;
+	color: white;
+}
+
+.t-5cols td:nth-child(1) {
+  font-weight: 700;
+}
+
+.t-5cols-b td:nth-child(1) {
+	font-weight: 700;
+  }
+
+.t-5cols td:not(:nth-child(1)):not(:nth-last-child(1)):not(:nth-child(2)) {
+  text-align: center;
+}
+
+
+.col-5-a1{
+	width: 260px;
+	min-width: 260px;
+}
+
+.col-5-a2{
+  min-width: 170px;
+  max-width: 260px;
+}
+
+
+.col-5-a3{
+  width: 130px;
+  min-width: 130px;
+}
+.col-5-a4{
+  width: 130px;
+  min-width: 130px;
+}
+
+.col-5-a4{
+  width: auto;
+}
+
+
+.col-5-s1{
+	width: 160px;
+	min-width: 160px;
+}
+
+.col-5-s2{
+  min-width: 100px;
+  max-width: 100px;
+}
+
+
+.col-5-s3{
+  width: 130px;
+  min-width: 130px;
+}
+.col-5-s4{
+	width: 460px;
+    min-width: 460px;
+}
+
+.col-5-s5{
+  width: auto;
+}
+
+li[
+	padding-left: 20px; 
+]
