@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quick Reference</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="interface.js"></script>
+</head>
+
+<body>
+	<div id="naviDe">
+	</div>
+	<div id="content" class="content">
+		<div id="infoPane">
+			<div id="ip_traits" class="info">
+				<div class="info-hdr">
+					<section id="traits" />
+					<h2>Eigenschaften</h2>
+				</div>
+				<div class="d-2cols">
+					<table class="t-2cols">
+						<colgroup class="cg-2-roll">
+							<col class="col-2-long-1">
+							<col class="col-2-roll-2">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Effekt</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Amorphous</td>
+								<td>Eine Kreatur mit diesem Merkmal kann ihren Wert beim Merkmal Größe um 1 erhöhen oder
+									verringern, und zwar als Freie Aktion (ohne ihre Bewegungswerte zu verändern). Eine
+									Kreatur mit diesem Merkmal verfügt außerdem über das Merkmal „Crawler“.</td>
+							</tr>
+							<tr>
+								<td>Amphibiös</td>
+								<td>Wenn eine Kreatur mit der Fähigkeit, eine andere Substanz als Luft zu atmen (z. B.
+									Wasser, Ammoniak, Kohlendioxid usw.), dieses Merkmal erhält, kann sie sowohl Luft
+									als auch ihre native Atmosphäre atmen.</td>
+							</tr>
+							<tr>
+								<td>Auto-Stabilisiert</td>
+								<td>Diese Wesen gelten stets als abgestützt, wenn sie schwere Waffen abfeuern. Sie
+									können daher eine Waffe im Voll- oder Halbautomatikmodus abfeuern, ohne zuvor die
+									Aktion „Abstützen“ durchführen zu müssen, und erleiden keine Abzüge auf ihre
+									Trefferwürfe.</td>
+							</tr>
+							<tr>
+								<td>Unheilvolle Präsenz(X)</td>
+								<td>Alle Charaktere erleiden einen Malus von –10 auf Willenskraft-Proben, die sie
+									innerhalb von X Metern von der Kreatur ablegen.</td>
+							</tr>
+							<tr>
+								<td>Bestialisch</td>
+								<td>Eine Kreatur mit diesem Merkmal muss in ihrem natürlichen Lebensraum niemals eine
+									Überlebensprobe ablegen. Es sei denn, sie ist am Verhungern oder verzweifelt: Eine
+									Bestien-Kreatur muss eine Herausfordernde (+0) Willenskraft-Probe ablegen, wenn sie
+									erschreckt, überrascht oder verletzt wird. Scheitert die Probe, flieht die Kreatur.
+								</td>
+							</tr>
+							<tr>
+								<td>Blind</td>
+								<td>Blinde Kreaturen scheitern automatisch bei allen Proben, die auf Sehen basieren, und
+									automatisch bei allen Ballistikfertigkeitsproben. Solche Kreaturen erleiden einen
+									Malus von –30 auf Waffenfertigkeitsproben sowie auf die meisten anderen Proben, die
+									üblicherweise das Sehen erfordern oder davon profitieren.</td>
+							</tr>
+							<tr>
+								<td>Brutaler Ansturm(X)</td>
+								<td>Beim Sturmangriff verursacht die Kreatur zusätzlichen Schaden in Höhe von (X)
+									Punkten bei jedem Treffer, den sie in dieser Runde erzielt.</td>
+							</tr>
+							<tr>
+								<td>Gräber (X)</td>
+								<td>Die Zahl in Klammern (X) gibt die Geschwindigkeit der Kreatur beim Graben an. Wenn
+									eine Kreatur gräbt, hinterlässt sie einen Tunnel. Charaktere mit einem niedrigeren
+									Wert im Merkmal Größe als der Gräber können diese Bereiche ungehindert betreten. Am
+									Ende jeder Runde, nachdem der Gräber den Tunnel passiert hat, wird 1W10 geworfen;
+									bei einem Ergebnis von 5 oder niedriger stürzt der Tunnel hinter der Kreatur ein.
+								</td>
+							</tr>
+							<tr>
+								<td>Kriecher</td>
+								<td>Die Grundbewegung einer Kreatur mit diesem Merkmal beträgt die Hälfte ihrer normalen
+									Bewegungsrate (aufgerundet), wie sie durch ihren Gewandtheitsbonus bestimmt wird.
+									Sie erleidet jedoch keine Abzüge für das Bewegen über schwieriges Gelände.</td>
+							</tr>
+							<tr>
+								<td>Dämonisch (X)</td>
+								<td>Creatures with this trait increase their Toughness bonus against all damage by the
+									number indicated in the parentheses (X), in the same manner as an Unnatural
+									Characteristic (see page 139), and stack if the latter also increases Toughness.
+									This increase is negated by damage inflicted from force weapons, psychic powers,
+									holy attacks, or other creatures with this trait. Daemonic creatures are also immune
+									to disease and poison, gain the Undying trait, and gain benefits when using psychic
+									powers as detailed in Chapter VI: Psychic Powers.</td>
+							</tr>
+							<tr>
+								<td>Dunkelsicht</td>
+								<td>Kreaturen mit diesem Merkmal erhöhen ihren Zähigkeitsbonus gegen jeglichen Schaden
+									um die Zahl in Klammern (X), auf die gleiche Weise wie eine Unnatürliche Eigenschaft
+									(siehe Seite 139), und dieser Effekt kumuliert, wenn Letztere ebenfalls die
+									Zähigkeit erhöht. Diese Erhöhung wird jedoch durch Schaden aufgehoben, der durch
+									Machtwaffen, psionische Kräfte, heilige Angriffe oder andere Kreaturen mit diesem
+									Merkmal verursacht wird. Dämonische Kreaturen sind zudem immun gegen Krankheiten und
+									Gifte, erhalten das Merkmal „Unsterblich“ und profitieren beim Einsatz psionischer
+									Kräfte wie in Kapitel VI: Psionische Kräfte beschrieben.</td>
+							</tr>
+							<tr>
+								<td>Tötliche Natürliche Waffen</td>
+								<td>Die Kreatur erhält alle Vorteile des Merkmals „Natürliche Waffen“, jedoch besitzen
+									ihre Angriffe nicht länger die Waffeneigenschaft „Primitiv“.</td>
+							</tr>
+							<tr>
+								<td>Furcht (X)</td>
+								<td>Das Merkmal „Furcht“ hat immer eine zugehörige Stufe (1–4), die widerspiegelt, wie
+									schrecklich die Kreatur anzusehen ist; diese wird durch die Zahl in Klammern (X)
+									angegeben. Je höher die Furchtstufe, desto schwerer fällt es anderen, nicht an der
+									Begegnung zu verzweifeln, wie in Tabelle 4–5: Furchtstufe dargestellt. Wenn ein
+									Charakter einer Kreatur mit diesem Merkmal begegnet, muss er eine Willenskraft-Probe
+									mit einem Malus basierend auf der Furchtstufe der Kreatur ablegen. Gelingt die
+									Probe, erleidet der Charakter keine negativen Effekte; misslingt sie, muss er auf
+									Schock würfeln, wobei er +10 auf den Wurf für jeden Grad des Fehlschlags der Probe
+									addiert.</td>
+							</tr>
+							<tr>
+								<td>Flieger (X)</td>
+								<td>Die Zahl in Klammern (X) gibt die Geschwindigkeit der Kreatur beim Fliegen an. Diese
+									Zahl ersetzt den Agilitätsbomnus der Kreatur für Bewegungsaktionen in der Luft.</td>
+							</tr>
+							<tr>
+								<td>Vom Jenseits</td>
+								<td>Eine solche Kreatur ist immun gegen Furcht, Niederhalten, Wahnsinnspunkte und
+									psionische Kräfte, die darauf abzielen, ihren Geist zu verwirren, zu kontrollieren
+									oder zu täuschen.</td>
+							</tr>
+							<tr>
+								<td>Schweber (X)</td>
+								<td>Die Zahl in Klammern (X) gibt die Geschwindigkeit der Kreatur beim Schweben an;
+									diese Zahl ersetzt ihren Agilitätsbonus zur Berechnung der Bewegung in der Luft.
+								</td>
+							</tr>
+							<tr>
+								<td>Körperlos</td>
+								<td>"Inkorporale Kreaturen erhalten das Merkmal „Schweber (6)“ sowie einen Bonus von +30
+									auf Schleichen-Proben, da sie in der Lage sind, mit Objekten zu verschmelzen und
+									sich nahezu geräuschlos zu bewegen. Eine inkorporale Kreatur ist zudem immun gegen
+									normale Waffen, die wirkungslos durch ihren Körper hindurchgehen. Dämonen,
+									psionische Kräfte, Kreaturen des Warp, andere inkorporale Kreaturen und Gegner mit
+									Machtwaffen können eine inkorporale Kreatur jedoch normal verletzen. Eine
+									inkorporale Kreatur kann normalerweise nicht auf die sterbliche Welt einwirken und
+									kann daher keine normalen Gegner verletzen, es sei denn, sie verfügt über eine
+									geeignete Spezialfähigkeit oder ein Talent. Bestimmte Vorrichtungen können diese
+									Kreaturen jedoch fernhalten, insbesondere ein Leeren-Schild oder das Gellar-Feld
+									eines Raumschiffs, das für sie eine undurchdringliche Barriere darstellt."</td>
+							</tr>
+							<tr>
+								<td>Maschine (X)</td>
+								<td>Maschinen atmen nicht, sind immun gegen Vakuum, extreme Kälte und
+									geistbeeinflussende psionische Effekte. Maschinen besitzen eine bestimmte Anzahl an
+									Rüstungspunkten (angegeben durch die Zahl in Klammern). Diese Rüstung kumuliert sich
+									mit getragener Rüstung, jedoch nicht mit dem Merkmal „Natürliche Rüstung“, und
+									bietet Widerstand gegen Schaden durch Feuer</td>
+							</tr>
+							<tr>
+								<td>Machanicus Implantate</td>
+								<td>Ermöglicht den Zugang zu ausschließlich dem Mechanicus vorbehaltenen Implantaten und
+									Talenten.</td>
+							</tr>
+							<tr>
+								<td>Navigator</td>
+								<td>Erlaubt es dir Navigatoren Kräfte zu erlenen</td>
+							</tr>
+							<tr>
+								<td>Gedanken Sperre</td>
+								<td>"Wenn die Kreatur mit einer Situation konfrontiert wird, die außerhalb ihrer
+									Programmierung liegt und kein anerkannter Meister vorhanden ist, der Befehle
+									erteilt, muss sie eine Routinemäßige (+20) Intelligenz-Probe ablegen oder für 1
+									Runde betäubt sein. Aufgrund ihrer im Wesentlichen geistlosen Natur ist sie nach
+									Ermessen des Spielleiters immun gegen alle vergleichenden Sozial-Proben."</td>
+							</tr>
+							<tr>
+								<td>Mehrere Arme (X)</td>
+								<td>"Die genaue Anzahl der Arme wird in Klammern (X) angegeben, sodass ein Genestealer
+									mit „Mehrere Arme (4)“ insgesamt vier Arme besitzt. Die Kreatur erhält einen Bonus
+									von +10 auf Athletik-Proben, die Klettern und Schwimmen betreffen. Zusätzlich kann
+									sie für jedes vollständige Arm-Paar (der Wert von „Mehrere Arme“ geteilt durch 2)
+									einen zusätzlichen Angriff durchführen, als würde sie mehrere Nahkampfwaffen führen.
+									Damit dies wirksam wird, muss die Kreatur entweder natürliche Waffen besitzen oder
+									tatsächliche Nahkampfwaffen führen. Es ist zu beachten, dass eine Kreatur trotzdem
+									das Talent „Beidhändiger Kämpfer (Nahkampf oder Fernkampf)“ benötigt, um in
+									derselben Runde mehrere Angriffe auszuführen."</td>
+							</tr>
+							<tr>
+								<td>Natürliche Rüstung (X)</td>
+								<td>Die Zahl in Klammern (X) gibt an, wie viele Rüstungspunkte die Kreatur auf allen
+									Trefferzonen erhält. Natürliche Rüstung kumuliert sich mit getragener Rüstung,
+									jedoch nicht mit dem Merkmal „Maschine“.</td>
+							</tr>
+							<tr>
+								<td>Natürliche Waffen</td>
+								<td>"Die Kreatur gilt als bewaffnet, auch wenn sie keine Waffen führt, und ihre Angriffe
+									verursachen 1W10 Schaden plus ihren Stärke-Bonus. Die Kreatur kann Angriffe mit
+									ihren Natürlichen Waffen unter Verwendung ihrer Waffenfertigkeit durchführen, kann
+									jedoch nicht mit ihren Natürlichen Waffen parieren und kann nicht entwaffnet werden,
+									es sei denn, ihre Gliedmaßen werden natürlich abgeschlagen. Im Allgemeinen sind
+									Kreaturen mit Natürlichen Waffen immun gegen die Eigenschaft „Energiefeld“, da
+									angenommen wird, dass sie genug Zähne, Krallen oder Stacheln haben, um den Verlust
+									einiger zu verkraften. Natürliche Waffen besitzen die Waffeneigenschaft „Primitiv
+									(7)“, sofern im Profil nichts anderes angegeben ist."</td>
+							</tr>
+							<tr>
+								<td>Phase</td>
+								<td>Als Halbe Aktion kann die Kreatur das Merkmal „Inkorporal“ erhalten oder ablegen und
+									dadurch substanzlos oder fest werden.</td>
+							</tr>
+							<tr>
+								<td>Psyker</td>
+								<td>Obwohl dieses Merkmal an sich keine Vorteile bietet, ermöglicht es Charakteren, die
+									Fertigkeit „Psyniscience“ sowie psionische Kräfte zu erwerben. Alle Psioniker
+									verfügen über einen Psi-Wert.</td>
+							</tr>
+							<tr>
+								<td>Vierbeiner</td>
+								<td>Vierbeinige Kreaturen sind über eine längere Distanz deutlich schneller als ihre
+									zweibeinigen Gegenstücke, und ihre Bewegungsgeschwindigkeit ist doppelt so hoch wie
+									normal. Kreaturen mit mehr als vier Beinen können dieses Merkmal ebenfalls erhalten,
+									wodurch ihre Bewegung wie oben beschrieben verdoppelt wird. Zusätzlich wird ihre
+									endgültige Bewegungsgeschwindigkeit um 2 pro weiterem Beinpaar über die ersten
+									beiden hinaus erhöht (z. B. +2 für 6 Beine, +4 für 8 Beine usw.).</td>
+							</tr>
+							<tr>
+								<td>Regeneration (X)</td>
+								<td>Jede Runde kann die Kreatur zu Beginn ihres Zuges eine Zähigkeitsprobe ablegen, um
+									eine Menge Schaden zu entfernen, die in den Klammern hinter dem Merkmal angegeben
+									ist.</td>
+							</tr>
+							<tr>
+								<td>Sanktioniert</td>
+								<td>Wenn ein sanktionierter Charakter den Elite-Vorteil „Psioniker“ erlangt, erhält er
+									nicht die normalerweise damit verbundene Korruption und beginnt mit einem Psi-Wert
+									von 2 anstelle von 1.</td>
+							</tr>
+							<tr>
+								<td>Größe (X)</td>
+								<td>Die Größe beeinflusst die Bewegung, wie gut sich die Kreatur verstecken und
+									unentdeckt bewegen kann, sowie wie leicht oder schwer sie im Kampf zu treffen ist.
+									Bei der Berechnung der Bewegung wird zuerst der Größenmodifikator angewendet und
+									anschließend weitere Modifikatoren durch andere Merkmale oder Talente (wie z. B.
+									„Vierbeinig“). Dabei ist zu beachten, dass die Bewegung einer Kreatur nicht auf
+									weniger als 1 reduziert werden kann.</td>
+							</tr>
+							<tr>
+								<td>Sonar Sinn</td>
+								<td>Ermöglicht es der Kreatur, die Position eines beliebigen festen Objekts innerhalb
+									von 30 Metern zu lokalisieren. Andere Kreaturen innerhalb dieses 30-Meter-Bereichs
+									können bei einer Erfolgreichen Herausfordernden (–10) Wahrnehmungsprobe die
+									ungewöhnlich hohen Schallreflexionen um sich herum wahrnehmen.</td>
+							</tr>
+							<tr>
+								<td>Seelengebunden</td>
+								<td>"Ein seelengebundener Psioniker wirft einen zusätzlichen Würfel, wenn er gezwungen
+									ist, für Gefahren des Warp zu würfeln. Er kann dann entweder die Einerstelle oder
+									die Zehnerstelle durch das Ergebnis des zusätzlichen Würfels ersetzen, um das
+									endgültige Resultat zu bestimmen. Beim Seelenbund muss der Psioniker einen der
+									folgenden Effekte wählen: 3W10 Wahnsinnspunkte, den dauerhaften Verlust seines
+									Sehvermögens, den dauerhaften Verlust von 1W10 Punkten in einer Eigenschaft oder
+									eine zufällige Mutation. Darüber hinaus ist ein seelengebundener Charakter dauerhaft
+									der Entität verpflichtet, was zweifellos mit verschiedenen Aufgaben und Konsequenzen
+									verbunden ist."</td>
+							</tr>
+							<tr>
+								<td>Ansturm</td>
+								<td>"Immer wenn eine Kreatur mit diesem Merkmal eine Willenskraft-Probe nicht besteht,
+									bewegt sie sich automatisch so weit wie möglich in einer geraden Linie vorwärts und
+									überrennt dabei alles, was sich ihr in den Weg stellt, bis die Quelle der Gefahr
+									entweder entkommen oder unter ihren Hufen zerschmettert ist. Jede Person oder jedes
+									Objekt, das sich im Weg befindet, erleidet einen einzelnen Treffer durch die
+									Natürlichen Waffen der Kreatur (oder 1W5+SB Wuchtschaden, falls die Kreatur dieses
+									Merkmal nicht besitzt). Eine stürmende Kreatur verursacht automatisch, dass alle
+									anderen Kreaturen mit demselben Merkmal in Sichtweite ebenfalls in Panik geraten und
+									stürmen. Der Sturm dauert an, bis die Quelle der Gefahr nicht mehr sichtbar ist oder
+									für 1W10 Minuten, je nachdem, was später eintritt."</td>
+							</tr>
+							<tr>
+								<td>Aus den Alpträumen</td>
+								<td>Solche Kreaturen gelten als im Besitz des Merkmals „Unsterblich“ und sind
+									vollständig immun gegen die meisten Umweltgefahren, Blutverlust und Betäubung. Sie
+									ignorieren zudem alle Kritischen Effekte, außer solche, die sie vollständig
+									zerstören würden, es sei denn, diese wurden durch eine psionische Kraft, eine
+									Machtwaffe oder einen heiligen Angriff verursacht.</td>
+							</tr>
+							<tr>
+								<td>Stabil</td>
+								<td>Erhält einen Bonus von +20 auf Proben, um sich gegen Festhalten- und
+									Zu-Boden-Werfen-Aktionen sowie gegen den Einsatz des Talents „Niederschlag“ zu
+									verteidigen.</td>
+							</tr>
+							<tr>
+								<td>Vom Schicksal berührt (X)</td>
+								<td>The NPC has a number of Fate points shown in parentheses (X). It can use these Fate
+									points in exactly the same way as Player Characters and can even burn a Fate point
+									to survive death and destruction at the GM’s discretion. The NPC’s attacks also use
+									the rules for Righteous Fury.</td>
+							</tr>
+							<tr>
+								<td>Giftig (X)</td>
+								<td>Der NSC verfügt über eine Anzahl an Schicksalspunkten, die in Klammern (X) angegeben
+									sind. Er kann diese Schicksalspunkte auf die gleiche Weise wie Spielercharaktere
+									verwenden und sogar einen Schicksalspunkt opfern, um nach Ermessen des Spielleiters
+									Tod oder Zerstörung zu überleben. Die Angriffe des NSC nutzen ebenfalls die Regeln
+									für Rechtschaffene Wut.</td>
+							</tr>
+							<tr>
+								<td>Unsterblich</td>
+								<td>Es kann weder durch Krankheiten, Gifte noch toxische Effekte verletzt werden. Zudem
+									benötigt es keine Atmung und kann daher ohne Unterstützung im Vakuum überleben.</td>
+							</tr>
+							<tr>
+								<td>Übernnatürliche Ag</td>
+								<td>Erhöht den Agilitätsbonus um X. Erfolgreiche Proben, die Gewandtheit verwenden,
+									erhalten eine Anzahl zusätzlicher Erfolgsgrade in Höhe der Hälfte des Wertes der
+									Unnatürlichen Eigenschaft.</td>
+							</tr>
+							<tr>
+								<td>Übernnatürlicher BS</td>
+								<td>Erhöht den Ballistikfertigkeitsbonus um X. Erfolgreiche Proben, die
+									Ballistikfertigkeit verwenden, erhalten eine Anzahl zusätzlicher Erfolgsgrade in
+									Höhe der Hälfte des Wertes der Unnatürlichen Eigenschaft.</td>
+							</tr>
+							<tr>
+								<td>Übernnatürliches Charisma</td>
+								<td>Erhöht den Bonus auf Fel um X. Erfolgreiche Proben, die auf Fel basieren, erhalten
+									eine Anzahl zusätzlicher Erfolgsgrade in Höhe der Hälfte des Wertes der
+									Unnatürlichen Eigenschaft.</td>
+							</tr>
+							<tr>
+								<td>Übernnatürliche Intelligenz</td>
+								<td>Erhöht den Intelligenzbonus um X. Erfolgreiche Proben, die Intelligenz verwenden,
+									erhalten eine Anzahl zusätzlicher Erfolgsgrade in Höhe der Hälfte des Wertes der
+									Unnatürlichen Eigenschaft.</td>
+							</tr>
+							<tr>
+								<td>Übernnatürliche Wahrnehmung</td>
+								<td>Erhöht den Wahrnehmungsbonus um X. Erfolgreiche Proben, die Wahrnehmung verwenden,
+									erhalten eine Anzahl zusätzlicher Erfolgsgrade in Höhe der Hälfte des Wertes der
+									Unnatürlichen Eigenschaft.</td>
+							</tr>
+							<tr>
+								<td>Übernatürliche Sinne</td>
+								<td>Die Kreatur kann ihre Umgebung mit anderen Sinnen als Sehen oder Hören wahrnehmen,
+									wie zum Beispiel speziellen Organen, feinen Härchen oder einer anderen
+									beunruhigenden Fähigkeit. Dieses Merkmal umfasst immer eine Reichweite in Metern,
+									die durch die Zahl in Klammern (X) angegeben ist.</td>
+							</tr>
+							<tr>
+								<td>Übernnatürliche Sträke</td>
+								<td>Erhöht den Stärkebonus um X. Erfolgreiche Proben, die Stärke verwenden, erhalten
+									eine Anzahl zusätzlicher Erfolgsgrade in Höhe der Hälfte des Wertes der
+									Unnatürlichen Eigenschaft.</td>
+							</tr>
+							<tr>
+								<td>Übernnatürliches Aushaltevermögen</td>
+								<td>Erhöht den Aushaltevermögensbonus um X. Erfolgreiche Proben, die Aushaltevermögen
+									verwenden, erhalten eine Anzahl zusätzlicher Erfolgsgrade in Höhe der Hälfte des
+									Wertes der Unnatürlichen Eigenschaft.</td>
+							</tr>
+							<tr>
+								<td>Übernnatürlicher WS</td>
+								<td>Erhöht den Waffenfertigkeitsbonus um X. Erfolgreiche Proben, die Waffenfertigkeit
+									verwenden, erhalten eine Anzahl zusätzlicher Erfolgsgrade in Höhe der Hälfte des
+									Wertes der Unnatürlichen Eigenschaft.</td>
+							</tr>
+							<tr>
+								<td>Übernnatürliche Willenskraft</td>
+								<td>Erhöht den Willenskraftbonus um X. Erfolgreiche Proben, die Willenskraft verwenden,
+									erhalten eine Anzahl zusätzlicher Erfolgsgrade in Höhe der Hälfte des Wertes der
+									Unnatürlichen Eigenschaft.</td>
+							</tr>
+							<tr>
+								<td>Warp Instabilität</td>
+								<td>Wenn eine Kreatur mit diesem Merkmal Schaden erleidet und bis zum Ende ihres
+									nächsten Zuges keinem anderen Wesen Schaden oder Wahnsinnspunkte zufügt, muss sie
+									eine Willenskraft-Probe ablegen. Die Kreatur erleidet 1 Schadenspunkt bei einem
+									Fehlschlag, plus 1 weiteren Schadenspunkt für jeden Grad des Fehlschlags. Sollte
+									dieser Schaden gleich oder größer als die Wunden der Kreatur sein, wird sie zurück
+									in den Warp verbannt.</td>
+							</tr>
+							<tr>
+								<td>Warp Waffen</td>
+								<td>Natürliche Waffen und Angriffe einer Kreatur mit diesem Merkmal ignorieren physische
+									Rüstung, es sei denn, die Rüstung besteht aus psychoaktiven Materialien oder ist auf
+									irgendeine Weise gegen den Warp geschützt. Kraftfelder wirken weiterhin normal gegen
+									diese Angriffe.</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

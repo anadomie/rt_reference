@@ -1,0 +1,2222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quick Reference</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="interface.js"></script>
+</head>
+
+<body>
+	<div id="naviDe">
+	</div>
+	<div id="content" class="content">
+		<div id="infoPane">
+			<div id="abilities" class="info">
+				<div class="info-hdr">
+					<section id="abilities" />
+					<h2>Psychische Fähigkeiten</h2>
+				</div>
+				<div class="d-7cols">
+					<table class="t-7cols nosort">
+						<colgroup class="cg-7b">
+							<col class="col-7b-1">
+							<col class="col-7b-2">
+							<col class="col-7b-3">
+							<col class="col-7b-4">
+							<col class="col-7b-5">
+							<col class="col-7b-6">
+							<col class="col-7b-7">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									<div class="filter-header">
+										<span class="header-text">Disziplin</span>
+										<span class="filter-icon" id="filterIcon">
+											<svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M6 9l6 6 6-6" stroke="white" stroke-width="3"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+									</div>
+									<div class="filter-container" id="filterDropdown">
+										<select id="filterSelect" multiple>
+											<!-- Options will be populated dynamically -->
+										</select>
+									</div>
+								</th>
+								<th>
+									<div class="search-header">
+										<span class="header-text">Name</span>
+										<span class="search-icon" id="nameSearchIcon">
+											<svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<circle cx="11" cy="11" r="8" stroke="white" stroke-width="3" />
+												<line x1="16" y1="16" x2="22" y2="22" stroke="white" stroke-width="3" />
+											</svg>
+										</span>
+									</div>
+									<div class="search-container" id="nameSearch">
+										<input type="text" id="nameSearchInput" placeholder="Search name...">
+									</div>
+								</th>
+								<th>Aktion</th>
+								<th>Fokusieren</th>
+								<th>Aufrechterhalten</th>
+								<th>Art</th>
+								<th>Effekt</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Minor</td>
+								<td>Aura der Furcht</td>
+								<td>Volle</td>
+								<td>-20 WP Test</td>
+								<td>Halbe</td>
+								<td>Konzentration</td>
+								<td>Der Psioniker erhält „Furcht (1)“, solange er diese Kraft aufrechterhält.
+									</br></br>
+									<b>Psionische Phänomene</b>: Anstatt für psionische Phänomene zu würfeln, sollte die
+									Situation dies erfordern, muss der Psioniker stattdessen eine Furcht (4)-Probe
+									ablegen und erleidet zudem Warp-Schock, wenn er scheitert.
+								</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Deja Vu</td>
+								<td>Halbe</td>
+								<td>-10 WP test (VS)</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der Psyker wählt ein einzelnes Ziel, das sich der Probe mit +10 Willenskraft-Probe
+									widersetzt.
+									Wenn der Psyker erfolgreich ist, muss das Ziel seine letzte Handlung wiederholen,
+									wie zum Beispiel das Schießen auf ein Ziel, das nicht mehr da ist, oder das
+									Eintauchen in Deckung vor einer Granate, die bereits detoniert ist. Diese
+									wiederholte Handlung zählt als die Aktion des Ziels für die Runde. Wenn die Aktion
+									offensichtlich schädlich für das Ziel wäre (aber nicht für einen Verbündeten),
+									gewinnt das Ziel automatisch die Vergleichende Probe (mit 1 Grad mehr Erfolg als der
+									Psyker)..
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Vorhersagen</td>
+								<td>Volle</td>
+								<td>-10 Psyniscience test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der Psyker wählt einen einzelnen Charakter oder ein Objekt innerhalb der Reichweite
+									und erhält ein kurzes und unklareres Bild der Zukunft, das ihm eine grobe
+									Vorstellung davon vermittelt, was dem Ziel innerhalb einer Anzahl von Minuten bis
+									zum Psi-Wert des Psionikers passieren wird. Der Spielleiter entscheidet, welche
+									Informationen der Psioniker erhält, wobei zusätzliche Erfolgsgrade bei der
+									Fokus-Power-Probe wichtigere Informationen liefern. </br></br>Zum Beispiel könnte
+									der
+									Psioniker erfahren, dass der Charakter Ziel eines Angriffs wird oder selbst
+									gewalttätig wird, oder dass ein Kogitator von einer unbekannten Person aufgerufen
+									wird. Der Psioniker kann sich nicht selbst als Ziel dieser Kraft wählen.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Entflammen</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>Halbe</td>
+								<td>Angriff, Konzentration</td>
+								<td>Der Psyker erzeugt eine kleine Flamme, die etwa einen Zentimeter im Durchmesser
+									misst, an einem Punkt innerhalb der Reichweite und Sichtlinie. Die Flamme ist nicht
+									groß oder heiß genug, um Schaden zu verursachen, kann jedoch einen Bereich von etwa
+									5 Metern Radius erleuchten. Sie kann auch brennbare Materialien entzünden, nach
+									Ermessen des Spielleiters, wobei die Wahrscheinlichkeit, dass ein Objekt entzündet
+									wird, mit der Dauer, in der der Psioniker die Kraft aufrechterhält, steigt. Wenn
+									das Ziel dieser Kraft ein Charakter ist, muss dieser jede Runde, in der der Psyker
+									die Kraft nach der ersten Runde aufrechterhält, eine Agilitätsprobe ablegen, um
+									nicht in Brand zu geraten. Das Ziel erhält einen Bonus
+									von +30 auf diese Probe, wenn es in einer Runde eine Bewegungsaktion ausführt.
+
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Schlechtes Omen</td>
+								<td>Volle</td>
+								<td>-10 WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>TDer Psyker wählt ein einzelnes Ziel innerhalb der Reichweite und Sichtlinie, das
+									sich dieser Kraft mit einer Herausfordernden (+0) Logikprobe widersetzt. Wenn die
+									Kraft während der strukturierten Zeit verwendet wird und das Ziel versagt, erleidet
+									es einen Malus von –10 auf alle Proben für eine Anzahl von Runden entsprechend dem
+									Psi-Wert. Wird die Kraft während der narrativen Zeit eingesetzt, wählt der Psyker
+									stattdessen einen Zeitpunkt innerhalb der nächsten PR-Stunden, zu dem das Ziel das
+									Omen erlebt. Der Spielleiter bestimmt die Auswirkungen auf das Verhalten des Ziels,
+									wobei ein wahrscheinliches Ergebnis ist, dass das Ziel seinen aktuellen Handlungsweg
+									oder die Richtung, in die es reist, überdenkt. Der Spielleiter sollte die
+									Erfolgsgrade des Psykers, seinen Psi-Wert sowie seinen Vorschlag für die Form des
+									Omens verwenden, um das Ergebnis zu bestimmen.
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 10m x PR</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Zwingen</td>
+								<td>Halbe</td>
+								<td>+10 WP test</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>Der Psyker wählt ein Ziel, (Objekt oder ein Charakter), und schiebt
+									es direkt von sich weg für eine Anzahl von Metern, die seinem Psi-Wert entspricht.
+									Maximal Gewicht bestimmt sich
+									anhand des Psi-Wert des Psykers und dem Willenskraftbonus (WPB) anstelle von Stärke-
+									und Aushaltevermögensbonus (SB und TB). Wenn das Ziel ein Charakter
+									ist, widersetzt es sich der Kraft mit einer Stärke-Probe. Wenn
+									das Ziel mit zwei oder mehr DoF scheitert, wird es außerdem zu
+									Boden geworfen. Wenn der Psyker mit 3 oder mehr DoS gewinnt, erleidet
+									das Ziel 1W5+PR Schaden und 1 Stufe Erschöpfung.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Glück</td>
+								<td>Halbe</td>
+								<td>Wahrnehmung test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der Psyker erhält einen Bonus von 5 + Psi-Wert auf die nächste Probe, die er in
+									dieser Runde ablegt. Ab 2 DoF, schlägt
+									sein fehlgeleiteter Versuch, den Warp zu rufen, fehl, und die resultierenden
+									psionischen Wellen verursachen einen Malus, der dem Doppelten seines Psi-Werts auf
+									die nächste Probe in dieser Runde entspricht.</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Suggestion</td>
+								<td>Volle</td>
+								<td>-10 WP test (VS)</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der Psyker überzeugt das Ziel von einer kleinen, aber potenziell wichtigen Lüge. Das
+									Ziel widersetzt sich dieser Kraft mit einer Willenskraft-Probe, die der Spielleiter
+									basierend auf der Glaubwürdigkeit und dem
+									Umfang der Lüge anpassen sollte. Im Falle von eindeutig unmöglichen Lügen gelingt es
+									dem Ziel automatisch (mit einem Grad mehr Erfolg als der Psyker).
+									</br></br>Beispielsweise
+									könnte ein menschlicher Psyker vorschlagen, dass ein Wächter bereits seine
+									Identifikation überprüft hat, aber es wäre ihm unmöglich, denselben Wächter davon zu
+									überzeugen, dass der Psyker ein Space Marine ist.
+									<p class="psyStats"><span><b>Reichweite:</b> 1m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Schädlinge Beschwören</td>
+								<td>Volle</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Eine Anzahl kleiner Tiere – wie Ratten, Schlangen und ähnliche kleine Kreaturen –
+									bis zu einer Anzahl, die dem Psi-Wert des Psykers entspricht, erscheinen so schnell
+									wie möglich am aktuellen Standort des Psykers. Die Zeit, bis die Kreaturen
+									erscheinen, hängt von ihrer Geschwindigkeit und Nähe ab, und sie werden
+									voraussichtlich über mehrere Runden oder Minuten hinweg eintreffen. Sobald die
+									Kreaturen ankommen, verhalten sie sich normal und sind nicht gezwungen, dem Psyker
+									zu gehorchen.
+									<p class="psyStats"><span><b>Reichweite:</b> 1km x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Waffen Fluch</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der Psyker wählt eine Anzahl von Fernkampfwaffen innerhalb der Reichweite, die dem
+									Psi-Wert des Psykers entspricht, wobei jede Waffe bester Handwerkskunst als zwei
+									Waffen für die Zwecke dieser Kraft zählt. Betroffene Waffen gelten als Waffen
+									minderer Qualität, bis sie repariert werden. Wenn die Erfolgsgrade des Psykers bei
+									der Fokus-Probe den Psi-Wert der Kraft übersteigen, verklemmen sich die
+									betroffenen Waffen sofort. Sollte der Psyker die Probe mit 2 oder mehr DoS
+									misslingen, verklemmen sich sofort auch seine eigenen Fernkampfwaffen.
+
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Sprache der Bestien</td>
+								<td>Halbe</td>
+								<td>-10 WP test (VS)</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der Psyker öffnet eine begrenzte telepathische Verbindung zu einem Tier, das sich
+									mit einer Willenskraft-Probe gegen die Kraft wehrt. Wenn der
+									Psyker erfolgreich ist, wählt er einen der folgenden Effekte
+									</br></br>
+									<b>Eindruckslesung:</b> Der Psyker erhält einen mentalen Eindruck von den kürzlichen
+									Erfahrungen des Tieres.
+									Dies sind keine Gedanken im Sinne eines empfindungsfähigen Wesens, sondern lediglich
+									vage Eindrücke und unklare Bilder. Der Spielleiter bestimmt das Detailniveau und die
+									Form der erhaltenen Informationen basierend auf der Intelligenz und den Sinnen des
+									Tieres sowie dem Psi-Wert des Psykers. Die Menge an Informationen richtet sich nach
+									den Erfolgsgraden
+
+									</br></br>
+									<b>Empathische Verbindung:</b>D er Psyker stellt eine Bindung zu dem Tier her, die
+									auch nach dem Ende der
+									telepathischen Verbindung anhält. Das Tier folgt dem Psyker und gehorcht seinen
+									Befehlen nach besten Kräften, genau wie wenn er es mit der speziellen Anwendung der
+									Fertigkeit Überleben Umgang mit Tieren gezähmt und trainiert hätte.
+
+									<p class="psyStats"><span><b>Reichweite:</b> 10m</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Gegenstand Rufen</td>
+								<td>Halbe</td>
+								<td>+10 WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Du beschwörst ein speziell vorbereitetes Objekt, das sofort in deiner Hand
+									erscheint. Um das Objekt vorzubereiten, musst du eine Stunde in tiefer Meditation
+									verbringen, das Objekt mit deinem psionischen Abdruck zu durchdringen und es mit
+									Glyphen und Runen zu markieren. Das Objekt muss klein und leicht genug sein, um mit
+									einer Hand getragen zu werden. Du kannst nur ein vorbereitetes Objekt gleichzeitig
+									besitzen.</td>
+							</tr>
+							<tr>
+								<td>Minor</td>
+								<td>Blutung Stillen</td>
+								<td>Halbe</td>
+								<td>+10 WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Du lässt dir selbst oder eine andere Kreatur innerhalb der Reichweite den
+									Blutverlust stoppen.
+
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Enfeeble</td>
+								<td>Schwächen</td>
+								<td>WP test (VS)</td>
+								<td>Halbe</td>
+								<td>Angriff, Konzentration</td>
+								<td>Der Psyker wählt ein einzelnes Ziel in Reichweite und Sichtlinie, das sich dieser
+									Kraft mit einer Aushaltevermögensprobe widersetzt. Wenn das Ziel die Kraft nicht
+									widersteht, wird es für eine Runde betäubt. Zusätzlich, solange diese Kraft aktiv
+									bleibt, erleidet das Ziel jedes Mal, wenn es bei einer Probe Doppelwürfe erzielt,
+									eine Anzahl von Erschöpfungsstufen, die dem halben Psi-Wert des Psykers entspricht
+									(abgerundet). Ein einzelnes Ziel kann nur von einer Anwendung der Kraft „Schwächen“
+									gleichzeitig betroffen sein, wobei weitere Anwendungen auf dasselbe Ziel keine
+									zusätzliche Wirkung haben.
+									<p class="psyStats"><span><b>Reichweite:</b> 20m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Ausdauer</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Eine Anzahl von Verbündeten in Reichweite, die dem Psi-Wert des Psykers entspricht,
+									plus der Psyker selbst, erholen sich um eine Anzahl von Wunden, die der Hälfte des
+									Psi-Werts des Psykers entspricht (aufgerundet). Sie können auch sofort die
+									Auswirkungen von Pinnen überwinden. Diese Kraft ist äußerst anstrengend und
+									erfordert mindestens 12 Stunden Erholung, bevor sie erneut eingesetzt werden kann.
+									<p class="psyStats"><span><b>Reichweite:</b> 3m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Blutsturz</td>
+								<td>Halbe</td>
+								<td>-10 WP test (VS)</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>Der Psyker wählt ein einzelnes Ziel in Reichweite und Sichtlinie, das sich dieser
+									Kraft mit einer Aushaltevermögen-Probe widersetzt. Wenn das Ziel die Kraft nicht
+									widersteht, erleidet es Energieschaden in Höhe des Psi-Werts des Psykers +
+									einem zusätzlichen Schadenspunkt pro Dof; dieser Schaden ignoriert den
+									Aushaltevermögensbonus und die Rüstung.
+									Sollte dieser Schaden das Ziel erfolgreich töten, kann der Psyker diese psionische
+									Kraft sofort als Freie Aktion auf ein beliebiges legales Ziel innerhalb von 5 Metern
+									des ursprünglichen Ziels erneut wirken.
+									<p class="psyStats"><span><b>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Beleben</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der Psyker kann eine Anzahl von Erschöpfungspunkten von sich selbst und Verbündeten
+									innerhalb der Reichweite entfernen. Er kann wählen, wie viele Stufen er pro
+									Charakter reduzieren möchte, aber die Summe aller entfernten Punkten von allen
+									Charakteren darf seinen Psi-Wert nicht überschreiten. Diese Kraft ist sehr
+									anstrengend und erfordert mindestens 12 Stunden Erholung, bevor sie erneut
+									eingesetzt werden kann.
+
+									<p class="psyStats"><span><b>Reichweite:</b> 1m</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Eiserner Arm</td>
+								<td>Halbe</td>
+								<td>-20 WP test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Solange diese Kraft aktiv ist, erhält der Psyker die Merkmale „Unnatürliches
+									Aushaltevermögen“ und „Unnatürliche Stärke“ mit Werten, die der Hälfte seines
+									Psi-Werts entsprechen (aufgerundet). Allerdings wiegt die robustere Form seines
+									Körpers den Psyker nieder, sodass er einen Malus von –10 auf Agilität erleidet,
+									solange die Kraft aktiv bleibt.</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Lebensentzug</td>
+								<td>Volle</td>
+								<td>-10 WP test</td>
+								<td>Frei</td>
+								<td>Angriff, Konzentration</td>
+								<td>Der Psyker wählt ein einzelnes Ziel in Reichweite und Sichtlinie, das sich dieser
+									Kraft mit einer Aushaltevermögen-Probe widersetzt. Wenn das Ziel die Kraft nicht
+									widersteht, erleidet es 1W10 + Psi-Wert Aushaltevermögen-Schaden, und der Psyker
+									erhält das Merkmal „Unnatürliches Aushaltevermögen (1)“, wobei der Wert für jede 5
+									Punkte an Aushaltevermögen-Schaden, den die Kraft verursacht, um 1
+									erhöht wird. Dieses Merkmal „Unnatürliche Aushaltevermögen“ bleibt so lange
+									bestehen, wie der Effekt der Kraft anhält.
+									<p class="psyStats"><b><span>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Fleisch Formen</td>
+								<td>Volle</td>
+								<td>+10 WP test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Der Psyker wählt sich selbst oder ein organisches Ziel, das er körperlich berühren
+									kann. Das physische Erscheinungsbild des Ziels ändert sich in eine neue Form, die
+									der Psyker für die Dauer der Kraft wählt. Die Menge und Präzision der Veränderungen
+									hängt vom finalen Psi-Wert ab. Hier sind einige grobe Richtlinien, aber der
+									Spielleiter kann den Wirkungsbereich der Kraft nach Bedarf weiter anpassen:
+									<ul>
+										<li>PR 1-3: Der Psyker kann subtile Veränderungen an der Form, dem Farbton und
+											der Farbe
+											des Fleisches vornehmen, um das Erscheinungsbild des Ziels zu verzerren. Er
+											hat
+											keine direkte Kontrolle darüber, wie das Endergebnis aussieht</li>
+										<li>PR 4-6: Der Psyker
+											kann Fleisch, Haare, Augen und andere körperliche Merkmale verändern. Er
+											kann
+											wählen, wie die Merkmale verändert werden, hat jedoch nicht die Präzision,
+											um andere
+											zu imitieren..</li>
+										<li>PR 7-9: Der Psyker kann jedes physische Merkmal des Ziels ändern,
+											sodass es einer anderen Person ähnelt. Der Psyker muss jedoch ein Bild des
+											Individuums haben oder ihn zuvor gesehen haben.</li>
+										<li>PR 10+: Der Psyker kann das Ziel
+											so formen, dass es exakt wie eine andere Person aussieht. Zusätzlich kann er
+											die
+											Kraft verwenden, um das Ziel in eine Form zu verwandeln, die nicht mehr
+											menschlich
+											aussieht..</li>
+									</ul>
+									Alle Tests, die zur Identifizierung der wahren Identität des Ziels durchgeführt
+									werden, erleiden für die Dauer der Kraft einen Malus in Höhe von 5 × PR.
+
+									Die Effekte der Kraft auf ein anderes Ziel als den Psyker bleiben für die gesamte
+									Dauer der Kraft bestehen, unabhängig davon, wie weit sich das Ziel vom Psyker
+									entfernt.
+									<p class="psyStats"><span><b>Reichweite:</b> 1m</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Peinigen</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>Durch das elektrische Feld seines eigenen Körpers projiziert der Psyker zischende
+									Blitze aus Bio-Blitzen und verwandelt seine eigene Lebensenergie in zerstörerische
+									Energie. Wahrsager behaupten oft, dass man viel über den Zustand der Seele eines
+									Biomancers an der Farbe und dem Aussehen dieser Kraft erkennen kann.
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 5m x PR</span>
+										<span><b>Schaden:</b> 1d10+PR (E)</span>
+										<span> <b>Durchschlag:</b> 4</span>
+										<span><b>Art:</b> Psychic Barrage</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Warp Geschwindigkeit</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Der Psyker erhält die Eigenschaften „Unnatürliche Waffenfertigkeit“, „Unnatürliche
+									Ballistikfertigkeit“ und „Unnatürliche Agilität, jeweils mit Werten, die seinem
+									Psi-Wert entsprechen.</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Bio-Blitz</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>Durch das Aufgreifen und Verstärken der natürlichen elektrischen Ströme im
+									Nervensystem des Psykers ruft er einen Bolzen der Macht herbei, um seine Feinde zu
+									schocken. Im Gegensatz zu anderen Psionikern, deren Wille und psionische Potenz die
+									Stärke ihrer Kräfte bestimmen, verlässt sich der Biomancer, der den Neuralen Sturm
+									kanalisert, auf seine eigene Zähigkeit.
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 20m x PR </span>
+										<span><b>Schaden:</b> 1d10 + TB + PR (E)</span>
+										<span><b>Durchschlag:</b> PR </span>
+										<span><b>Art:</b> Psychic Barrage</span>
+										<span><b>Eigenschaft:</b> Schockend, Störfeld(0)</span>
+									</p>
+
+								</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Regeneration</td>
+								<td>Volle</td>
+								<td>-10 WP test</td>
+								<td>Halbe</td>
+								<td>Konzentration</td>
+								<td>Diese Kraft hat zwei Modi: aktiv und ruhend. Beim Einsatz von Regeneration im Kampf,
+									bei anstrengender Aktivität oder in strukturierter Zeit wird der aktive Modus
+									verwendet. Dies erfordert eine Halbe Aktion, um aufrecht erhalten zu werden, und der
+									Psyker erhält die Eigenschaft „Regeneration (PR/2, aufgerundet)“. Er erhält einen
+									Bonus
+									auf seine Aushaltevermögen-Proben, die mit dem Regenerationsmerkmal abgelegt werden,
+									in Höhe von 5 mal dem Psi-Wert.</br></br>Wenn der Psyker ruht oder sich anderweitig
+									nicht
+									in anstrengender Aktivität befindet, kann er stattdessen die ruhende Version dieser
+									Kraft verwenden. Er heilt eine Menge Schaden, die seinem Psi-Wert pro Tag Ruhe
+									entspricht, während er den Regenerationsmodus in diesem Zustand nutzt. Obwohl dieser
+									Heilmechanismus weit langsamer ist als die Kampffassung, ermöglicht er es dem
+									Körper, sich vollständig zu erholen. Mit 1d5 Wochen Ruhe kann der Psyker sogar
+									verlorene Gliedmaßen und Organe nachwachsen lassen; das Wiederanfügen verlorener
+									Gliedmaßen verkürzt diese Zeit um die Hälfte.</td>
+
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Blut Aufkochen</td>
+								<td>Halbe</td>
+								<td>WP test (VS)</td>
+								<td>Halbe</td>
+								<td>Konzentration</td>
+								<td>In der Runde, in der der Psyker diese Kraft manifestiert, kann diese, die durch die
+									Aushaltevermögen-Probe des
+									Ziels widerstanden werden. Das Ziel erleidet eine Stufe Erschöpfung sowie eine
+									zusätzliche Stufe für alle 2 DoS. In den folgenden Runden kann der Psyker die Kraft
+									aufrechterhalten, indem er die Probe wiederholt und Stufen der
+									Erschöpfung wie zuvor beschrieben zufügt. Sollte das Ziel Stufen der Erschöpfung
+									erleiden, die gleich oder größer als das Doppelte seines Aushaltevermögen-Bonus
+									sind, werden die Auswirkungen von „Blutkochen“ tödlich: In jeder weiteren Runde
+									erleidet das Ziel 1d10 + Psi-Wert Reisenden-Schaden, falls der Psyker die
+									Probe gewinnt. Sollte das Ziel in einer Runde die Probe gewinnen,
+									endet die Kraft sofort. </br></br>Dämonen, Warp-Wesen, Konstruktwesen und andere
+									Wesen ohne
+									Kreislaufsystem oder mit einem Kreislaufsystem, das das menschliche Verständnis
+									übersteigt, sind immun gegen die Auswirkungen dieser Kraft.
+									<p class="psyStats"><span><b>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Biomantie</td>
+								<td>Scharfe Sinne</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der erfolgreiche Einsatz dieser Kraft gewährt dem Psyker die Eigenschaft
+									„Unnatürliche
+									Sinne (5)“ und verstärkt einen seiner Sinne über seine normale Fähigkeit hinaus. Der
+									Psyker erhält einen Bonus von +30 auf alle Wahrnehmungs-Proben beim Einsatz des
+									ausgewählten Sinnes.
+									Das Schärfen bestimmter Sinne gewährt zusätzliche Vorteile:
+
+
+									:\n\n“.
+									<ul>
+										<li>Geruch: Das Schärfen des
+											Geruchssinns gewährt dem Psyker einen zusätzlichen Bonus von +20 auf eine
+											Überlebensfertigkeitsprobe zum Verfolgen, wenn der Psyker einen Gegenstand
+											des
+											verfolgten Individuums hat (ein Kleidungsstück, ein frisch abgetrenntes
+											Gliedmaß,
+											etc.). Dieser Bonus kumuliert sich mit dem +30-Bonus, der normalerweise
+											durch diese
+											Kraft gewährt wird.</li>
+										<li>Tastsinn: Ein Psyker mit einem geschärften Tastsinn kann
+											Objekte sehen, während er sie berührt, unabhängig von verfügbarem Licht. Zum
+											Beispiel kann er mit den Fingern über erhabene Schrift gleiten, um sie in
+											einem
+											stockdunklen Raum zu lesen.</li>
+										<li>Geschmack: Personen, die in dieser Kraft geschult
+											sind, mussten ihre Sinne als Teil des Lernprozesses testen. Der
+											Geschmackssinn des
+											Psykers ist so geschärft, dass er die Anwesenheit von Gift in Lebensmitteln
+											erkennen
+											kann, die er probiert, indem er eine erfolgreiche Herausfordernde (+0)
+											Wahrnehmungsprobe ablegt. Diese Probe wird vor dem Schlucken der Nahrung
+											abgelegt,
+											sodass der Psyker, vorausgesetzt das Gift ist nicht in einer massiven Dosis
+											enthalten, es ausspucken kann, bevor es Wirkung zeigt.</li>
+									</ul>
+									Geschärfte Sinne hält für eine Anzahl an Runden an, die dem Psy-Wert des Psykers
+									entspricht.
+
+									Diese Kraft kann mehrfach aktiviert werden, wobei jedes Mal ein neuer Sinn geschärft
+									wird (der +30-Bonus bleibt jedoch unverändert, unabhängig davon, wie oft die Kraft
+									genutzt wird).
+									</br>
+									</br>Eine ungewöhnliche Anwendung dieser Kraft ist es, die Auswirkungen
+									umzukehren. Viele Erlebnisse in der Galaxie sind besser den Feinden überlassen,
+									weshalb der schlaue Biomancer seine Sinne abschaltet, wenn die Situation dies
+									erfordert. Bei der Nutzung dieser Kraft kann der Psyker wählen, einen seiner Sinne
+									abzuschalten (wie zum Beispiel das Sehen, um Blindheit bei intensivem Licht zu
+									vermeiden, oder den Tastsinn während einer Befragung durch grausame Eldar-Räuber).
+									Dabei erhält er weder den +30-Bonus auf Wahrnehmungs-Proben noch das Merkmal
+									„Unnatürliche Sinne (5)
+								</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Böse Vorahnung</td>
+								<td>Reaktion</td>
+								<td>-10 Wahrnehmung test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>In jeder Situation, in der der Psyker zu einer Ausweichprobe aufgefordert wird, kann
+									er stattdessen versuchen, diese Kraft zu nutzen. Wenn die Kraft erfolgreich ist,
+									vermeidet der Psyker den Angriff genau so, als hätte er eine Ausweichprobe
+									bestanden.
+								</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Vorwarnung</td>
+								<td>Halbe</td>
+								<td>Psyniscience test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Für die Dauer dieser Kraft erhalten eine Anzahl von Verbündeten innerhalb der
+									Reichweite, die dem Psi-Wert des Psykers entspricht, zuzüglich des Psykers selbst,
+									einen Bonus auf alle Ausweichproben in Höhe des doppelten Psi-Werts des
+									Psykers. Von dieser Kraft betroffene Verbündete verlieren ihre Vorteile, sobald
+									sie die Reichweite verlassen.
+									<p class="psyStats"><span><b>Reichweite:</b> 3m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Unglück</td>
+								<td>Halbe</td>
+								<td>-10 WP test (VS)</td>
+								<td>Free</td>
+								<td>Angriff, Konzentration</td>
+								<td>TDer Psyker wählt ein einzelnes Ziel in Reichweite und Sichtlinie, das sich dieser
+									Kraft mit einer Willenskraft-Probe widersetzt. Wenn das Ziel die Kraft nicht
+									widersteht, folgt ihm Unglück, wohin es auch geht. Für die Dauer dieser Kraft
+									werden die Rüstungspunkte des Ziels an allen Körperstellen um die Hälfte des
+									Psi-Werts des Psykers reduziert (aufgerundet). Außerdem verklemmen sich die Waffen
+									des Ziels bei jedem Angriff, bei dem sie ihr Ziel verfehlen.
+									<p class="psyStats"><span><b>Reichweite:</b> 20m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Perfektes Timing</td>
+								<td>Halbe</td>
+								<td>-10 Psyniscience test</td>
+								<td>Halbe</td>
+								<td>Konzentration</td>
+								<td>Für die Dauer dieser Kraft ignorieren der Psyker und eine Anzahl von Verbündeten
+									innerhalb der Reichweite, die dem Psi-Wert des Psykers entspricht, die Auswirkungen
+									von Deckung, wenn sie auf ein Ziel schießen. Wenn ihre Angriffe eine Trefferzone des
+									Feindes treffen würden, die von Deckung profitieren würde, wird dieser Vorteil
+									ignoriert. Von dieser Kraft betroffene Verbündete verlieren ihre Vorteile, sobald
+									sie die Reichweite verlassen.
+									<p class="psyStats"><span><b>Reichweite:</b> 3m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Präkognition</td>
+								<td>Volle</td>
+								<td>-20 Psyniscience test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der Psyker erhält eine Anzahl von Wiederholungen, die seinem Psi-Wert entspricht,
+									die bis zum Beginn seines nächsten Zuges anhalten. Für die Dauer dieser Runde kann
+									der Psyker, wann immer er oder ein Verbündeter in Reichweite eine Probe oder
+									Schadenswurf ablegt, eine seiner Wiederholungen ausgeben, um diesem Verbündeten zu
+									erlauben, alle Würfel in dem Wurf neu zu werfen. Wenn der Psyker vor Beginn
+									seines nächsten Zuges getötet oder bewusstlos gemacht wird, gehen alle verbleibenden
+									Wiederholungen verloren.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Voraussicht</td>
+								<td>Halbe</td>
+								<td>Psyniscience test</td>
+								<td>Halbe</td>
+								<td>Konzentration</td>
+								<td>Für die Dauer dieser Kraft erhalten der Psyker und eine Anzahl von Verbündeten
+									innerhalb der Reichweite, die dem Psi-Wert des Psykers entspricht, einen Bonus auf
+									ihre Waffenfertigkeits- und Ballistikfertigkeits-Proben in Höhe des Zweifachen
+									Psi-Werts des Psykers. Von dieser Kraft betroffene Verbündete verlieren ihren
+									Vorteil, sobald sie die Reichweite verlassen.
+									<p class="psyStats"><span><b>Reichweite:</b> 3m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Blick des Wahrsagers</td>
+								<td>Spezial</td>
+								<td>Psyniscience test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Um das Ritual zu beginnen, muss der Psyker mindestens dreißig Minuten damit
+									verbringen, verschiedene psionische Fokusse zu verwenden, um seine Vision zu
+									konzentrieren – Tarotkarten zu ziehen, Runen zu werfen, tief ins Feuer zu blicken
+									oder andere Methoden, so vielfältig wie die Sterne des Imperiums. Am Ende dieser
+									Zeit legt er seine Probe ab, um seine Vision über das Gebiet zu
+									projizieren, wobei der Spielleiter Informationen basierend auf den Erfolgsgraden
+									enthüllt:
+									<ul>
+										<li><b>1</b>: Der Psyker schafft es, seinen Blick auf eine
+											einzelne, entscheidende Handlung seines Gegners zu konzentrieren, die dieser
+											entweder plant oder gerade ausführt. Dies könnte das Starten eines
+											Hinterhalts, das
+											Verstecken eines ketzerischen Buches oder das Durchführen eines
+											blutgetränkten
+											Opfers sein.</li>
+										<li><b>2</b>: Die Vision des Psykers erstreckt sich über ein
+											weites Gebiet, sodass er alle Aktivitäten auf einem gesamten Schlachtfeld
+											oder einer
+											Ebenen des Hives sehen kann. Er ist jedoch nicht in der Lage, seine Vision
+											genug zu
+											fokussieren, um die genauen Details auf individueller Ebene zu sehen.</li>
+										<li><b>3</b>: Der Psyker beherrscht die Fokussierung seiner Vision. Er ist sich
+											aller
+											vorherigen Effekte bewusst und kann auch Details zu individuellen
+											Aktivitäten und
+											den genauen feindlichen Zahlen erkennen.</li>
+										<li><b>4+</b>: Der Psyker bricht durch
+											den Schleier der Zeit und sieht ein Gebiet sowie die zahllosen möglichen
+											Ausgänge
+											der Konflikte innerhalb davon. Er ist sich aller vorherigen Effekte bewusst
+											und
+											kennt auch die Details der Pläne von feindlichen Anführern.
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Warp Wahrnehmung</td>
+								<td>Halbe</td>
+								<td>Psyniscience test</td>
+								<td>Halbe</td>
+								<td>Konzentration</td>
+								<td>Der Psyker erhält die Eigenschaft „Unnatürliche Sinne (X)“, wobei der X-Wert dem
+									Psi-Wert des Psykers multipliziert mit 10 entspricht.</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Verwickeltes Schicksal</td>
+								<td>Volle</td>
+								<td>-10 Psyniscience test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Die Vision dauert eine Anzahl von Sekunden, die dem Doppelten Psi-Werts des
+									Psykers entspricht, und kann sich auf die Zukunft oder die Vergangenheit des
+									Subjekts erstrecken, über eine Anzahl von Tagen, die dem Psi-Wert des Psykers
+									entspricht. Je höher der Psi-Wert, desto mehr kann der Psyker kontrollieren, worauf
+									sich seine Visionen konzentrieren (nach Ermessen des Spielleiters).</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Neuer Versuch</td>
+								<td>Frei</td>
+								<td>-10 Psyniscience test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Bei einer erfolgreichen Probe ist der Psyker in der Lage, eine beliebige
+									Probe innerhalb einer Anzahl von Runden, die seinem Psi-Wert entspricht, erneut zu
+									würfeln. Er kann jede Probe erneut würfeln, muss jedoch das Ergebnis des zweiten
+									Wurfs akzeptieren. Das Schicksal ist launisch und bestraft diejenigen, die zu viel
+									in ihr eigenes Schicksal blicken. Daher kann diese Kraft nur einmal alle 24 Stunden
+									eingesetzt werden.</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Im Weg des Schadens</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Indem der Psyker einen tiefen Blick in die nahe Zukunft wirft, kann er die
+									Handlungen seiner Feinde vorausahnen. Bis zum Ende des nächsten Zuges erhält der
+									Psyker einen Bonus auf alle Waffenfertigkeits- und Ballistikfertigkeits-Proben in
+									Höhe des Vierfachen seines Psi-Werts (maximal +20), und Ballistikfertigkeits-Proben
+									gegen ihn erleiden denselben Wert als Malus.
+								</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Vorahnung</td>
+								<td>Halbe</td>
+								<td>Psyniscience test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Indem der Psyker für einen kurzen Moment in die Zukunft blickt, kann er mögliche
+									Ergebnisse
+									und potenzielle Gefahren erkennen. Bis zum Ende des nächsten Zuges erhält der Psyker
+									einen
+									Bonus auf eine Fertigkeitsprobe in Höhe des dreifachen Psi-Werts. </td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Präkongitives Ausweichen</td>
+								<td>Frei</td>
+								<td>Psyniscience test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Du kannst die Wahrscheinlichkeit zu deinem Vorteil manipulieren. Die Fäden deiner
+									unmittelbaren Zukunft erscheinen klar in deinem Geist. Du hast die Fähigkeit,
+									Projektilen auszuweichen, noch bevor sie abgefeuert wurden. </br></br>Wenn du diese
+									Kraft
+									manifestierst, kannst du in den Kampf eintreten und dabei eine erstaunliche Grazie
+									(oder unglaubliches Glück) zeigen, indem du dich durch Kugelhagel bewegst, ohne auch
+									nur einen Kratzer abzubekommen. Bis zum Ende deines nächsten Zuges erleiden alle
+									Ballistikfertigkeits-Proben, die auf dich abzielen, einen Malus von –5 x Psi-Wert.
+								</td>
+							</tr>
+							<tr>
+								<td>Divination </td>
+								<td>Übernatürliches Wahrnehmen</td>
+								<td>Halbe</td>
+								<td>Psyniscience test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Indem du deine Wahrnehmung aus dem begrenzten Gefäß deiner physischen Sinne
+									herauswirfst, erhältst du ein unnatürliches Bewusstsein für die Welt um dich. Deine
+									Augen rollen weiß in ihren Höhlen, und deine Sinne streifen um dich, blicken
+									gleichzeitig nach oben, hinten, vorne und zur Seite. Du erhältst auch Eindrücke
+									zukünftiger Ereignisse, die dir eine unheimliche Genauigkeit bei ihrer Vorhersage
+									verleihen. Du erhältst einen Bonus von +20 auf alle Wahrnehmungs-Proben. Zusätzlich
+									fügst du deinen Psi-Wert zu deinem Initiativwert hinzu.</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Ausbrennen</td>
+								<td>Halbe</td>
+								<td>+20 WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der Psyker wählt sich selbst oder einen anderen Charakter, den er körperlich
+									berühren kann. Wenn das Ziel unter Blutverlust leidet, wird dieser Zustand durch den
+									erfolgreichen Einsatz der Kraft entfernt.
+									<p class="psyStats"><span><b>Reichweite:</b> 1m</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Feuriger Atem</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Angriff</td>
+								<td>
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 20m x PR</span>
+										<span><b>Schaden:</b> 1d10+2 + 2xPR (E)</span>
+										<span><b>Durchschlag:</b> 0</span>
+										<span><b>Art:</b> Psychic Barrage</span>
+										<span><b>Eigenschaften:</b> Flamme</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Feurige Form</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>Halbe</td>
+								<td>Konzentration</td>
+								<td>Solange diese Kraft aktiv ist, verursachen alle Nahkampfangriffe des Psykers
+									zusätzlichen Energieschaden
+									in Höhe seines Psi-Werts und erhalten die Eigenschaft „Flamme“. Zusätzlich strahlt
+									der Psyker am Ende
+									jedes seiner Züge, in dem er diese Kraft aufrechterhält, eine Psionische Explosion
+									aus,
+									die auf seinem Standort zentriert ist. Jeder Charakter im Bereich der Explosion, mit
+									Ausnahme des Psykers selbst, wird getroffen.
+									<p class="psyStats">
+										<span><b>Schaden:</b> 1d10 + PR (E)</span>
+										<span><b>Durchschlag:</b> 0</span>
+										<span><b>Art:</b> Psychic Blast</span>
+										<span><b>Eigenschaften:</b> Explosion (PR)</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Feuerschild</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Solange diese Kraft aktiv ist, erleidet jeder Charakter in Reichweite und
+									Sichtlinie, der den Psyker erfolgreich mit einem Angriff trifft, sofort
+									Energieschaden in Höhe des Psi-Werts des Psykers. Die Erfolgsgrade dieses Angriffs
+									entsprechen denen der Fokus-Power-Probe, und der verursachte Schaden wird nicht
+									durch Rüstung oder Aushaltevermögen reduziert.
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 20m x PR</span>
+										<span><b>Schaden:</b> PR (E)</span>
+										<span><b>Durchschlag:</b> 0</span>
+										<span><b>Art:</b> Psychic Bolt</span>
+										<span><b>Eigenschaften:</b> Flamme</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Inferno</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 10m x PR</span>
+										<span><b>Schaden:</b>2d10 + 3xPR (E)</span>
+										<span><b>Durchschlag:</b> 0</span>
+										<span><b>Art:</b> Psychic Blast</span>
+										<span><b>Eigenschaften:</b> Blast (PR)</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Flammen Manipulieren</td>
+								<td>Halbe</td>
+								<td>+20 WP test</td>
+								<td>Halbe</td>
+								<td>Angriff</td>
+								<td>Der Psyker wählt ein Feuerfeld in Reichweite und Sichtlinie mit einem Radius, der
+									nicht größer als die Psi-Wert-Meter ist. Jede Runde kann er entweder das Feuer
+									löschen oder das Feuer kontrollieren. Wenn er das Feuer löscht, endet diese Kraft
+									und das Feuer erlischt. Wenn er das Feuer kontrolliert, kann er es pro Runde um eine
+									Anzahl von Metern, die seinem Psi-Wert entspricht, entlang einer brennbaren
+									Oberfläche bewegen.
+									<p class="psyStats"><span><b>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Geschmolzener Strahl</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Angriff</td>
+								<td>
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 5m x PR</span>
+										<span><b>Schaden:</b>1d10+5 + 3xPR (E)</span>
+										<span><b>Durchschlag:</b> 2xPR</span>
+										<span><b>Art:</b> Psychic Bolt</span>
+										<span><b>Eigenschaften:</b> Melta</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Spotane Entzündung</td>
+								<td>Halbe</td>
+								<td>+10 WP test</td>
+								<td>-</td>
+								<td>Angriff</td>
+								<td>
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 20m x PR</span>
+										<span><b>Schaden:</b>1d10+2 + 2xPR (E)</span>
+										<span><b>Durchschlag:</b> 0</span>
+										<span><b>Art:</b> Psychic Bolt</span>
+										<span><b>Eigenschaften:</b> Flamme</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Sonnenstrahl</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Angriff</td>
+								<td>
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 20m x PR</span>
+										<span><b>Schaden:</b>1d10+2 + 2xPR (E)</span>
+										<span><b>Durchschlag:</b> 0</span>
+										<span><b>Art:</b> Psychic Storm</span>
+										<span><b>Eigenschaften:</b> Flame</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Feuerwand</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>Halbe</td>
+								<td>Angriff</td>
+								<td>Diese Kraft ermöglicht es dir, eine unbewegliche Barriere aus Feuer zu erschaffen,
+									die so lange bestehen bleibt, wie du es wünschst. Die Wand ist drei Meter hoch und
+									einen Meter dick und kann bis zu zehn Meter lang sein für jeden Punkt deines
+									Psi-Werts. Du kannst sie überall innerhalb der Reichweite platzieren, sogar direkt
+									über Gegnern, wobei diese eine +20 Agilitätsprobe ablegen dürfen, um
+									aus dem Weg zu kommen. Gegner, die die Wand überqueren oder die Probe misslingen,
+									erleiden 1W10 + 2 + PR Energieschaden (der Rüstung ignoriert) und müssen erneut
+									eine Agilitätsprobe ablegen oder geraten in Brand.
+									<p class="psyStats"><span><b>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Pyromantie</td>
+								<td>Verbrennen</td>
+								<td>Volle</td>
+								<td>-20 WP test</td>
+								<td>Volle</td>
+								<td>Angriff, Konzentration</td>
+								<td>Der Psyker wählt ein einzelnes Ziel (dies kann ein lebendes Wesen, ein Fahrzeug oder
+									ein anderes unbelebtes Objekt sein). Wenn die Probe erfolgreich ist,
+									erleidet das Ziel 1W10+1 Energieschaden, der die Rüstung ignoriert. In den folgenden
+									Runden fügt die Kraft den in der vorherigen Runde zugefügten Schaden plus 1W10+1
+									zusätzlichen Schaden zu, wobei auch die Rüstung ignoriert wird. (In Runde 2 würde
+									die Kraft also 2W10+2 Schaden verursachen, in Runde 3 3W10+3 Schaden und so
+									weiter).</br></br>Die Kraft erfordert die volle Konzentration des Psykers, um
+									aufrecht
+									erhalten zu werden. Wenn der Psyker jemals eine Reaktion während der
+									Aufrechterhaltung dieser Kraft verwendet, endet die Kraft sofort und muss erneut
+									manifestiert werden.
+									<p class="psyStats"><span><b>Reichweite:</b> 3m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Telekinetischer Angriff</td>
+								<td>Halbe</td>
+								<td>+10 WP test</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>Wenn der Psyker mindestens3 DoS für
+									diesen Angriff erzielt, wird das Ziel außerdem 1d5 Meter weit zu Boden
+									geworfen. Besonderst große Ziele wie Schlachtpanzer, Große Dämonen und
+									Titanen sind nach Ermessen des Spielleiters immun gegen diesen Effekt.
+
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 20m x PR</span>
+										<span><b>Schaden:</b>1d10 + PR (I)</span>
+										<span><b>Durchschlag:</b> 2</span>
+										<span><b>Art:</b> Psychic Bolt</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Zermalmen</td>
+								<td>Halbe</td>
+								<td>WP test (VS)</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>Der Psyker wählt ein einzelnes Ziel in Reichweite und Sichtlinie, das sich dieser
+									Kraft mit einer Aushaltevermögensprobe widersetzt. Wenn das Ziel die Kraft nicht
+									widersteht, erleidet es den folgenden Angriff.
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 10m x PR</span>
+										<span><b>Schaden:</b>1d10 + PR (I)</span>
+										<span><b>Durchschlag:</b> 2</span>
+										<span><b>Art:</b> Psychic Projection</span>
+										<span><b>Eigenschaften:</b> Fessel(PR/2)</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Tor zur Unendlichkeit</td>
+								<td>3 Actions</td>
+								<td>-20 WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Der Psyker wählt einen Punkt innerhalb von 5 Metern mal seinem Psi-Wert und öffnet
+									an diesem Punkt ein Tor zum Immaterium. Anschließend wählt er einen Punkt innerhalb
+									der Reichweite der Kraft und öffnet einen Ausgang zu diesem Tor an diesem Standort.
+									Der Psyker muss sich des Standorts, an dem er den Ausgang des Tors öffnet, bewusst
+									sein, sei es, weil er diesen Ort zuvor besucht hat, ihn aus der Ferne gesehen hat
+									oder ihn einfach auf einer Karte studiert hat.\n\nDas Tor bleibt für eine Anzahl von
+									Runden geöffnet, die dem Psi-Wert des Psykers entspricht, und hat einen Radius in
+									Metern, der ebenfalls dem Psi-Wert des Psykers entspricht. Solange die Kraft aktiv
+									ist, sind die beiden Seiten des Tors miteinander verbunden, und jede Person oder
+									jedes Objekt kann frei zwischen ihnen hindurchgehen, solange es durch das Tor
+									passt. Diese Kraft ist äußerst anstrengend und erfordert mindestens 12 Stunden
+									Erholung, bevor sie erneut eingesetzt werden kann.
+									<p class="psyStats"><span><b>Reichweite:</b> 1km x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Objuration Mechanicum</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>TDer Psyker wählt einen Punkt innerhalb der Reichweite und Sichtlinie. Diese Kraft
+									erzeugt
+									ein Störfeld, das an diesem Punkt zentriert ist und einen Radius in Metern hat, der
+									dem Psi-Wert des Psykers entspricht.
+									<p class="psyStats"><span><b>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Schockwelle</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>Jeder Charakter im Wirkungsbereich (außer dem Psyker) erleidet den unten angegebenen
+									Schaden.
+									Er wird außerdem direkt vom Psyker weggeschoben, für eine Anzahl von Metern, die dem
+									Psi-Wert des Psykers entspricht.
+									<p class="psyStats">
+										<span><b>Schaden:</b>1d10 + PR (I)</span>>
+										<span><b>Durchschlag:</b> 0</span>>
+										<span><b>Art:</b> Psychic Blast</span>>
+										<span><b>Eigenschaften:</b> Explosion (PR)</span>>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Telekinetischer Dom</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Der Psyker wählt einen Punkt innerhalb der Reichweite und Sichtlinie und erschafft
+									eine Kuppel aus unsichtbarer Energie, die an diesem Punkt zentriert ist und einen
+									Radius hat, der der Hälfte des Psi-Werts des Psykers entspricht (aufgerundet). Jeder
+									Verbündete (einschließlich des Psykers, falls zutreffend), der sich innerhalb der
+									Kuppel befindet, erhält eine Anzahl von Rüstungspunkten, die dem Psi-Wert des
+									Psykers entspricht, auf allen Trefferzonen gegen Angriffe, die außerhalb des Radius
+									der Kuppel ihren Ursprung haben. Charaktere können jedoch weiterhin physisch durch
+									die Kuppel hindurchgehen, ohne dass ein Malus entsteht.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Telekinetisches Schild</td>
+								<td>Halbe</td>
+								<td>+20 WP test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Für die Dauer dieser Kraft gelten alle Trefferzonen des Psykers als durch Deckung
+									geschützt, mit einem Rüstungswert, der der Hälfte des Psi-Werts dieser Kraft
+									entspricht (aufgerundet).
+									Dieses Schild kann wie normale Deckung durch Schaden beschädigt werden, der den
+									Rüstungswert des Schilds übersteigt. Wenn der Rüstungswert des Schildes auf 0
+									reduziert
+									wird, endet die Kraft und wird nicht mehr aufrechterhalten.</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Geist über Materie</td>
+								<td>Halbe</td>
+								<td>Special</td>
+								<td>Halbe</td>
+								<td>Konzentration</td>
+								<td>Ein Psyker mit dieser Kraft kann sie auf eine von drei Arten nutzen: konstante
+									Bewegung, schneller Stoß oder kräftiger Wurf.
+
+									<ul>
+										<li><b>Konstante Bewegung:</b> Die Probe ist mit einem +20 Nonus, und der Psyker
+											kann jedes Objekt innerhalb
+											der Reichweite und Sichtlinie bewegen, das nicht mehr als 10 kg x Psi-Wert
+											wiegt.
+											Objekte, die auf diese Weise bewegt werden, können nur so langsam bewegt
+											werden,
+											dass sie nicht zum Angriff verwendet werden können, und wenn das Objekt
+											losgelassen
+											wird, schwebt es langsam zu Boden.</li>
+
+										<li><b>Schneller Stoß</b>: Die Probe hat einen +10 Bonus und wird mit einer
+											Stärke-Probe eines einzelnen Ziels innerhalb der
+											Reichweite und Sichtlinie verglichen. Wenn das Ziel die Probe nicht besteht,
+											wird es
+											um eine Anzahl von Metern, die dem Psi-Wert entspricht, zurückgeworfen, plus
+											einen
+											weiteren Meter für jeden Erfolgsgrad bei der Probe.</li>
+
+										<li><b>Kräftiger Wurf:</b>
+											Die Probe erlaubt es dem Psyker, ein Objekt
+											zu heben, das nicht mehr als 5 kg x Psi-Wert wiegt, und es auf einen Gegner
+											innerhalb der Reichweite zu werfen. Der Wurf trifft und verursacht 1W10
+											Wuchtschaden, plus 1 für jedes zusätzliche 5 kg des Gewichts des Objekts.
+										</li>
+									</ul>
+									<p class="psyStats"><span><b>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Strudel des Verderbens</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>Halbe</td>
+								<td>Angriff, Konzentration</td>
+								<td>Der Psyker wählt einen Punkt innerhalb der Reichweite und Sichtlinie und erschafft
+									ein Energiewirbel, das an diesem Punkt zentriert ist und zu Beginn einen Radius von
+									2 Metern hat. Jeder Charakter, der am Ende des Psykers Zuges den Wirbel berührt,
+									erleidet Schaden, wie unten angegeben.
+
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 5m x PR</span>
+										<span><b>Schaden:</b> 2d10 + 2PR (X)</span>
+										<span><b>Durchschlag:</b> Aktueller Radius</span>
+										<span><b>Art:</b> Psychic Blast</span>
+										<span><b>Eigenschaften:</b> Explosion (2)</span>
+									</p>
+
+									Der Psyker kann das Aufrechterhalten dieser Kraft nicht freiwillig beenden.
+									Stattdessen muss der Psyker zu Beginn jedes Zuges, in dem er den Wirbel
+									aufrechterhält, eine Herausfordernde Willenskraft-Probe ablegen, mit einem
+									Malus von –5 für jeden Meter des aktuellen Radius des Wirbels. Wenn er die Probe
+									besteht, kann er eine der folgenden Aktionen durchführen:
+									<ul>
+										<li>Den Radius des Wirbels um 1m vergrößern</li>
+										<li>Den Radius des Wirbels um 1m verkleinern.</li>
+										<li>Den Wirbel um [PR]m bewegen.</li>
+									</ul>
+									Wenn der Psyker die Willenskraft-Probe zum Aufrechterhalten des Wirbels nicht
+									besteht oder wenn er aufgrund anderer Umstände die Probe nicht ablegen kann,
+									vergrößert sich der Radius des Wirbels um ein Meter, und er bewegt sich um eine
+									Anzahl von Metern, die dem Psi-Wert des Psykers entspricht, in eine zufällige
+									Richtung.
+
+									</br></br>
+									Wenn der Radius des Wirbels jemals auf null Meter verringert wird, endet die Kraft
+									und der Wirbel verschwindet.
+									Wenn der Radius des Wirbels jemals größer wird als der Psi-Wert des Psykers,
+									explodiert der Wirbel, was das Ende der Kraft zur Folge hat und den Wirbel zerstört.
+									Der Psyker wird von diesem Schaden getroffen, unabhängig von seiner Nähe zum
+									explodierenden Wirbel, da die Energie des Warps, die er kanalisiert hat, zurück auf
+									ihn prallt.
+									<p class="psyStats">
+										<span><b>Schaden:</b> 2d10 + 4PR (X)</span>
+										<span><b>Durchschlag:</b> Aktueller Radius</span>
+										<span><b>Art:</b> Psychic Blast</span>
+										<span><b>Eigenschaften:</b> Explosion (2xPR)</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Todesgriff</td>
+								<td>Halbe</td>
+								<td>-10 WP test (VS)</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>Dieser Schaden wird nicht durch Rüstung (es sei denn, sie ist dagegen geschützt)
+									oder den
+									Aushaltevermögen-Bonus reduziert. Zusätzlich funktioniert diese Kraft nur gegen
+									lebende Wesen und Tiere. Sie wirkt nicht gegen Dämonen, unbelebte Objekte oder
+									andere Bewohner des Warps.
+
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 5m x PR</span>
+										<span><b>Schaden:</b>1d10 + PR (I)</span>
+										<span><b>Pen: Special</b></span>
+										<span><b>Art:</b> Psychic Projection</span>
+										<span><b>Eigenschaften:</b> Schockend</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Psycho-Kinetisches Schild</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Der Psyker ist in der Lage, eine mentale Barriere zu formen, die physischen
+									Angriffen standhält. Die Barriere schützt nur einen 90-Grad-Bereich um einen
+									Charakter (der Psyker kann die Barriere als Halbe Aktion bewegen), muss jedoch so
+									positioniert werden, dass sie den Psyker oder einen nahegelegenen Verbündeten
+									schützt. Das Schild bietet eine Anzahl an Rüstungspunkten (AP), die dem Psi-Wert des
+									Psykers entspricht. Die Barriere ist nicht nur gegen physische und Fernangriffe
+									wirksam, sondern auch gegen psionische und dämonische Angriffe.
+									<p class="psyStats"><span><b>Reichweite:</b> 2m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Präzise Telekinese</td>
+								<td>Special</td>
+								<td>+10 WP test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Im Gegensatz zu den ersten groben Manipulationen der Telekinese ermöglicht es diese
+									Technik dem Psyker, seine Fähigkeit so fein abzustimmen, dass er alles aus der
+									Entfernung tun kann, was er auch mit bloßen Händen tun könnte. In jeder
+									Situation, in der die Aufgabe einen Test erfordern würde, ersetzt der
+									Psyker diesen mit einem Willenskraft-Test. Der Psi-Wert des Psykers ersetzt seinen
+									Stärke-Bonus, wenn er diese Technik verwendet. Wenn der Psyker diese Technik
+									verwendet, um mit einer Waffe anzugreifen, muss er dennoch Aktionen ausgeben, als ob
+									er die Waffe führen würde. Er profitiert von und erleidet alle Abzüge und Boni, die
+									er normalerweise hätte, wenn er die Waffe führen würde, und misst alle Entfernungen
+									zu Zielen von sich selbst, nicht
+									von der Waffe. Wenn er (nicht die Waffe) keine Sichtlinie zum Ziel hat, erleidet er
+									die üblichen Abzüge für das Schießen ohne Sicht.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR<span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Telekinetische Waffe</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>Frei</td>
+								<td>Konzentration</td>
+								<td>Indem der Psyker die Kraft seines Geistes in eine Klinge aus zerstörerischer Energie
+									formt, ist die Telekinetische Waffe eine mächtige Manifestation der Disziplin und
+									Kontrolle des Psykers. Die Telekinetische Waffe zählt als ein Schwert in der Hand
+									des Psykers, jedoch gibt es keinen Malus dafür, dass das erforderliche Talent
+									„Waffentraining“ nicht vorhanden ist.\n\nUm mit der Psionischen Waffe zu treffen,
+									legt der Psyker eine Waffenfertigkeitsprobe ab – die Telekinetische Waffe kann
+									pariert werden, wird jedoch nicht von Waffen mit der Eigenschaft „Energiefeld“
+									zerstört. Wenn die Waffe trifft, verursacht sie 1W10 Riss-Schaden, mit einem Bonus
+									von +3 Schaden pro Psi-Wert. Zusätzlich hat die Waffe einen Penetrationswert, der
+									dem Psi-Wert des Psykers entspricht.
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Mächtiger Sturm</td>
+								<td>Volle</td>
+								<td>-10 WP test</td>
+								<td>Volle</td>
+								<td>Angriff, Konzentration</td>
+								<td>Der Psyker kann eine Anzahl von Zielen auswählen, die seinem Psi-Wert entspricht,
+									für jede Runde, in der er diese Kraft aufrechterhält. Der Psyker muss für jedes
+									seiner Ziele eine Willenskraft-Probe ablegen, um zu treffen,
+									und verursacht 2d10 Wuchtschaden mit einem Bonus von +3 Schaden pro Psi-Wert. Kein
+									Ziel darf mehr als einmal pro Runde getroffen werden.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR radius</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telekinese</td>
+								<td>Force Shards </td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>Free</td>
+								<td>Angriff, Konzentration</td>
+								<td>When activated, the psyker brings a number of force shards into existence equal to
+									the Psy Rating. The force shards hover around the psyker, acting as a potential
+									barrier to incoming Angriffs. Any opponent Angriffing the psyker when he has one or
+									more force shards orbiting suffers a -10 to Weapon Skill or Ballistic Skill tests.
+									The force shards can be launched at targets as a ranged Angriff in subsequent turns.
+									As a half action the psyker makes a Challenging (+0) Willpower Test to hit the
+									target. On a success he hits with one force shard, plus one additional hit per
+									degree of success, to a maximum number of hits equal to the number of force shards.
+									Type: Psychic Storm Range: 10m x PR DMG: 1d10 + 2xPR (R) Pen: PR Special: —
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 10m x PR</span>
+										<span><b>Schaden:</b>1d10 + 2PR (R)</span>
+										<span><b>Durchschlag:</b> PR</span>
+										<span><b>Art:</b> Psychic Storm</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Dominate</td>
+								<td>Volle</td>
+								<td>WP test (Opposed)</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>The psyker nominates a number targets in range and line of sight up to half his psy
+									rating (rounded up) who oppose this power with a Willpower test. Each target that
+									fails to resist the power must follow a simple command given by the psyker. Some
+									example orders include “Flee,” “Fall,” or “Angriff your friend. ” If the command is
+									a
+									potentially suicidal act, each target receives a +20 to its Willpower test to Oppose
+									the power. In all cases, the command must be achievable in a single round.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Erasure</td>
+								<td>Volle</td>
+								<td>WP test (Opposed)</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>The psyker chooses a single foe in range and line of sight who opposes this power
+									with a Willpower test. If he fails, the psyker removes a memory of a recent event
+									from the target’s mind. The psyker can only remove an amount of time from the
+									target’s memory up to 10 x PR minutes, and the event removed cannot have occurred
+									more than PR hours prior to the use of this power. The enemy is left with a gap in
+									his memory, with no recollection of what occurred during that time.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Hallucination</td>
+								<td>Halbe</td>
+								<td>WP test (Opposed)</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>The psyker nominates a single target in range and line of sight who opposes this
+									power with a Willpower test. If the target fails to resist the power, it must roll
+									on Hallucinogenic Effects Table, and immediately apply the effects.
+									The effect rolled on the table lasts for a number of rounds equal to half the
+									psyker’s psy rating, rounded up.
+									<p class="psyStats"><span><b>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Invisibility</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>Free</td>
+								<td>Konzentration</td>
+								<td>The psyker nominates a single target within range and line of sight (this can be the
+									psyker himself). For the duration of the power, the target counts having the Stealth
+									skill at Known (rank 1), and gains a bonus to Stealth tests equal to +5 times the
+									psyker’s psy rating. Additionally, all ranged Angriffs made against the target
+									suffer
+									a penalty equal to -5 times the psyker’s psy rating. If the target moves beyond the
+									power’s range, he loses this power’s benefits.
+									<p class="psyStats"><span><b>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Mental Fortitude</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>Free</td>
+								<td>Konzentration</td>
+								<td>For the duration of this power, a number of allies up to the psyker’s psy rating
+									within range count as having the Adamantium Faith talent. Allies affected by this
+									power lose its benefits as soon as they move out of range.
+									<p class="psyStats"><span><b>Reichweite:</b> 3m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Psychic Shriek</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Angriff</td>
+								<td>
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 10m x PR</span>
+										<span><b>Schaden:</b>1d10+2 + 2PR (X)</span>
+										<span><b>Durchschlag:</b> 0</span>
+										<span><b>Art:</b> Psychic Projection</span>
+										<pan><b>Special:</b> Concussive (PR/2)</pan>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Puppet Master</td>
+								<td>Volle</td>
+								<td>-10 WP test (Opposed)</td>
+								<td>Special</td>
+								<td>Konzentration</td>
+								<td>The psyker nominates a single target in range and line of sight with total wounds no
+									greater than 3 times the psyker’s psy rating, who opposes this power with a
+									Willpower test. If the target fails to resist the power, it is controlled by the
+									psyker like a puppet. For the duration of the power, the psyker can divide his
+									Actions between himself and the target. The dominated target uses its own
+									Characteristics, but at -10 due to the crudity of the control. If at any point the
+									psyker would make the target perform a potentially suicidal action, the target can
+									attempt a Challenging (+0) Opposed Willpower test to try to break free of the power.
+									Additionally, the power breaks as soon as the target moves out of range.
+									<p class="psyStats"><span><b>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Telepathic Link</td>
+								<td>Halbe</td>
+								<td>-10 WP test (Opposed)</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>The psyker chooses a person in range and line of sight who opposes this power with a
+									Willpower test. If the target fails, the psyker can either read the person’s
+									thoughts or send him a brief mental message.
+									<ul>
+										<li><b>Thought Reading:</b> The psyker reads the target’s thoughts, with the GM
+											determining
+											the nature of the information gained. The more degrees of success scored on
+											the
+											Focus Power test, the more information is gained overall. The higher the PR
+											of the
+											power, the more secretive the information gained.</li>
+										<li><b>Thought Sending:</b> The psyker causes a message to appear in the
+											target’s mind as if
+											he has just heard it spoken aloud. The message can be no longer than 5 x PR
+											seconds
+											long.</li>
+									</ul>
+									If the target of this power is aware of what the psyker is trying to do, he can
+									voluntarily fail the opposed Willpower test, counting as having rolled a 100.
+									<p class="psyStats"><span><b>Reichweite:</b> 20m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Terrify</td>
+								<td>Halbe</td>
+								<td>-10 WP test (Opposed)</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Slithering deep into the mind of his victim, the psyker unearths their greatest
+									failings, greatest weaknesses, and greatest fears. Using these as tools against his
+									opponent, the psyker can turn even the most courageous warriors into pathetic,
+									whimpering cowards before him.
+									The psyker nominates a single target in range and line of sight who opposes this
+									power with a Willpower test. If the target fails to resist the power, it must roll
+									on Shock Table, adding +10 times the psyker’s psy rating to the
+									roll in place of the normal addition for degrees of failure, and immediately apply
+									the effects.
+									<p class="psyStats"><span><b>Reichweite:</b> 10m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Chaos Mind</td>
+								<td>Halbe</td>
+								<td>-10 WP test (Opposed)</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>This damage cannot be reduced due to armour (unless the armour is warded) or
+									Toughness. Daemons and other creatures of the warp are immune to this ability. This
+									Power always hits the Head location.
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 5m x PR</span>
+										<span><b>Schaden:</b>1d10 + PR (X)</span>
+										<span><b>Durchschlag:</b> Special</span>
+										<span><b>Art:</b> Psychic Projection</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Mental Alacrity</td>
+								<td>Halbe</td>
+								<td>+10 WP test</td>
+								<td>Free</td>
+								<td>Konzentration</td>
+								<td>For the duration of this power, the psyker and a number of allies equal to his psy
+									rating within range, gain a bonus to their Perception equal to twice the psyker’s
+									psy rating. Allies affected by this power lose its benefit as soon as they move out
+									of range.
+									<p class="psyStats"><span><b>Reichweite:</b> 3m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Telepathy</td>
+								<td>Beastmaster</td>
+								<td>Halbe</td>
+								<td>WP test (Opposed)</td>
+								<td>Free</td>
+								<td>Konzentration</td>
+								<td>The psyker can establish rudimentary control over animals. He can affect a number of
+									animals (creatures with the Bestial trait) equal to his Psy Rating, and if the
+									psyker succeeds at the Opposed Willpower Test, the target animals must follow his
+									psychic commands. Each round, the psyker may spend a Reaction to give a single
+									animal a simple command such as “Come here”, “Guard me,” “Run,” “Angriff,” and so
+									forth. The animal will do its best to follow the command. If the animal feels
+									threatened, becomes injured, or is commanded to act in manner contrary to its
+									nature, it may make a further Opposed Willpower Test against the psyker with a +10
+									bonus to break free of the psyker’s control. How the animal reacts if it breaks free
+									depends largely on how the psyker treated the animal.
+									<p class="psyStats"><span><b>Reichweite:</b> 20m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Astropath</td>
+								<td>Astral Telepathy</td>
+								<td>Volle</td>
+								<td>-20 WP test (Opposed)</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>The psyker chooses a person he is aware of within range who resists the power with a
+									Willpower test. This can be someone the psyker has met personally, or someone he is
+									aware of by description. If the power succeeds, the psyker can transmit a brief
+									verbal message of no more than 5 seconds x psy rating.
+									If the target is aware of the psyker’s action, he may choose to fail the Willpower
+									test, counting as having rolled a 100.
+									<p class="psyStats"><span><b>Reichweite:</b> 1000km x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Astropath</td>
+								<td>Telepathic Bond</td>
+								<td>Volle</td>
+								<td>-10 WP test (Opposed)</td>
+								<td>Free</td>
+								<td>Konzentration</td>
+								<td>The psyker establishes a telepathic bond with a number of individuals up to half his
+									psy rating, who resist the power with a Willpower test. As long as the bond is held,
+									the psyker and targets can send and receive messages telepathically. This does not
+									grant full awareness of all of the characters’ thoughts, but allows each character
+									to choose what messages to send. All characters involved in the bond receive all
+									messages.
+									If a target is aware of the psyker’s action, he may choose to fail the Willpower
+									test, counting as having rolled a 100. If a character moves out of range of the
+									psyker, the power ceases to affect him.
+									<p class="psyStats"><span><b>Reichweite:</b> 20m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Astropath</td>
+								<td>Mind Scan</td>
+								<td>Volle</td>
+								<td>-20 WP test</td>
+								<td>Volle</td>
+								<td>Konzentration</td>
+								<td>The psyker chooses a target within range and line of sight who resists the power
+									with a Willpower test. The target may attempt to resist each round the power is
+									sustained. If the target wins, the psyker is repelled from his mind and gains no
+									further information. The information the psyker learns corresponds to the number of
+									rounds he successfully sustains the power:
+									<ul>
+										<li><b>First Round:</b> The psyker learns basic information, including the
+											target’s name,
+											mood, and general state of health.</li>
+										<li><b>Second Round:</b> The psyker accesses the target’s surface thoughts and
+											learns his
+											number of Insanity points and number of Corruption points.</li>
+										<li><b>Third Round:</b> The psyker successfully gains access to the target’s
+											short-term
+											memory and learns of any mental disorders.</li>
+										<li><b>Fourth Round:</b> The target’s subconscious is revealed.</li>
+										<li><b>Fifth Round:</b> The target’s mind is laid bare for the psyker to plunder
+											at will,
+											from the target’s happiest memories to his darkest secrets.</li>
+									</ul>
+									<p class="psyStats"><span><b>Reichweite:</b> 1km x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Astropath</td>
+								<td>Thought Shield</td>
+								<td>Reaction</td>
+								<td>-20 WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>The psyker can choose to use this power when he is the target of a rival psyker’s
+									mind-influencing ability, a Daemon’s attempt to possess him, or any creature’s
+									attempt to subvert his control of himself. If the power succeeds, the psyker
+									successfully shields his mind from the influence or possession attempt, which
+									immediately fails.</td>
+							</tr>
+							<tr>
+								<td>Chrono</td>
+								<td>Time Shift</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Adjust target charater's Initative by +- PR for PR/2 turns
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Chrono</td>
+								<td>Temporal Stasis</td>
+								<td>Volle</td>
+								<td>-10 WP test (Opposed)</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>Target character opposes the Willpower Test with Toughness. If the psyker wins
+									target character loses it's next turn.
+									<p class="psyStats"><span><b>Reichweite:</b> 3m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Chrono</td>
+								<td>Chronological Removal</td>
+								<td>Volle</td>
+								<td>-30 WP test</td>
+								<td>-</td>
+								<td>Konzentration, Angriff</td>
+								<td>Target character is removed from the field for PR/2 turns and suffers 1d10 Toughness
+									and Intelligence damage per turn gone.
+									<p class="psyStats"><span><b>Reichweite:</b> 3m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Chrono</td>
+								<td>Stop Time</td>
+								<td>Free</td>
+								<td>-20 WP test</td>
+								<td>Free</td>
+								<td>Konzentration</td>
+								<td>Character may take an additional turn after his current one. Each subsequent use of
+									this power during the same encounter suffers an additional -20 per use.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Chrono</td>
+								<td>Slow Time</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>Halbe</td>
+								<td>Konzentration</td>
+								<td>For the duration of this power, a number of enemies equal to his psy rating within
+									range, lose a half action.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Chrono</td>
+								<td>Chrono Shield</td>
+								<td>Halbe</td>
+								<td>-20 WP test</td>
+								<td>Volle</td>
+								<td>Konzentration</td>
+								<td>The psyker chooses a point in range and line of sight, and creates a dome of
+									invisible energy centred on that point with a radius equal to half the psyker’s psy
+									rating, rounded up. Each ally (including the psyker, potentially) standing inside
+									the dome gains an additional Force Field equal to psyker's Willpower.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Chrono</td>
+								<td>Chrono Shift</td>
+								<td>Halbe</td>
+								<td>+10 WP test</td>
+								<td>-</td>
+								<td>Konzentration</td>
+								<td>The psyker chooses a point in range and has knowledge of and teleports to that
+									point.
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Chrono</td>
+								<td>Time Warp</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>Free</td>
+								<td>Konzentration</td>
+								<td>The psyker gains the Unnatural Weapon Skill, Unnatural Ballistic Skill, and
+									Unnatural Agility traits, all at values equal to his psy rating. Or target character
+									within range gets Unnatural Weapon Skill, Unnatural Ballistic Skill, and Unnatural
+									Agility traits, all at values equal to half his psy rating
+									<p class="psyStats"><span><b>Reichweite:</b> 5m x PR</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>Chrono</td>
+								<td>Temporal Crush</td>
+								<td>Halbe</td>
+								<td>WP test</td>
+								<td>-</td>
+								<td>Angriff</td>
+								<td>
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 10m x PR</span>
+										<span><b>Schaden:</b>2d10 + PR (R)</span>
+										<span><b>Durchschlag:</b> 0</span>
+										<span><b>Art:</b> Psychic Projection</span>
+										<span> <b>Special:</b> Haywire(0) + PR/2 to Haywire Table</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Chrono</td>
+								<td>Chronosphere</td>
+								<td>Halbe</td>
+								<td>-10 WP test</td>
+								<td>-</td>
+								<td>Angriff, Konzentration</td>
+								<td>
+									<p class="psyStats">
+										<span><b>Reichweite:</b> 10m x PR</span>
+										<span><b>Schaden:</b>2d10 + 2xPR Toughness Damage</span>
+										<span><b>Durchschlag:</b> 0</span>
+										<span><b>Art:</b> Psychic Blast</span>
+										<span><b>Eigenschaften:</b> Blast (PR)</span>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="phenomena" class="info">
+				<div class="info-hdr">
+					<section id="psy_phenomena" />
+					<h2>Psychische Phänomene</h2>
+				</div>
+				<div class="d-2cols">
+					<table class="t-2cols nosort">
+						<colgroup class="cg-2-roll">
+							<col class="col-2-roll-1">
+							<col class="col-2-roll-2">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Roll</th>
+								<th>Effect</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>01-01</td>
+								<td><b>Healing Breeze:</b> Everyone within 1d10 meters of the psyker (except the psyker)
+									is healed by 1 wound.</td>
+							</tr>
+							<tr>
+								<td>02-03</td>
+								<td><b>Dark Foreboding:</b> A faint breeze blows past the psyker and those near him, and
+									everyone gets the feeling that somewhere in the galaxy something unfortunate just
+									happened.</td>
+							</tr>
+							<tr>
+								<td>04-05</td>
+								<td><b>Warp Echo:</b> For a few moments, all noises cause echoes, regardless of the
+									surroundings.</td>
+							</tr>
+							<tr>
+								<td>06-06</td>
+								<td><b>Liquify:</b> A nearby object, wall, floor, ceiling or minor NPC turns irrevocably
+									into an unidentified liquid.</td>
+							</tr>
+							<tr>
+								<td>07-08</td>
+								<td><b>Unholy Stench:</b> The air around the psyker becomes permeated with a bizarre and
+									foul smell.</td>
+							</tr>
+							<tr>
+								<td>09-10</td>
+								<td><b>Mind Warp:</b> The psyker suffers a -5 penalty to Willpower tests until the start
+									of his next turn as his own inherent phobias, suspicions, and hatreds surge to the
+									surface of his mind in a wave of unbound emotion.</td>
+							</tr>
+							<tr>
+								<td>11-11</td>
+								<td><b>Foul Aura:</b> Everyone within 1d10 meters of the psyker (including the psyker)
+									take 1 wound.</td>
+							</tr>
+							<tr>
+								<td>12-13</td>
+								<td><b>Hoarfrost:</b> The temperature plummets for an instant, and a thin coating of
+									frost forms to cover everything within 3d10 metres.</td>
+							</tr>
+							<tr>
+								<td>14-14</td>
+								<td><b>Knock:</b> All doors within 4d10 meters of the psyker are opened if they are
+									closed, or closed if they are open.</td>
+							</tr>
+							<tr>
+								<td>15-15</td>
+								<td><b>Rewind:</b> Everyone within 1d10 meters of the psyker repeats the same action
+									they performed last turn.</td>
+							</tr>
+							<tr>
+								<td>16-17</td>
+								<td><b>Aura of Taint:</b> All animals within 1d100 metres become spooked and agitated;
+									characters can use the Psyniscience skill to pinpoint the psyker as the cause</td>
+							</tr>
+							<tr>
+								<td>18-20</td>
+								<td><b>Memory Worm:</b> All people within line of sight of the psyker forget some
+									trivial fact or minor personal memory.</td>
+							</tr>
+							<tr>
+								<td>21-22</td>
+								<td><b>Spoilage:</b> Food and drink go bad in a 5d10 metre radius.</td>
+							</tr>
+							<tr>
+								<td>23-23</td>
+								<td><b>Jammed:</b> All’s guns within 5d10 meters jam.</td>
+							</tr>
+							<tr>
+								<td>24-25</td>
+								<td><b>Haunting Breeze:</b> Winds whip up around the psyker for a few moments, blowing
+									light objects around and guttering fires within 3d10 metres.</td>
+							</tr>
+							<tr>
+								<td>26-26</td>
+								<td><b>Gravitational Reversal:</b> Gravity reverses for 1d10 turns in a radius of 1d10
+									meters around the psyker.</td>
+							</tr>
+							<tr>
+								<td>27-29</td>
+								<td><b>Veil of Darkness:</b> For a brief moment (effectively, until the end of the
+									round), the area within 3d10 metres is plunged into immediate and impenetrable
+									darkness.</td>
+							</tr>
+							<tr>
+								<td>30-31</td>
+								<td><b>Distorted Reflections:</b> Mirrors and other reflective surfaces within a radius
+									of 5d10 metres distort or shatter.</td>
+							</tr>
+							<tr>
+								<td>32-33</td>
+								<td><b>Force Pull:</b> Everyone within 3d10 meters must pass a +10 strength check or
+									drop whatever they are holding in their dominant hand as it is wrenched away from
+									them suddenly. If the item is being held in two hands, receive a +30 to the strength
+									check instead.</td>
+							</tr>
+							<tr>
+								<td>34-35</td>
+								<td><b>Breath Leech:</b> Each character (including the psyker) within a 3d10 metre
+									radius becomes short of breath for one round and cannot make any Run or Charge
+									actions.</td>
+							</tr>
+							<tr>
+								<td>36-38</td>
+								<td><b>Daemonic Mask:</b> For a fleeting moment, the psyker takes on a daemonic
+									appearance and gains the Fear (1) trait until the start of the next turn. However,
+									he also gains 1 Corruption point.</td>
+							</tr>
+							<tr>
+								<td>39-41</td>
+								<td><b>Unnatural Decay:</b> All plant life within 3d10 metres of the psyker withers and
+									dies.</td>
+							</tr>
+							<tr>
+								<td>42-44</td>
+								<td><b>Spectral Gale:</b> Howling winds erupt around the psyker, requiring each
+									character (including the psyker) within 4d10 metres to make an Easy (+30) Agility or
+									Strength test to avoid being knocked Prone.</td>
+							</tr>
+							<tr>
+								<td>45-46</td>
+								<td><b>Inferno:</b> The Psyker and 1d5 random people within 3d10 meters are set on fire.
+								</td>
+							</tr>
+							<tr>
+								<td>47-48</td>
+								<td><b>Bloody Tears:</b> Blood weeps from stone and wood within 3d10 metres of the
+									psyker. If there are any paintings, pict-displays, statues, or other representations
+									of people inside this area, they appear to be crying blood.</td>
+							</tr>
+							<tr>
+								<td>49-50</td>
+								<td><b>Sensual Overload:</b> Everyone within 2 d10 meters rolls a d10. On a 1-3, they
+									are deafened for two rounds, on a 4-8 they are blinded for two rounds, on a 9-0 they
+									are stunned for two rounds.</td>
+							</tr>
+							<tr>
+								<td>51-52</td>
+								<td><b>The Earth Protests:</b> The ground suddenly shakes, and each character (including
+									the psyker) within a 5d10 metre radius must make an Ordinary (+10) Agility test or
+									be knocked down.</td>
+							</tr>
+							<tr>
+								<td>53-54</td>
+								<td><b>Actinic Discharge:</b> Static electricity fills the air within 5d10 metres
+									causing hair to stand on end and unprotected electronics to short out, while the
+									psyker is wreathed in eldritch lightning.</td>
+							</tr>
+							<tr>
+								<td>55-55</td>
+								<td><b>Warp Provocation:</b> Any creatures within 100 meters are engraged and try to
+									Angriff the psyker for 1d10 turns.</td>
+							</tr>
+							<tr>
+								<td>56-57</td>
+								<td><b>Warp Ghosts:</b> Ghostly apparitions fill the air within 3d10 metres around the
+									psyker, flying about and howling in pain for a few brief moments. Everyone in the
+									radius (except the psyker himself ) must test against a Fear rating of 1.</td>
+							</tr>
+							<tr>
+								<td>58-59</td>
+								<td><b>Falling Upwards:</b> Everything within 2d10 metres of the psyker (including the
+									psyker himself ) rises 1d10 metres into the air as gravity briefly ceases. Almost
+									immediately, everything crashes back to earth, suffering falling Damage as
+									appropriate for the distances fallen.</td>
+							</tr>
+							<tr>
+								<td>60-62</td>
+								<td><b>Banshee Howl:</b> A shrill keening rings out across the immediate area,
+									shattering glass and forcing every mortal creature able to hear it (including the
+									psyker) to pass a Challenging (+0) Toughness Test or be deafened for 1d10 rounds.
+								</td>
+							</tr>
+							<tr>
+								<td>63-64</td>
+								<td><b>The Furies:</b> The Psyker is assailed by unseen horrors. He is slammed to the
+									ground and suffers 1d5 Damage (ignoring Armour, but not Toughness Bonus) and he must
+									test against Fear (2).</td>
+							</tr>
+							<tr>
+								<td>65-66</td>
+								<td><b>Warp Prison:</b> Three domes of force spring up, trapping and dividing groups of
+									characters within 3d10 meters for 1d5 turns at the GM's discretion. The walls of the
+									force are red and are functionally impenetrable.</td>
+							</tr>
+							<tr>
+								<td>67-68</td>
+								<td><b>Shadow of the Warp:</b> For a split second, the world changes in appearance, and
+									everyone within 1d100 metres has brief but horrific glimpse of the shadow of the
+									Warp. Everyone in the area (including the psyker) must make a Difficult (-10)
+									Willpower Test or gain 1d5 Corruption Points.</td>
+							</tr>
+							<tr>
+								<td>69-71</td>
+								<td><b>Tech Scorn:</b> The machine spirits reject your unnatural ways. All un-warded
+									technology within 5d10 metres malfunctions momentarily, and all ranged weapons Jam
+									(see page 255), whilst characters with cybernetic implants must pass a Routine (+10)
+									Toughness Test or suffer 1d5 Damage, ignoring Toughness Bonus and Armour.</td>
+							</tr>
+							<tr>
+								<td>72-74</td>
+								<td><b>Warp Madness:</b> A violent ripple of tainted discord causes all creatures within
+									2d10 metres (with the exception of the psyker) to become Frenzied for a Round and
+									suffer 1d5 Corruption Points unless they can pass a Difficult (-10) Willpower Test.
+								</td>
+							</tr>
+							<tr>
+								<td>75+</td>
+								<td><b>Perils of the Warp:</b> The Warp opens in a wild maelstrom of unnatural energy.
+									Roll on Table 6-3: Perils of the Warp</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="perils" class="info">
+				<div class="info-hdr">
+					<section id="perils_o_warp" />
+					<h2>Gefahren des Warps</h2>
+				</div>
+				<div class="d-2cols">
+					<table class="t-2cols nosort">
+						<colgroup class="cg-2-roll">
+							<col class="col-2-roll-1">
+							<col class="col-2-roll-2">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Roll</th>
+								<th>Effect</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>01-05</td>
+								<td><b>The Gibbering:</b> The psyker screams in pain as uncontrolled Warp energies surge
+									through his unprepared mind. He must make a Challenging (+0) Willpower Test or be
+									stunned for 1d5 Rounds.</td>
+							</tr>
+							<tr>
+								<td>06-09</td>
+								<td><b>Warp Burn:</b> A violent burst of energy from the Warp smashes into the psyker's
+									mind, sending him reeling. He suffers 2d5 Damage, ignoring Toughness Bonus and
+									Armour, and is stunned for 1d5 Rounds.</td>
+							</tr>
+							<tr>
+								<td>10-13</td>
+								<td><b>Psychic Concussion:</b> With a crack of energy, the psyker is knocked unconscious
+									for 1d5 Rounds, and everyone within 3d10 metres must make a Routine (+10) Willpower
+									Test or be Stunned for one Round.</td>
+							</tr>
+							<tr>
+								<td>14-18</td>
+								<td><b>Psy Blast:</b> There is an explosion of power and the psyker is thrown 3d10
+									metres into the air, falling to the ground moments later (see page 267 for Falling
+									Damage).</td>
+							</tr>
+							<tr>
+								<td>19-24</td>
+								<td><b>Soul Sear:</b> Warp power courses through the psyker's body, scorching his soul.
+									The psyker cannot use any powers for the next hour and gains 2d5 Corruption Points.
+								</td>
+							</tr>
+							<tr>
+								<td>25-30</td>
+								<td><b>Locked In:</b> The power cages the psyker's mind in an ethereal prison, tormented
+									by visions of the Warp. The psyker falls to the ground in a catatonic state. Each
+									Round thereafter, he must spend a Full Action to make a Difficult (-10) Willpower
+									Test. On a success, his mind is freed and restored to his body, haunted by his
+									experiences but otherwise unharmed.</td>
+							</tr>
+							<tr>
+								<td>31-38</td>
+								<td><b>Chronological Incontinence:</b> Time warps around the psyker. He winks out of
+									existence and reappears in 1d10 Rounds (or one minute in narrative time) in the
+									exact location. He suffers one point of permanent Toughness and Intelligence damage
+									as his body and mind rebel against the experience, and gains 1d5 Corruption Points.
+								</td>
+							</tr>
+							<tr>
+								<td>39-46</td>
+								<td><b>Psychic Mirror:</b> The psyker's power is turned back on him. Resolve the power's
+									effects, but the power targets the psyker instead. If the power is beneficial, it
+									deals 1d10+5 Energy Damage (ignoring Armour) to the psyker instead of its normal
+									effect.</td>
+							</tr>
+							<tr>
+								<td>47-55</td>
+								<td><b>Warp Whispers:</b> The voices of daemons fill the air within 4d10 metres of the
+									psyker, whispering terrible secrets and shocking truths. Everyone in the area
+									(including the psyker ) must make a Hard (-20) Willpower Test or suffer 1d5
+									Corruption Points and an equal amount of Willpower damage. In addition, whether or
+									not the psyker passes the Willpower Test, he suffers an additional 1d5+5 Willpower
+									damage.</td>
+							</tr>
+							<tr>
+								<td>56-58</td>
+								<td><b>Vice Versa:</b> The psyker's mind is thrown out of his body and into another
+									nearby creature or person. The psyker and a random being (note, this cannot be a
+									daemon, mindless xenos, or other soulless creature) within 50 metres swap
+									consciousness for 1d10 rounds. This may be an ally or enemy. Each creature retains
+									its Weapon Skill, Ballistic Skill, Intelligence, Perception, Willpower, and
+									Fellowship during the swap, but all other Characteristics are of the new host body.
+									If either body is slain, the effect ends immediately and both parties return to
+									their original bodies. Both suffer 1d5 Intelligence damage from the experience. If
+									there are no creatures within range, the psyker becomes catatonic for 1d5 rounds
+									while his mind wanders the Warp. This journey causes 1d10 Willpower Damage, 1d10
+									Intelligence Damage and 1d10 Corruption Points.</td>
+							</tr>
+							<tr>
+								<td>59-67</td>
+								<td><b>Dark Summoning:</b> The Empyrean buckles and tears at the arrogance of the
+									psyker, and a Bloodletter rips its way into existence. (see Chapter XI:
+									Adversaries). The fiend appears within 3d10 metres of the psyker, for a number of
+									Rounds equal to 1d5 plus the psyker's Toughness Bonus. The psyker's turn immediately
+									ends, and the Daemon may take its turn immediately. It detests the psyker and
+									focuses all of its Angriffs upon the fool that unwittingly summoned it. It will not
+									Angriff anyone else, even if others Angriff it.</td>
+							</tr>
+							<tr>
+								<td>68-72</td>
+								<td><b>Rending the Veil:</b> The air vibrates with images of cackling daemons and the
+									kaleidoscopic taint of the Warp is rendered visible. All sentient creatures (any
+									creature with an Intelligence characteristic) within 1d100 metres must test against
+									Fear (2). The psyker must Test against Fear (4) instead. This effect lasts for 1d5
+									Rounds.</td>
+							</tr>
+							<tr>
+								<td>73-78</td>
+								<td><b>Blood Rain:</b> A psychic storm erupts, covering an area of 5d10 metres in which
+									everyone must pass a Challenging (+0) Strength Test or be knocked to the ground. In
+									addition to howling winds and the skies raining blood, any psychic powers used in
+									the area for 1d5 Rounds automatically invoke Perils of the Warp, in addition to any
+									Psychic Phenomena those powers cause. The psyker gains 1d5+1 Corruption Points.</td>
+							</tr>
+							<tr>
+								<td>79-82</td>
+								<td><b>Cataclysmic Blast:</b> The psyker's power overloads, arcing out in great bolts of
+									Warp energy. Anyone within 1d10 metres (including the psyker) takes 1d10 Energy
+									Damage with a Pen of 5. The psyker may not Dodge this, or stop the Angriff with a
+									Field Save (see page 196). In addition, all of the psyker's clothing and gear is
+									destroyed, leaving him naked and smoking on the ground. The psyker may use no
+									further powers for 1d5 hours after the event.</td>
+							</tr>
+							<tr>
+								<td>83-86</td>
+								<td><b>Mass Possession:</b> Daemons ravage the mind of every living thing within 1d100
+									metres. Every character in the area must resist a possession Angriff (see the
+									Possession Trait in Chapter V: Talents and Traits; the Angriffer is a random Lesser
+									Daemon). This possession will last for no more than 2d10 Rounds, after which the
+									daemons are cast back into the Warp.</td>
+							</tr>
+							<tr>
+								<td>87-90</td>
+								<td><b>Reality Quake:</b> Reality buckles around the psyker, and an area radiating out
+									3d10 metres from him is sundered: solid objects alternately rot, burn, and freeze,
+									and everyone and everything in the area takes 2d10 Rending Damage, ignoring Armour
+									(and unable to be dodged). Warded objects, daemons, and untouchables halve the
+									Damage rolled.</td>
+							</tr>
+							<tr>
+								<td>91-99</td>
+								<td><b>Grand Possession:</b> A grand and terrible Warp entity takes interest in the
+									psyker's soul, descending from the Warp to seize the mortal's body for its own
+									purposes. A powerful Daemon attempts to possess the psyker (see the Possession Trait
+									in Chapter IV: Talents and Traits). Use the Bloodletter from page 354, but increase
+									all of its Characteristics by +20 and give it Fear 4. Even if the daemon fails, the
+									psyker still suffers 2d10 Toughness Damage, and will forever add +10 to all rolls on
+									the Psychic Phenomena and Perils of the Warp tables as his body now serves as a
+									conduit to the power of the Warp. If the character dies while possessed, the daemon
+									manifests in the real world for a number of days equal to its Toughness Bonus or
+									until it is destroyed.</td>
+							</tr>
+							<tr>
+								<td>100</td>
+								<td><b>Annihilation:</b> The psyker is immediately and irrevocably destroyed, burned to
+									nothing by the screaming fires of the Immaterium or dragged into the deepest
+									maelstrom of the Warp. The psyker may not spend Fate to recover from this death, he
+									is irrevocably destroyed. There is a chance that a daemonic entity of some sort
+									appears in the psyker's place. The type of daemon that appears is determined by the
+									GM, based on how powerful the psyker was - more powerful psykers draw more powerful
+									daemons. The percentage chance that the daemon appears is equal to the psyker's
+									Willpower characteristic (roll a d100, if the result is equal to or under the
+									characteristic, the daemon appears).</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quick Reference</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="interface.js"></script>
+</head>
+
+<body>
+	<div id="navi">
+	</div>
+	<div id="content" class="content">
+		<div id="infoPane">
+			<div id="info_traits" class="info">
+				<div class="info-hdr">
+					<section id="traits" />
+					<h2>Traits</h2>
+				</div>
+				<div class="d-2cols">
+					<table class="t-2cols">
+						<colgroup class="cg-2-roll">
+							<col class="col-2-long-1">
+							<col class="col-2-roll-2">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Effect</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Amorphous</td>
+								<td>A creature with this trait may increase or decrease its Size trait value by 1 as a
+									Free Action (though doing so does not change its movement values). A creature with
+									this trait also has the Crawler trait.</td>
+							</tr>
+							<tr>
+								<td>Amphibious</td>
+								<td>If this trait is taken by a creature with the ability to breathe another substance
+									other than air (i.e., water, ammonia, carbon-dioxide, etc.) then it can breathe air
+									as well as its native atmosphere.</td>
+							</tr>
+							<tr>
+								<td>Auto-Stabilised</td>
+								<td>These beings always count as braced when firing heavy weapons and therefore may fire
+									a weapon on full or semi-automatic without taking the Brace action first, and not
+									suffer any penalties to hit.</td>
+							</tr>
+							<tr>
+								<td>Baneful Presence (X)</td>
+								<td>All characters suffer a –10 penalty to Willpower tests taken while within X metres
+									of the creature.</td>
+							</tr>
+							<tr>
+								<td>Bestial</td>
+								<td>A creature with this trait never needs to make a Survival test whilst in its natural
+									habitat. Unless starving or desperate, a Bestial creature must make a Challenging
+									(+0) Willpower test when frightened, startled, or injured. If it fails, the creature
+									flees.</td>
+							</tr>
+							<tr>
+								<td>Blind</td>
+								<td>Blind creatures automatically fail all tests based on vision, and automatically fail
+									all Ballistic Skill tests. Such creatures take a –30 penalty to Weapon Skill tests
+									and most other tests that ordinarily involve or are benefited by vision.</td>
+							</tr>
+							<tr>
+								<td>Brutal Charge(X)</td>
+								<td>When Charging, the creature deals an extra (X) points of damage on each hit it
+									inflicts that turn.</td>
+							</tr>
+							<tr>
+								<td>Burrower (X)</td>
+								<td>The number in parentheses (X) indicates its speed when burrowing. When a creature
+									burrows, it leaves behind a tunnel. Characters with a Size trait value lower than
+									the burrower can enter these areas without impediment. At the end of each round
+									after the burrower passes, roll 1d10; on a result of 5 or lower, the tunnel
+									collapses behind the creature.</td>
+							</tr>
+							<tr>
+								<td>Crawler</td>
+								<td>The base move for a creature with this trait is half its normal movement rate (round
+									up) as determined by its Agility bonus, but it does not take penalties for moving
+									over difficult terrain.</td>
+							</tr>
+							<tr>
+								<td>Daemonic (X)</td>
+								<td>Creatures with this trait increase their Toughness bonus against all damage by the
+									number indicated in the parentheses (X), in the same manner as an Unnatural
+									Characteristic (see page 139), and stack if the latter also increases Toughness.
+									This increase is negated by damage inflicted from force weapons, psychic powers,
+									holy attacks, or other creatures with this trait. Daemonic creatures are also immune
+									to disease and poison, gain the Undying trait, and gain benefits when using psychic
+									powers as detailed in Chapter VI: Psychic Powers.</td>
+							</tr>
+							<tr>
+								<td>Dark-Sight</td>
+								<td>A creature with this trait sees normally even in areas of total darkness, and never
+									takes a penalty for fighting in areas of dim or no lighting.</td>
+							</tr>
+							<tr>
+								<td>Deadly Natural Weapons</td>
+								<td>The creature gains all the benefits of the Natural Weapons trait (see page 137),
+									except that its attacks no longer have the Primitive weapon quality.</td>
+							</tr>
+							<tr>
+								<td>Fear (X)</td>
+								<td>The Fear trait always has an associated rating (1–4) to reflect how awful the
+									creature is to behold; this is indicated by the number in parentheses (X). The
+									higher the Fear rating, the harder it is for others to resist going insane from the
+									encounter, as shown on Table 4–5: Fear Rating. When a character encounters a
+									creature with this trait, the character must make a Willpower test with a penalty
+									based on the creature’s Fear rating. If he succeeds, the character suffers no ill
+									effects; if he fails, he must roll on Table 8-11: Shock (see page 287), adding +10
+									to the roll for every degree of failure on the test.</td>
+							</tr>
+							<tr>
+								<td>Flyer (X)</td>
+								<td>The number in parentheses (X) indicates its speed when flying. This number replaces
+									the creature’s Agility bonus for movement actions while airborne. For more details
+									on flying, see page 249 of Chapter VII: Combat.</td>
+							</tr>
+							<tr>
+								<td>From Beyond</td>
+								<td>Such a creature is immune to Fear, Pinning, Insanity points, and psychic powers used
+									to cloud, control, or delude its mind.</td>
+							</tr>
+							<tr>
+								<td>Hoverer (X)</td>
+								<td>The number in parentheses (X) indicates its speed when hovering; this number
+									replaces its Agility bonus for purposes of calculating Movement while airborne. For
+									more details on flying, see page 249 of Chapter VII: Combat.</td>
+							</tr>
+							<tr>
+								<td>Incorporeal</td>
+								<td>"Incorporeal creatures gain the Hoverer (6) trait and a +30 bonus on Stealth tests
+									due to their ability to merge with objects and nearly silent movement. An
+									Incorporeal creature is also immune to normal weapons, which simply pass
+									ineffectually through its body. Daemons, psychic powers, Warp creatures, other
+									Incorporeal creatures, and opponents armed with force weapons can all injure an
+									Incorporeal creature normally. An Incorporeal creature cannot usually affect the
+									mortal world, and thus cannot damage normal opponents unless it has a suitable
+									special ability or talent. Certain devices can keep these creatures at bay, though,
+									most notably a Void Shield or a spaceship’s Gellar Field, which acts as an
+									impenetrable barrier to them."</td>
+							</tr>
+							<tr>
+								<td>Machine (x)</td>
+								<td>Machines do not breathe, are immune to vacuum, extremes of cold, and
+									mind-influencing psychic effects. Machines have a certain number of Armour points
+									(indicated by the number in parentheses). This armour stacks with worn armour, but
+									not with the Natural Armour trait, and provides resistance against damage from Fire
+									(see page 243)</td>
+							</tr>
+							<tr>
+								<td>Machanicus Implants</td>
+								<td>Allows access to Mechanicus only implants and talents</td>
+							</tr>
+							<tr>
+								<td>Navigator</td>
+								<td>Allows acces to Navigator Abilities</td>
+							</tr>
+							<tr>
+								<td>Mind Lock</td>
+								<td>If faced with a situation outside of its programming and with no recognised master
+									to issue orders, the creature must pass a Routine (+20) Intelligence test or be
+									Stunned for 1 round. Due to its essentially mindless nature, at the GM’s discretion
+									it is immune to all Opposed Social tests.</td>
+							</tr>
+							<tr>
+								<td>Multiple Arms (X)</td>
+								<td>The exact number of arms is indicated in parentheses (X), so a Genestealer with
+									Multiple Arms (4) has four arms total. It gains a +10 bonus on Athletics tests
+									involving climbing and swimming. In addition, for each full pair of arms it has (the
+									Multiple Arms value divided by 2) it can make an additional attack as if wielding
+									multiple melee weapons. In this case, the creature must either have natural weapons
+									or actual melee weapons to wield for this to take effect. Note that a creature still
+									requires the Two-Weapon Wielder (Melee or Ranged) talent to make multiple attacks in
+									the same turn.</td>
+							</tr>
+							<tr>
+								<td>Natural Armor (X)</td>
+								<td>The number in parentheses (X) indicates how many Armour points the creature gains to
+									all locations. Natural Armour stacks with worn armour, but not with the Machine
+									trait.</td>
+							</tr>
+							<tr>
+								<td>Natural Weapons</td>
+								<td>It counts as being armed even when not wielding weapons, with attacks that deal 1d10
+									points of damage plus its Strength bonus. The creature can make attacks with its
+									Natural Weapons using its Weapon Skill, though it cannot Parry with its natural
+									weapons, nor can it be disarmed unless, of course, its limbs are hacked off. In
+									general, creatures with Natural Weapons are immune to the Power Field quality, as it
+									is assumed they have enough teeth, claws, or spines to ignore a few being removed.
+									Natural weapons have the Primitive (7) weapon quality unless stated otherwise in the
+									profile.</td>
+							</tr>
+							<tr>
+								<td>Phase</td>
+								<td>As a Half Action, the creature may gain or remove the Incorporeal trait, becoming
+									insubstantial or solid.</td>
+							</tr>
+							<tr>
+								<td>Psyker</td>
+								<td>Though this trait has no benefits on its own, it allows characters to purchase the
+									Psyniscience skill and psychic powers. All psykers have a psy rating (or PR; see
+									page 193) which is listed out for each NPC.</td>
+							</tr>
+							<tr>
+								<td>Quadruped</td>
+								<td>Quadrupeds are much quicker over a distance than their bipedal counterparts, and
+									their movement is double that normally indicated by their Agility bonus (see page
+									245). Creatures with more than four legs may gain this trait as well, increasing
+									their movement as indicated above but adding an additional 2 (after doubling) to
+									their final movement rate for each set of legs beyond the first two pairs (i.e., +2
+									for 6 legs, +4 for 8 legs, etc.).</td>
+							</tr>
+							<tr>
+								<td>Regeneration (X)</td>
+								<td>Each round, at the start of its turn, the creature can make a Toughness test to
+									remove an amount of damage indicated in the parentheses after the trait.</td>
+							</tr>
+							<tr>
+								<td>Sanctioned</td>
+								<td>If a Sanctioned character gains the Psyker elite advance, he does not gain the
+									Corruption normally inflicted with that advance and starts at psy rating of 2
+									instead of 1.</td>
+							</tr>
+							<tr>
+								<td>Size (X)</td>
+								<td>Size affects movement, how well the creature can hide and move undetected, and how
+									easy or hard it is to strike in combat. When calculating movement, apply the size
+									modifier first, and then other modifiers from other traits or talents (such as
+									Quadruped). Note that a creature’s movement cannot be reduced to less than 1.</td>
+							</tr>
+							<tr>
+								<td>Sonar</td>
+								<td>Sense Allows the creature to locate the position of any solid object within 30
+									metres. Other creatures within this 30 metre range that succeed on a Difficult (–10)
+									Awareness skill can detect the oddly-pitched sounds echoing around them.</td>
+							</tr>
+							<tr>
+								<td>Soul Bound</td>
+								<td>"A soul bound psyker rolls an extra die when forced to roll on Table 6–3: Perils of
+									the Warp (see page 197), then replaces either the ones die or the tens die with the
+									extra die he rolled to determine the final result. Upon becoming soul-bound, the
+									psyker must choose one of the following effects: 3d10 Insanity points, the permanent
+									loss of his sight, permanent loss of 1d10 points from one characteristic, or a
+									random mutation. In addition, a soul bound character is permanently indebted to the
+									entity, which undoubtedly entails all manner of other duties and consequences."</td>
+							</tr>
+							<tr>
+								<td>Stampede</td>
+								<td>Whenever a creature with this trait fails a Willpower test, it automatically moves
+									in a straight line forwards as far as possible, overrunning anything in its path
+									until the source of danger is escaped or crushed under hoof. Anyone in the way
+									suffers a single hit from the creature’s Natural Weapons (or 1d5+SB Impact damage if
+									it does not have that trait). One stampeding creature automatically causes all other
+									creatures with the same trait within sight to stampede as well. The stampede lasts
+									until the source of danger is no longer visible or for 1d10 minutes, whichever
+									occurs last.</td>
+							</tr>
+							<tr>
+								<td>Stuff of Nightmares</td>
+								<td>Such creatures count as having the Undying trait, and are completely immune to most
+									environmental hazards, Blood Loss, and Stunning. They also ignore any Critical
+									Effect other than one that would destroy them outright, unless it was caused by a
+									psychic power, force weapon, or holy attack.</td>
+							</tr>
+							<tr>
+								<td>Sturdy</td>
+								<td>Gains a +20 bonus to tests made to resist Grappling and Knock Down actions, and uses
+									of the Takedown talent.</td>
+							</tr>
+							<tr>
+								<td>Touched by the Fates (X)</td>
+								<td>The NPC has a number of Fate points shown in parentheses (X). It can use these Fate
+									points in exactly the same way as Player Characters and can even burn a Fate point
+									to survive death and destruction at the GM’s discretion. The NPC’s attacks also use
+									the rules for Righteous Fury.</td>
+							</tr>
+							<tr>
+								<td>Toxic (X)</td>
+								<td>A character that successfully deals damage to a Toxic creature in melee combat must
+									make a Toughness test at the end of his turn with a penalty equal to 10 times the
+									number in parentheses (X), or suffer 1d10 points of Energy damage not reduced by
+									Armour or Toughness. For example, a creature with Toxic (4) would impose a –40 on
+									Toughness tests. Some creatures carry additional effects with their toxins, or
+									inflict more damage as indicated in their individual descriptions.</td>
+							</tr>
+							<tr>
+								<td>Undying</td>
+								<td>It cannot be harmed by diseases, poisons, or toxic effects. It also has no need to
+									breathe, and thus can survive unaided in a vacuum.</td>
+							</tr>
+							<tr>
+								<td>Unnatural Agility (X)</td>
+								<td>Adds X to Agility bonus. Successful tests using Agility gain a number of bonus
+									degrees of success equal to half the Unnatural Characteristic value.</td>
+							</tr>
+							<tr>
+								<td>Unnatural Ballistic Skill (X)</td>
+								<td>Adds X to Ballistic Skill bonus. Successful tests using Ballistic Skill gain a
+									number of bonus degrees of success equal to half the Unnatural Characteristic value.
+								</td>
+							</tr>
+							<tr>
+								<td>Unnatural Fellowship (X)</td>
+								<td>Adds X to Fellowship bonus. Successful tests using Fellowship gain a number of bonus
+									degrees of success equal to half the Unnatural Characteristic value.</td>
+							</tr>
+							<tr>
+								<td>Unnatural Intelligence (X)</td>
+								<td>Adds X to Intelligence bonus. Successful tests using Intelligence gain a number of
+									bonus degrees of success equal to half the Unnatural Characteristic value.</td>
+							</tr>
+							<tr>
+								<td>Unnatural Perception (X)</td>
+								<td>Adds X to Perception bonus. Successful tests using Perception gain a number of bonus
+									degrees of success equal to half the Unnatural Characteristic value.</td>
+							</tr>
+							<tr>
+								<td>Unnatural Senses (X)</td>
+								<td>The creature can perceive its surroundings using senses other than sight or hearing,
+									such as special organs, fine hairs, or some other disturbing ability. This trait
+									always includes a range in metres indicated by the number in parentheses (X).</td>
+							</tr>
+							<tr>
+								<td>Unnatural Strength (X)</td>
+								<td>Adds X to Strength bonus. Successful tests using Strength gain a number of bonus
+									degrees of success equal to half the Unnatural Characteristic value.</td>
+							</tr>
+							<tr>
+								<td>Unnatural Toughness (X)</td>
+								<td>Adds X to Toughness bonus. Successful tests using Toughness gain a number of bonus
+									degrees of success equal to half the Unnatural Characteristic value.</td>
+							</tr>
+							<tr>
+								<td>Unnatural Weapon Skill (X)</td>
+								<td>Adds X to Weapon Skill bonus. Successful tests using Weapon Skill gain a number of
+									bonus degrees of success equal to half the Unnatural Characteristic value.</td>
+							</tr>
+							<tr>
+								<td>Unnatural Willpower (X)</td>
+								<td>Adds X to Willpower bonus. Successful tests using Willpower gain a number of bonus
+									degrees of success equal to half the Unnatural Characteristic value.</td>
+							</tr>
+							<tr>
+								<td>Warp Instability</td>
+								<td>If a creature with this trait takes damage and does not deal any damage or Insanity
+									points to another creature by the end of its next turn, it must make a Willpower
+									test. The creature suffers 1 point of damage for failing, plus 1 additional point of
+									damage for each degree of failure. If this would deal damage equal to (or in excess
+									of) the creature’s wounds, it is cast back into the Warp.</td>
+							</tr>
+							<tr>
+								<td>Warp Weapons</td>
+								<td>Natural weapons and attacks made by a creature with this trait ignore physical
+									armour, unless the armour is created from psychoactive materials or is somehow
+									warded against the Warp. Force fields still work against these attacks normally.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

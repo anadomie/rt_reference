@@ -134,19 +134,19 @@ th, td {
 
 	/* Style the header row */
 thead th {
-	position: sticky; /* Makes the table header sticky */
-    top: 50px; /* Adjust to match the navbar's height */
-    z-index: 999; /* Keeps it above the table content */
+	position: sticky; /* Keeps the header fixed while scrolling */
+	top: 50px; /* Adjust for navbar height */
+	z-index: 999; /* Keeps it above the table content */
 	background-color: #AA0000;
 	color: white;
-	font-family: 'Cinzel', serif; /* Header font: classical and thematic */
-	font-weight: 700; /* Bold style */
+	font-family: 'Cinzel', serif;
+	font-weight: 700;
 	font-size: 22px;
 	line-height: 1.8;
 	padding-top: 8px;
 	padding-bottom: 8px;
 	vertical-align: middle;
-	text-align: left; /* Horizontally centers the text (optional) */
+	text-align: left;
 }
 
 tbody {
@@ -179,27 +179,126 @@ tr:nth-child(even) {
 
 .col-5-a1{
 	width: 260px;
-	min-width: 260px;
 }
 
 .col-5-a2{
-  min-width: 170px;
-  max-width: 260px;
+  width: 200px;
 }
-
 
 .col-5-a3{
-  width: 130px;
-  min-width: 130px;
+	width: 130px;
 }
-.col-5-a4{
-  width: 130px;
-  min-width: 130px;
+
+.col-5-a3b{
+  width: 150px;
 }
 
 .col-5-a4{
+  width: 130px;
+}
+
+.col-5-a5{
   width: auto;
 }
+
+.t-7cols td:nth-child(4),
+.t-7cols td:nth-child(6) {
+    text-align: center;
+}
+
+.col-7-1{
+	width: 250px;
+}
+
+.col-7-2{
+  width: 100px;
+}
+
+.col-7-3{
+	width: 130px;
+}
+.col-7-4{
+	width: 50px;
+}
+.col-7-5{
+	width: 200px;
+}
+
+.col-7-6{
+	width: 100px;
+}
+
+.col-7-7{
+  width: auto;
+}
+
+
+
+
+.col-12-1{
+	width: 200px;
+}
+.col-12-2{
+	width: 100px;
+}
+.col-12-3{
+	width: 90px;
+}
+.col-12-4{
+	width: 90px;
+}
+.col-12-5{
+	width: 80px;
+}
+.col-12-6{
+	width: 120px;
+}
+.col-12-7{
+	width: 50px;
+}
+.col-12-8{
+	width: 120px;
+}
+.col-12-9{
+	width: 100px;
+}
+.col-12-10{
+	width: 50px;
+}
+.col-12-11{
+	width: 100px;
+}
+.col-12-12{
+	width: auto;
+}
+
+
+.col-7b-1{
+	width: 160px;
+}
+
+.col-7b-2{
+  width: 180px;
+}
+.col-7b-3{
+	width: 120px;
+}
+.col-7b-4{
+	width: 200px;
+}
+.col-7b-5{
+	width: 100px;
+}
+
+.col-7b-6{
+	width: 150px;
+}
+
+.col-7b-7{
+  width: auto;
+}
+
+
 
 
 .col-5-s1{
@@ -226,6 +325,162 @@ tr:nth-child(even) {
   width: auto;
 }
 
-li[
+.col-2-roll-1{
+	width: 150px;
+}
+.col-2-long-1{
+	width: 250px;
+}
+
+.col-2-roll-2{
+	width: auto;
+}
+
+li{
 	padding-left: 20px; 
-]
+}
+
+.psyStats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /* Space between each key-value pair */
+}
+
+.psyStats span {
+    display: flex;
+    align-items: center;
+}
+
+.psyStats b {
+    margin-right: 5px; /* Small spacing between the label and value */
+}
+
+
+.search-icon {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Change search icon color on hover */
+.search-icon:hover svg circle,
+.search-icon:hover svg line {
+    stroke: #FFD700;  /* Gold color on hover */
+}
+
+/* Active search highlight */
+.active-search svg circle,
+.active-search svg line {
+    stroke: #FFD700;
+}
+
+
+.search-container {
+    display: none;
+    position: relative; 
+    z-index: 1000;  /* Ensure it is above the table header */
+    width: 100%; /* Adjust as needed */
+}
+
+/* Optional: Add space between search bar and header row */
+.search-container::before {
+    content: "";
+    display: block;
+}
+
+/* Search input styling */
+.search-container input {
+    width: 100%;
+    padding: 3px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Show search bar when active */
+.search-header.hidden {
+    display: none;
+}
+
+/* Show search bar when active */
+.search-container.show {
+    display: block;
+}
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative; /* Required for absolute positioning of dropdown */
+}
+
+/* Ensure filter dropdown is hidden initially */
+.filter-container {
+    display: none;
+    position: absolute;  /* Position relative to the header */
+    top: 100%; /* Place it directly below the header */
+    left: 0;
+    width: 250px; /* Match the header width */
+    border: 2px solid #AA0000;
+	height: 180px;
+    padding: 0px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Hide filter text and icon when dropdown is active */
+.filter-header.hidden {
+    display: none;
+}
+
+/* Show filter dropdown when active */
+.filter-container.show {
+    display: block;
+}
+
+/* Dropdown styles */
+#filterSelect {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+	height: 100%;
+	background-color: #333;
+	color: white;
+	padding: 5px;
+    font-size: 20px;
+    outline: none;
+}
+
+/* Style for the dropdown icon */
+.filter-icon {
+    cursor: pointer;
+	padding-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.filter-icon:hover svg path {
+    stroke: #FFD700;  /* Gold color on hover */
+}
+
+/* Active dropdown highlight */
+.active-filter svg path {
+    stroke: #FFD700;
+}
+
+/* Rotate arrow when active */
+.filter-icon.active svg {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+section::before {
+    content: "";
+    display: block;
+    height: 50px; /* Offset amount */
+    margin-top: -50px; /* Negative margin cancels out the extra space */
+    visibility: hidden;
+}
