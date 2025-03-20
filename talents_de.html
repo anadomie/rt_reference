@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quick Reference</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="interface.js"></script>
+</head>
+
+<body>
+	<div id="naviDe">
+	</div>
+	<div id="content" class="content">
+		<div id="infoPane">
+			<div id="ip_traits" class="info">
+				<div class="info-hdr">
+					<section id="traits" />
+					<h2>Eigenschaften</h2>
+				</div>
+				<div class="d-3cols">
+					<table class="t-3cols">
+						<colgroup class="cg-3">
+							<col class="col-3-1">
+							<col class="col-3-2">
+							<col class="col-3-3">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Voraussetzung</th>
+								<th>Beschreibung</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Adamantiumglaube</td>
+								<td>Abgestumpft, Resistenz(Furcht), WP 45</td>
+								<td>Der Charakter ist abgestumpft gegenüber Schrecken, die schwächere Menschen brechen
+									würden. Dies kann durch jahrelanges Feuergefecht, den Anblick der Schrecken des Warp
+									oder seinen absoluten Glauben an den Imperator kommen. Er kann seinen
+									Willenskraft-Bonus von den Fehlerschwellen bei misslungenen Furcht- oder
+									Deckungstests abziehen. Wenn dies das Ergebnis auf null oder weniger reduziert,
+									zählt der Furcht-Test als bestanden mit 1 Erfolgsgrad.</td>
+							</tr>
+							<tr>
+								<td>Aura der Autorität</td>
+								<td>Fel 30</td>
+								<td>Bei der Ansprache von Charakteren mit militärischem Hintergrund erhält der Charakter
+									+10 auf alle Charisma Prüfungen</td>
+							</tr>
+							<tr>
+								<td>Ambassador Imperialis</td>
+								<td>Fel 35, Int 35</td>
+								<td>Ob durch Dienst in der Flotte eines Freihändlers oder Verhandlungen mit
+									Xenos-Söldnern in Grenzwelten, der Charakter hat Erfahrung im Umgang mit Aliens und
+									den verschiedensten nicht-imperialen Kulturen. Er kann subtile Fauxpas vermeiden,
+									die schnell zu Blutvergießen führen könnten. Der Charakter reduziert jeglichen Malus
+									auf Interaktionstests im Umgang mit Xenos oder nicht-imperialen NPCs um 20. Zudem
+									kann er einmal pro Begegnung einen misslungenen Interaktionstest mit solchen NPCs
+									erneut würfeln.</td>
+							</tr>
+							<tr>
+								<td>Beidhändig</td>
+								<td>Ag 30</td>
+								<td>This talent does not represent true ambidexterity so much as sufficient training
+									with both hands to make the distinction moot. When combined with Two-Weapon Wielder
+									talent, the penalty for making attacks with both weapons in the same turn drops to
+									–10.</td>
+							</tr>
+							<tr>
+								<td>Archivator</td>
+								<td>Ag 30</td>
+								<td>Dieses Talent repräsentiert weniger echte Beidhändigkeit, sondern vielmehr
+									ausreichend Training mit beiden Händen, um den Unterschied bedeutungslos zu machen.
+									In Kombination mit dem Talent "Zwei-Waffen-Kämpfer" sinkt der Malus für Angriffe mit
+									beiden Waffen in derselben Runde auf –10.</td>
+							</tr>
+							<tr>
+								<td>Rüstungsmeister</td>
+								<td>Int 35, Technik, Handwerk (Rüstungsschmied)</td>
+								<td>Der Charakter ist ein erfahrener Rüstungsschmied, der ständig seine Rüstung
+									verbessert oder sie in makellosem Zustand hält, indem er selbst den geringsten
+									Schaden repariert. Mit jahrelangem Training hat er gelernt, den Schutz seiner
+									Rüstung zu erhöhen und diese optimal zu nutzen. Der Charakter erhält zusätzliche
+									Rüstungspunkte in Höhe seines Intelligenzbonus, die er auf alle Trefferzonen
+									verteilen kann, die seine Rüstung normalerweise abdeckt, vorausgesetzt, er hat
+									täglich mindestens eine Stunde Zeit für Reinigung, Reparatur oder kleine
+									Modifikationen. Dieser Bonus gilt nur für Rüstungen, die der Akoluth selbst trägt,
+									da er seine Ausbildung mit seinem handwerklichen Können kombiniert.</td>
+							</tr>
+							<tr>
+								<td>Assassinenstoß</td>
+								<td>Ag 40, Akrobatik</td>
+								<td>Die natürliche Beweglichkeit und anmutige Kampfform des Charakters machen ihn zu
+									einem tödlichen Wirbel im Kampf. Nach einem Nahkampfangriff kann der Charakter einen
+									Herausfordernden (+0) Akrobatik-Test ablegen; gelingt dieser, darf er sich bis zu
+									seiner Halben Bewegung als freie Aktion bewegen. Diese Bewegung kann er nur einmal
+									pro Runde ausführen, und der Gegner erhält durch diese Bewegung keinen
+									Gelegenheitsangriff.</td>
+							</tr>
+							<tr>
+								<td>Bastion aus Eisenwillen</td>
+								<td>Psy-Wert, Starker Wille, WP 40</td>
+								<td>Die pure Willenskraft und der psionische Fokus des Charakters sind durch jahrelanges
+									Training und Übung zu einer Einheit verschmolzen, sodass ihre kombinierte Nutzung
+									zur zweiten Natur geworden ist. Der Charakter addiert 5 x seinen Psy-Wert zu jedem
+									Gegenwurf, den er zur Verteidigung gegen psionische Kräfte macht.</td>
+							</tr>
+							<tr>
+								<td>Kampfraserei</td>
+								<td>Raserei</td>
+								<td>Lange Erfahrung und unbezwingbarer Wille haben es dem Charakter ermöglicht, das
+									innere Biest zu zähmen, seine Wut zu lenken und trotz der tobenden Blutlust in
+									seinem Geist einen klaren Kopf zu bewahren. Der Charakter kann im Zustand der
+									Raserei parieren und einen misslungenen Test zum Beenden oder Vermeiden der Raserei
+									erneut würfeln, falls er dies wünscht.</td>
+							</tr>
+							<tr>
+								<td>Klingenmeister</td>
+								<td>WS 30, Waffenkenntnis (beliebige Nahkampfwaffe)</td>
+								<td>The Acolyte’s mastery of bladed weapons and their martial disciplines has no peer.
+									When attacking with any bladed weapon, including chainswords, axes, and power
+									swords, he can re-roll one missed attack per round.</td>
+							</tr>
+							<tr>
+								<td>Blindes Kämpfen</td>
+								<td>Per 30</td>
+								<td>Durch jahrelanges Training und die Entwicklung seiner anderen Sinne ist der
+									Charakter in der Lage, im Nahkampf ohne Sicht effektiv zu kämpfen. Er ignoriert alle
+									Mali für den Kampf mit Nahkampfwaffen bei eingeschränkter Sicht, was ihm erlaubt, in
+									Nebel, Rauch oder Dunkelheit effektiver zu agieren. Siehe Seite 229 für eine
+									vollständige Liste der normalen Mali basierend auf Licht und Sicht. Dieses Talent
+									verbessert nur seine Trefferchancen mit Nahkampfwaffen und hat keinen Einfluss auf
+									Angriffe mit Fernkampfwaffen.</td>
+							</tr>
+							<tr>
+								<td>Kopfgeldjäger</td>
+								<td>-</td>
+								<td>Der Entdecker ist ein erfahrener und gerissener Kopfgeldjäger, der den höchsten
+									Preis für das Einfangen eines Zieles, tot oder lebendig, verlangt. Wenn der
+									Charakter einen Flüchtigen für das Kopfgeld übergibt, erhält die Gruppe des
+									Charakters einen Bonus von +100 Objektivpunkten für Militärische oder Kriminelle
+									Ziele.</td>
+							</tr>
+							<tr>
+								<td>Leibwächter</td>
+								<td>Ag 35</td>
+								<td>Nachdem ein Gegner einen erfolgreichen Angriff gegen einen Verbündeten durchgeführt
+									hat, kann der Charakter eine Reaktion nutzen, um sich bis zu seiner halben
+									Bewegungsdistanz zu bewegen und sich zwischen Angreifer und Ziel zu stellen. Der
+									Angriff wird dann gegen den Charakter statt gegen das ursprüngliche Ziel ausgeführt.
+									Bei einem Nahkampfangriff kann der Charakter im Rahmen dieser Reaktion auch
+									versuchen, den Angriff zu parieren.</td>
+							</tr>
+							<tr>
+								<td>Herovrragender Bizeps</td>
+								<td>S 45</td>
+								<td>Wo ein schwächerer Mann durch den Rückstoß einer schweren Waffe zurückgeworfen
+									würde, bleibt der Charakter dank seiner starken Physis standhaft. Er kann eine
+									schwere Waffe im Halbautomatik- oder Vollautomatik-Feuermodus ohne Abstützen
+									abfeuern und erleidet keinen Malus von –30 für das Fehlen der Abstützung. Zusätzlich
+									erhält er bei der Verwendung der „Heben“-Sonderanwendung der Athletik-Fertigkeit
+									(siehe Seite 98) +20 auf seinen Athletik-Test, um seine kräftige Muskulatur zu
+									reflektieren.</td>
+							</tr>
+							<tr>
+								<td>Bollwerk des Glaubens</td>
+								<td>WP 45, Eiserner Glaube</td>
+								<td>Wenn der Charakter einen Furcht-Test besteht, der durch einen Dämon verursacht
+									wurde, erleidet der Dämon 1 Energieschaden, der Rüstung und Zähigkeitsbonus
+									ignoriert, für jeden Erfolgsgrad des Furcht-Tests.</td>
+							</tr>
+							<tr>
+								<td>Katzenfall</td>
+								<td>Ag 30</td>
+								<td>Gymnastische Fähigkeiten und natürlicher Gleichgewichtssinn ermöglichen es dem
+									Charakter, große Höhen ohne Schaden zu überstehen. Er reduziert automatisch die
+									effektive Fallhöhe um eine Anzahl von Metern, die seinem Beweglichkeitsbonus
+									entspricht, und ignoriert diese Distanz. Zusätzlich erhält er +20 auf
+									Akrobatik-Tests bei der Verwendung der Sonderanwendung „Springen“, wenn es darum
+									geht, Fallschaden zu verringern.</td>
+							</tr>
+							<tr>
+								<td>Reinigen und Läutern</td>
+								<td>Waffentraing (Flamme), WP 35</td>
+								<td>Der Charakter kann das Fließen von Promethium kontrollieren und die Flamme wie einen
+									alten Begleiter manipulieren. Die Ziele der Flammenangriffe des Charakters erleiden
+									einen -20 Malus auf ihre Agilitätsproben, um den Effekten zu entkommen. Bei
+									Verwendung gegen ein Ziel mit dem "Horde"-Merkmal wird die Anzahl der Treffer um
+									+1d5 erhöht.</td>
+							</tr>
+							<tr>
+								<td>Hinweise aus der Menge</td>
+								<td>Fel 30</td>
+								<td>Es ist oft schwierig, Informationen von Gruppen wie Hive-Gangs oder
+									Administratum-Schreibern zu erhalten, da die Anzahl der Personen Widerstand gegen
+									Befragungen stärkt. Ein erfahrener Charakter weiß, dass solche Gruppen wichtige
+									Informationen für eine Untersuchung besitzen können und gezieltere Befragungen
+									wertvolle Hinweise aufdecken können. Einmal pro Tag kann er einen Test zum Sammeln
+									von Informationen von einer Gruppe erneut würfeln.</td>
+							</tr>
+							<tr>
+								<td>Kampfmeister</td>
+								<td>WS 30</td>
+								<td>Die Waffe des Charakters scheint überall gleichzeitig zu sein und hält im Nahkampf
+									deutlich mehr Gegner in Schach, als es möglich erscheint. Gegner im Nahkampf
+									erhalten keinen Bonus für Überzahl.</td>
+							</tr>
+							<tr>
+								<td>Ständige Wachsamkeit</td>
+								<td>Int 35 oder Per 35, Wahrnehmung Rang 2</td>
+								<td>Durch jahrelanges Überleben von Hinterhalten und Überraschungsangriffen ist der
+									Charakter stets kampfbereit. Sein Unterbewusstsein reagiert auf das leiseste
+									Geräusch oder die Aktivierung eines Laspacks, oft bevor er die Bedrohung vollständig
+									erkennt. Bei Erwerb dieses Talents wählt der Charakter eine Spezialisierung, die mit
+									der verwendeten Voraussetzung (Wahrnehmung oder Intelligenz) übereinstimmt. Er kann
+									die Eigenschaft, die zu dieser Spezialisierung passt, anstelle seines
+									Beweglichkeitswerts für Initiativewürfe verwenden und würfelt zwei Würfel, wobei er
+									den höheren Wert für seine Initiative verwendet.</td>
+							</tr>
+							<tr>
+								<td>Kontaktnetzwerk</td>
+								<td>Vertuschung, Int 35</td>
+								<td>Charaktere verlassen sich auf ein Netzwerk aus Beziehungen, Gefälligkeiten, Schulden
+									und Verpflichtungen, das von einem einzelnen Wohnblock bis hin zu einem ganzen
+									System reichen kann. Die richtige Entwicklung und Nutzung dieses Netzwerks
+									ermöglicht es ihnen, Zugang zu Waffen, Reisen, Personal und anderen Ressourcen zu
+									erhalten. Wer seine Verbindungen optimal nutzt, kann sicherstellen, dass er gut
+									ausgerüstet und vorbereitet ist, wenn er sich einer neuen Häresie stellt. Ein
+									Charakter mit diesem Talent kann seinen Wert in Charisma anstelle seines Einflusses
+									bei Nachschubtests verwenden.</td>
+							</tr>
+							<tr>
+								<td>Koordinierte Verhörung</td>
+								<td>S 40 oder WP 40, Hinweise aus der Menge, Verhör</td>
+								<td>Ein ausgebildeter Charakter, insbesondere in Zusammenarbeit mit anderen erfahrenen
+									Charakteren, kann selbst die härtesten Verdächtigen und gefangenen Ketzer zur
+									Kooperation bewegen. Er erhält einen Bonus von +10 auf alle Verhör-Tests und einen
+									zusätzlichen +5 für jeden weiteren Charakter, der ebenfalls über das Talent
+									"Koordinierte Verhörführung" verfügt und am Verhör teilnimmt</td>
+							</tr>
+							<tr>
+								<td>Gegenangriff</td>
+								<td>WS 40</td>
+								<td>Die blitzschnellen Riposten des Charakters sind tödliche Kunstwerke, schnell und
+									unsichtbar wie der Wind. Einmal pro Runde, nachdem er einen Angriff erfolgreich
+									pariert hat, kann der Charakter sofort eine Standardangriffs-Aktion als freie Aktion
+									gegen denselben Gegner ausführen, wobei er die Waffe verwendet, mit der er pariert
+									hat. Der Charakter erleidet einen Malus von –20 auf den Waffenfertigkeitstest für
+									diesen Angriff.</td>
+							</tr>
+							<tr>
+								<td>Vertuschung</td>
+								<td>Int 35</td>
+								<td>Schon das kleinste Gerücht über die Anwesenheit der Inquisition kann ausreichen, um
+									Ketzer zu zerstreuen und Kulte in den Untergrund zu treiben. Charaktere nutzen
+									gezielte Bestechungen, schreckliche Drohungen und andere Mittel, um ihre Aktivitäten
+									so geheim wie möglich zu halten. Nach Ermessen des Spielleiters kann der Charakter
+									seinen Einfluss verringern, um die Subtilität seiner Gruppe zu erhöhen. Für jeden
+									auf diese Weise verlorenen Einflusspunkt erhöht der Charakter die Subtilität seiner
+									Einsatzgruppe um 1W5.</td>
+							</tr>
+							<tr>
+								<td>Zermalmender Schlag</td>
+								<td>WS 40</td>
+								<td>Der Charakter kann seine gesamte Körperkraft in Nahkampfangriffe einbringen. Er
+									addiert die Hälfte seines Waffenfertigkeitsbonus (aufgerundet) zum Schaden, den er
+									mit Nahkampfangriffen verursacht.</td>
+							</tr>
+							<tr>
+								<td>Dämonenjäger</td>
+								<td>Verbotenes Wissen (Dämonologie), WP 40</td>
+								<td>Der Charakter kann misslungene Aufmerksamkeit- und Psyniscience-Tests zum Aufspüren
+									von Dämonen erneut würfeln. Zusätzlich erhalten seine Angriffe gegen Dämonen die
+									Eigenschaft "Bewährt (3)".</td>
+							</tr>
+							<tr>
+								<td>Dämonologe</td>
+								<td>Psy-Wert 3, WP 45, Verbotenes Wissen (Dämonologie)</td>
+								<td>Wenn der Charakter die Aktion „Macht fokussieren“ durchführt und das Ziel der
+									psionischen Kraft ein Dämon ist, erhält er einen Bonus von +10 auf den
+									Fokusmacht-Test. Nach Ermessen des Spielleiters kann dieser Bonus auch auf andere
+									Tests angewendet werden, wie z. B. Rituale zum Beschwören oder Binden eines Dämons.
+								</td>
+							</tr>
+							<tr>
+								<td>Dunkle Seele</td>
+								<td>Gehärtete Seele, 20 Verderbnispunkte</td>
+								<td>Wenn der Charakter aufgrund steigender Verderbnis einen Test ablegen müsste, um eine
+									Mutation zu erhalten, kann er stattdessen wählen, den Test automatisch zu bestehen.
+									Tut er dies, erhält er jedoch gleichzeitig eine Malignität und erhöht seine
+									Gesamtzahl an Verderbnispunkten um 1W10.</td>
+							</tr>
+							<tr>
+								<td>Todesbringer</td>
+								<td>BS 45 oder WS 45</td>
+								<td>Der Charakter kann seine Treffer so platzieren, dass sie maximalen Schaden
+									verursachen, z. B. in Lücken oder Gelenken der Rüstung. Bei Erwerb dieses Talents
+									wählt der Charakter die Spezialisierung, die der verwendeten Voraussetzung
+									entspricht (Nahkampf mit Waffenfertigkeit, Fernkampf mit Ballistikfertigkeit).
+									Verursacht ein Angriff dieses Typs Kritischen Schaden, addiert der Charakter seinen
+									Wahrnehmungsbonus zum Schadensresultat.</td>
+							</tr>
+							<tr>
+								<td>Dekadenz</td>
+								<td>T 30</td>
+								<td>Der Charakter verliert das Bewusstsein erst nach einer Anzahl von Zähigkeitswürfen,
+									die dem Doppelten seines Zähigkeitsbonus entsprechen. Er erhält außerdem einen Bonus
+									von +10, um den Auswirkungen von Sucht zu widerstehen.</td>
+							</tr>
+							<tr>
+								<td>Feinsinnige Verhandlungen</td>
+								<td>Vertuschen, Täuschen, Fel 50</td>
+								<td>Der Verlust von Ruf durch den Umgang mit Xenos wird um 1d5 reduziert.</td>
+							</tr>
+							<tr>
+								<td>Feinfühliges Verhör</td>
+								<td>Fel 50, Koordinierte Verhörung</td>
+								<td>Das Verhören von Verdächtigen und Zeugen ist immer ein notwendiger Teil jeder
+									Untersuchung. Solche Sitzungen müssen jedoch geheim bleiben, damit andere nicht von
+									der Beteiligung der Inquisition erfahren. Täuschungen, Drohungen und andere
+									Subtilitäten kommen hier zum Einsatz. Wenn der Charakter durch ein Verhör die
+									Subtilität seiner Einsatzgruppe verringern würde, wird die verringerte Subtilität um
+									1W5 reduziert. Führt dies zu einer negativen Zahl, erhöht die geschickte
+									Vorgehensweise des Charakters die Subtilität der Einsatzgruppe um 1.</td>
+							</tr>
+							<tr>
+								<td>Verleugnung der Hexe</td>
+								<td>WP 35</td>
+								<td>Der Charakter zieht aus seinem Glauben und seiner mentalen Stärke einen Schild gegen
+									jene, die vom Warp verdorben sind. Er kann seine Willenskraft anstelle seines
+									Beweglichkeitswerts nutzen, um eine Ausweichreaktion gegen Fern- oder
+									Nahkampfangriffe durch psionische Kräfte durchzuführen. Wenn er einen Angriff mit
+									Flächeneffekt erfolgreich abwehrt, bewegt sich der Charakter nicht, sondern bleibt
+									einfach unbeeinflusst von der psionischen Kraft.</td>
+							</tr>
+							<tr>
+								<td>Vernichtender Angriff</td>
+								<td>WS 35</td>
+								<td>Der Charakter entfesselt einen wütenden Angriff auf seinen Feind, gestärkt durch den
+									Zorn des Imperators. Einmal pro Runde kann er nach dem Abschluss einer erfolgreichen
+									Aktion „Voller Angriff“ eine zweite Aktion „Voller Angriff“ gegen dasselbe Ziel als
+									freie Aktion durchführen, mit den gleichen Boni und Mali wie beim ersten Angriff.
+								</td>
+							</tr>
+							<tr>
+								<td>Hart im Nehmen</td>
+								<td>WP 40</td>
+								<td>Durch mentale Entschlossenheit oder pure Sturheit weigert sich der Charakter,
+									aufzugeben. Wenn er aufgrund der Blutverlust-Bedingung eine Stufe Erschöpfung
+									erleiden würde, kann er einen Herausfordernden (+0) Willenskraft-Test ablegen.
+									Gelingt der Test, erleidet er keine Erschöpfung.</td>
+							</tr>
+							<tr>
+								<td>Entwaffnen</td>
+								<td>Ag 30</td>
+								<td>Der Charakter kann durch geübte Technik oder rohe Gewalt Waffen aus den Händen
+									seiner Gegner reißen. Als volle Aktion kann er einen Gegenwurf auf Waffenfertigkeit
+									gegen ein Ziel durchführen, mit dem er im Nahkampf engagiert ist. Gewinnt der
+									Charakter den Test, lässt der Gegner seine Waffe zu Boden fallen. Erzielt der
+									Charakter drei oder mehr Erfolgsgrade, kann er die Waffe des Gegners an sich nehmen.
+								</td>
+							</tr>
+							<tr>
+								<td>Göttlicher Schutz</td>
+								<td>BS 45, WP 35</td>
+								<td>Jene, die Hexen und Mutanten jagen, bevorzugen oft reinigendes Feuer, um ihre
+									unreinen Feinde zu läutern. Als Beweis für die reinigende Macht der Flammen können
+									einige gesegnete Krieger Flammenwerfer und ähnliche Waffen einsetzen, ohne dass ihre
+									Verbündeten im Zielbereich Schaden nehmen. Sollte ein angeblicher Verbündeter
+									dennoch von den Flammen getroffen werden, ist dies sicherlich ein Beweis für
+									verborgene Ketzerei. Wenn der Charakter eine Waffe mit der Eigenschaft „Spray“
+									einsetzt, trifft der Angriff nur Feinde im Zielbereich und schadet keinen
+									Verbündeten.</td>
+							</tr>
+							<tr>
+								<td>Doppelschuss</td>
+								<td>Zwei-Waffen-Kämpfer</td>
+								<td>Der Charakter ist geübt im Ausführen von Doppelangriffen und erkennt beinahe
+									instinktiv, wann seine Treffer am effektivsten sind. Führt er in derselben Runde
+									eine zweite Fernkampfangriffs-Aktion gegen dasselbe Ziel aus, erhält er einen Bonus
+									von +20 auf den Angriffstest, wenn sein erster Angriff einen oder mehrere
+									erfolgreiche Treffer erzielt hat.</td>
+							</tr>
+							<tr>
+								<td>Doppelteam</td>
+								<td>-</td>
+								<td>Der Charakter hat Erfahrung im Kampf in Zweierteams, die gemeinsam ihre Gegner
+									überwältigen. Bei Überzahl gegen einen Gegner erhält er einen zusätzlichen Bonus von
+									+10 auf Waffenfertigkeitstests. Haben beide Charaktere, die den Gegner zahlenmäßig
+									überlegen sind, dieses Talent, erhalten beide einen zusätzlichen Bonus von +10, was
+									insgesamt +20 ergibt. Dieser Bonus kommt zusätzlich zu den normalen Boni durch
+									Überzahl</td>
+							</tr>
+							<tr>
+								<td>Feind*</td>
+								<td>-</td>
+								<td>der Charakter wird von einer bestimmten sozialen Gruppe, Organisation, einem
+									ketzerischen Kult oder einer Xenos-Rasse besonders verachtet und möglicherweise
+									gejagt. Er erleidet einen zusätzlichen Malus von –10 auf Charisma- und
+									Einfluss-Tests im Umgang mit dieser Gruppe, und der Spielleiter kann diese nutzen,
+									um das Leben des Charakters gelegentlich zu erschweren. Anders als andere Talente
+									kostet „Feind“ keine XP und kann nicht als Fortschritt genommen werden. Stattdessen
+									können Spielleiter und Spieler vereinbaren, es passend zur Handlung oder Kampagne zu
+									vergeben. Es kann mit Zustimmung des Spielleiters entfernt werden, wenn der
+									Charakter sich bei der Gruppe rehabilitiert hat. Das Talent „Feind“ kann mehrfach
+									für dieselbe Gruppe vergeben werden, in diesem Fall wird es als „Feind (X)“
+									aufgeführt, wobei X die Anzahl der Vergaben angibt. Dies repräsentiert Gruppen, die
+									den Charakter besonders hassen und tot sehen wollen. Der Malus auf Charisma-Tests
+									erhöht sich dabei auf –10 mal</td>
+							</tr>
+							<tr>
+								<td>Hervorragender Lord-Kapitän</td>
+								<td>Führung Rang 4, Kapitän eines Raumschiffs</td>
+								<td>Der Kapitä erhöht die Moral auf seinem Schiff dauerhaft um seinen Charisma-Bonus.
+									Dieser Bonus geht verloren, wenn der Charakter vom Schiff entfernt wird, stirbt oder
+									seine Position verliert.</td>
+							</tr>
+							<tr>
+								<td>Exotische Waffenbeherrschung*</td>
+								<td>-</td>
+								<td>Der Charakter ist im Umgang mit einer besonders seltenen Waffenart, wie einer
+									Gravitonkanone oder einer Nadelpistole, ausgebildet. Waffen, die dieses einzigartige
+									Talent erfordern, sind in ihren Waffenbeschreibungen gekennzeichnet. Anders als bei
+									anderen Waffenausbildungen gilt dieses Talent nur für eine einzelne Waffenart und
+									nicht für eine Klasse von Waffen. Beachte, dass eine exotische Waffe der Klasse
+									„Schwer“ zusätzlich das Talent „Waffenkenntnis (Schwere Waffen)“ erfordert sowie
+									„Exotische Waffenbeherrschung“ für diese spezifische Waffe.</td>
+							</tr>
+							<tr>
+								<td>Auge der Vergeltung</td>
+								<td>BS 50</td>
+								<td>Der Charakter kann seinen Fokus darauf richten, wo er seinem Feind den größten
+									Schaden zufügt, und ihn mit einem einzigen Schuss niederstrecken. Vor einer
+									Standard-Fernkampfangriffsaktion kann er einen Schicksalspunkt ausgeben. Tut er
+									dies, addiert er die Anzahl der Erfolgsgrade des Angriffstests sowohl zum Schaden
+									als auch zur Durchschlagskraft des Treffers.</td>
+							</tr>
+							<tr>
+								<td>Gesicht in der Menge</td>
+								<td>Fel 35, Hinweise aus der Menge</td>
+								<td>Eine erfolgreiche Untersuchung erfordert oft das unbemerkte Verfolgen von
+									Verdächtigen, um sie zu versteckten Orten ketzerischer Anbetung oder krimineller
+									Aktivitäten zu führen. Mit entsprechender Ausbildung kann der Charakter
+									sicherstellen, dass niemand seine Anwesenheit bemerkt, indem er die Manieren der
+									Menge nachahmt oder sich in Versammlungen einfügt, während er sein Ziel im Auge
+									behält. Bei der Verwendung der Sonderanwendung „Schatten folgen“ der Fertigkeit
+									Schleichen kann er seinen Charisma-Wert anstelle seiner Beweglichkeit verwenden.
+								</td>
+							</tr>
+							<tr>
+								<td>Vom Warp begünstigt</td>
+								<td>WP 35</td>
+								<td>Immer wenn der Charakter ein Psionisches Phänomen würfelt, darf er ein zweites Mal
+									würfeln und das bevorzugte Ergebnis auswählen.</td>
+							</tr>
+							<tr>
+								<td>Ferric Summons</td>
+								<td>Ferrische Lockimplantate, Mechanicus-Implantate</td>
+								<td>Der Charakter hat gelernt, seine Ferrischen Lockimplantate besser zu nutzen. Er kann
+									ein ungesichertes Metallobjekt mit einem Gewicht von bis zu 2 Kilogramm pro Punkt
+									seines Willenskraftbonus in seine Hand rufen und solche Objekte aus einer Entfernung
+									von bis zu 40 Metern herbeiholen.</td>
+							</tr>
+							<tr>
+								<td>Feldvivisektion*</td>
+								<td>BS oder WS 40, Verbotenes Wissen (Xenos–beliebig), Medicae Rang 2</td>
+								<td>Der Charakter kann anstelle eines Waffenfertigkeits- oder Ballistiktests einen
+									Medicae-Test durchführen, um Ziele zu attackieren, für die er über das passende
+									Verbotene Wissen verfügt.</td>
+							</tr>
+							<tr>
+								<td>Flagellant</td>
+								<td>WP30</td>
+								<td>Der Charakter glaubt, dass Schmerz reinigt, und unterzieht sich regelmäßig
+									selbstgefügten Strafen, um für seine Sünden zu büßen. Als volle Aktion kann er
+									seinem eigenen Körper eine passende Bestrafung zufügen und erleidet 1W5–2 Stufen
+									Erschöpfung (mindestens 1). Er erhält dann für eine Stunde oder bis zum Ende der
+									aktuellen Begegnung einen Bonus von +10 auf Willenskraft-Tests, um Furcht, Deckung,
+									psionischen Kräften oder Verderbnis zu widerstehen. Besitzt der Charakter zusätzlich
+									das Talent „Raserei“, kann er unter dem Effekt dieses Talents als freie Aktion in
+									den Zustand der Raserei versetzt werden.</td>
+							</tr>
+							<tr>
+								<td>Geistesblitz</td>
+								<td>Int 40, Kontaktnetzwerk, Koordinierte Verhörung</td>
+								<td>Trotz logischer Analyse und sorgfältiger Untersuchung bleiben einige Rätsel
+									unlösbar, doch Inspiration kann aus unerwarteten Quellen kommen – sei es aus Mustern
+									im Lho-Rauch oder direkten Appellen an den Imperator. Ein Charakter, der seinen
+									Geist darauf trainiert hat, solche unkonventionellen Informationen zu verarbeiten,
+									kann Schlussfolgerungen ziehen, die durch direktes Denken nicht erreichbar sind, und
+									selbst die verborgensten Häresien aufdecken. Wenn er bei einer Untersuchung
+									feststeckt, kann er einen Schicksalspunkt ausgeben, um einen einzelnen Hinweis oder
+									eine Spur aufzudecken, die ihm beim Fortschreiten seiner Bemühungen hilft.</td>
+							</tr>
+							<tr>
+								<td>Vorausblick</td>
+								<td>Int 30</td>
+								<td>Verbringe 10 Minuten um ein Problem zu analysieren. Dein Nächster Intelligenz-Test
+									zur lösung hat +10</td>
+							</tr>
+							<tr>
+								<td>Raserei</td>
+								<td>-</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Graue Seele</td>
+								<td>-</td>
+								<td>Längere Exposition gegenüber Dunkelheit hat als Immunisierung gegen alles Unreine
+									gewirkt und dem Charakter Widerstand gegen Korruption verliehen. Wann immer er einen
+									Verderbins-Test ablegt, nimmt er nur die Hälfte der normalen Strafe.</td>
+							</tr>
+							<tr>
+								<td>Grenadier</td>
+								<td>BS 35</td>
+								<td>Der Charakter weiß, dass Granaten und andere Sprengstoffe zu den effektivsten
+									Mitteln gehören, um marodierende Alien-Bestien zu vernichten oder Horden von
+									geringeren Xenos-Monstrositäten schnell auszudünnen. Verfehlt der Charakter mit
+									einer geworfenen Waffe oder einer Waffe mit der Eigenschaft „Sprengung“, kann er die
+									Streuungsdistanz um bis zu die Hälfte seines Ballistikfertigkeitsbonus in Metern
+									reduzieren.</td>
+							</tr>
+							<tr>
+								<td>Heiliger der Befehlsführer</td>
+								<td>Fel 40, WP 40</td>
+								<td>Der Charakter hat sich darin geschult, andere besser zu führen und zu beeinflussen,
+									sei es durch Motivation oder Einschüchterung. Wenn er freundliche NSCs mit
+									Fertigkeiten anspricht, die die Neigungen „Sozial“ oder „Führung“ haben (wie
+									Überreden, Befehlen oder Einschüchtern), kann er bis zu 100-mal seinen
+									Charisma-Bonus an Zielen beeinflussen, anstelle der üblichen 10-fachen Anzahl.</td>
+							</tr>
+							<tr>
+								<td>Hammerschlag</td>
+								<td>Zermalmender Schlag</td>
+								<td>Der Charakter führt einen einzigen Schlag mit solcher Konzentration und Kraft aus,
+									dass er Rüstungen durchbricht und Fleisch zerquetscht. Wenn er die Aktion „Voller
+									Angriff“ verwendet, um einen einzelnen Nahkampfangriff auszuführen, kann er die
+									Hälfte seines Stärke-Bonus (aufgerundet) zur Durchschlagskraft der Waffe hinzufügen.
+									Der Angriff zählt außerdem als mit der Eigenschaft „Betäubend (2)“ ausgestattet, um
+									die schockierende Wucht des Schlages darzustellen.</td>
+							</tr>
+							<tr>
+								<td>Harte Verhandlung</td>
+								<td>Fel 50, Handel Rang 1</td>
+								<td>Die scharfsinnigen Verhandlungs- und Tauschfähigkeiten des Charakters sind
+									unerreicht, und er hat ein Talent dafür, Chancen auf Gewinn zu erkennen, wo andere
+									nichts sehen. Wann immer der Profitfaktor für die Erfüllung einer Aufgabe verliehen
+									wird, erhält die Gruppe einen Bonus von +1 auf den Gesamt-Profitfaktor.</td>
+							</tr>
+							<tr>
+								<td>Schweres Ziel</td>
+								<td>Ag 40</td>
+								<td>Leichtfüßig bewegt sich der Charakter geschickt und ausweichend, Fähigkeiten, die er
+									sich durch jahrelangen Beschuss angeeignet hat. Wenn er eine Angriff- oder
+									Rennen-Aktion ausführt, erleiden Gegner einen Malus von –20 auf
+									Ballistikfertigkeitstests, um ihn mit Fernkampfangriffen zu treffen. Dieser Malus
+									gilt bis zum Beginn seines nächsten Zuges.</td>
+							</tr>
+							<tr>
+								<td>Gehärtete Seele</td>
+								<td>WP 35, 10 Verderbnispunkte</td>
+								<td>Immer wenn der Charakter Verderbnispunkte erhalten würde, kann er die Anzahl der
+									erhaltenen Punkte halbieren (aufgerundet) und stattdessen eine entsprechende Anzahl
+									an Wahnsinnspunkten erhalten.</td>
+							</tr>
+							<tr>
+								<td>Zäh</td>
+								<td>T 40</td>
+								<td>Die robuste Konstitution des Charakters ermöglicht es ihm, sich schnell von Schock
+									oder Verletzungen zu erholen. Bei medizinischer Behandlung oder Heilung erholt er
+									sich immer so, als wäre er nur leicht verletzt, unabhängig davon, wie schwer die
+									Verletzungen tatsächlich sind.</td>
+							</tr>
+							<tr>
+								<td>Hass*</td>
+								<td>-</td>
+								<td>Eine Gruppe, Organisation oder Rasse hat dem Charakter in der Vergangenheit Unrecht
+									getan, was seine Feindseligkeit anheizt. Im Nahkampf gegen Gegner dieser Gruppe
+									erhält der Charakter einen Bonus von +10 auf alle Waffenfertigkeitstests gegen sie.
+									Zudem fällt es ihm schwer, vor seinem verhassten Feind zurückzuweichen, und er muss
+									einen Herausfordernden (+0) Willenskraft-Test ablegen, um sich zurückzuziehen oder
+									zu ergeben, es sei denn, er ist selbstmörderisch unterlegen.</td>
+							</tr>
+							<tr>
+								<td>Heldenhafte Inspiration</td>
+								<td>BS 40, Ag 40</td>
+								<td>Dieser Charakter ist außergewöhnlich geschickt darin, genau die richtigen Worte zu
+									finden, um das Beste aus seinen Zellengenossen herauszuholen und sie in den
+									schlimmsten Situationen auf Kurs zu halten. Ob durch weise Worte, feurige Rhetorik
+									oder milde Provokation hängt von der Person und der Situation ab. Einmal pro Runde
+									kann dieser Charakter die besondere Anwendung der Befehlsfertigkeit "Inspiration"
+									als Halbe Aktion statt als Volle Aktion nutzen.</td>
+							</tr>
+							<tr>
+								<td>Schießen aus der Hüfte</td>
+								<td>Fel 30, Führung</td>
+								<td>Der Charakter ist so geschickt mit Fernkampfwaffen, dass er präzise schießen kann,
+									ohne durch das Visier zu zielen. Als volle Aktion kann er sich bis zu seiner vollen
+									Bewegungsreichweite bewegen und einen einzelnen Angriff mit einer Fernkampfwaffe
+									ausführen. Dieser Angriff kann nur ein Einzelschuss sein, keine halb- oder
+									vollautomatischen Angriffe. Charaktere mit dem Talent „Zwei-Waffen-Kämpfer“ können
+									dieses Talent in Kombination mit „Schießen aus der Hüfte“ nutzen, um zwei
+									Einzelschüsse abzugeben, wenn sie in jeder Hand eine Fernkampfwaffe führen.</td>
+							</tr>
+							<tr>
+								<td>Meisterpilot</td>
+								<td>Rang 2 in Überleben oder einer Fahrzeugführung-Fertigkeit, Ag 35</td>
+								<td>Wenn die Situation es erfordert, überschreitet der Charakter die Grenzen seiner
+									Fähigkeiten und zeigt beeindruckende Manöver. Diese Erfahrung hat ihn auch gelehrt,
+									sich aus fatalen Fehlern zu retten, die für weniger erfahrene Piloten verheerend
+									wären.Erfolgreiche Operieren-Tests (oder Überleben-Tests bei lebenden Reittieren)
+									können um freiwillig erlittene 1 Stufe Erschöpfung verstärkt werden, wobei die
+									Erfolgsgrade um die Hälfte seines Beweglichkeitsbonus erhöht werden. Misslingt ein
+									solcher Test, kann er freiwillig 1 Stufe Erschöpfung erleiden, um die Fehlerschwere
+									um seinen Beweglichkeitsbonus zu reduzieren, bis zu einem Minimum von 1.</td>
+							</tr>
+							<tr>
+								<td>Deckung finden</td>
+								<td>Rang 2 in Überleben oder einer Fahrzeugführung-Fertigkeit, Ag 35</td>
+								<td>Der Charakter behält im Kampf stets seine Gegner im Auge und lenkt sein Fahrzeug
+									oder Reittier so, dass es eine kleinere Silhouette bietet und vorhandenes Gelände
+									optimal als Deckung nutzt.Wenn der Charakter eine Fahrzeugkampaktion des Typs
+									„Bewegung“ ausführt, zählt der Wert der Größen-Eigenschaft seines Fahrzeugs oder
+									Reittiers bis zum Beginn seines nächsten Zuges als um 1 niedriger, sowohl für
+									Angriffsmodifikatoren als auch für die Vorteile von Deckung.</td>
+							</tr>
+							<tr>
+								<td>Unabhängige Zielerfassung</td>
+								<td>BS 40</td>
+								<td>Der Charakter hat seine Situationswahrnehmung so weit entwickelt, dass er innerhalb
+									von Sekundenbruchteilen in zwei Richtungen feuern kann. Beim Einsatz von zwei Waffen
+									in einer einzigen Aktion (z. B. mit dem Talent „Zwei-Waffen-Kämpfer“) müssen sich
+									die Ziele nicht innerhalb von 10 Metern voneinander befinden.</td>
+							</tr>
+							<tr>
+								<td>Unentrinnbarer Angriff*</td>
+								<td>BS 40 or WS 40, Per 35</td>
+								<td>Diese Fähigkeit gilt für Nahkampf- oder Fernkampfangriffe, je nach gewählter
+									Spezialisierung. Nach einem erfolgreichen Angriffstest im Rahmen einer
+									All-Out-Attacke, eines Called Shots, einer Charge, eines Standardangriffs oder einer
+									Stun-Aktion, verursacht der Charakter einen Malus auf alle Ausweichversuche
+									(Ausweichen oder Abwehren) gegen diesen Angriff. Der Gegner zieht von seinen
+									Erfolgsgraden so viele ab, wie die Gesamtzahl der Erfolgsgrade des Angriffs, jedoch
+									maximal der Waffenfertigkeitsbonus des Charakters für Nahkampf oder der
+									Ballistikfertigkeitsbonus für Fernkampf. Wenn der Gegner auf 0 oder weniger
+									Erfolgsgrade kommt, schlägt der Test mit einem Misserfolg von 1 Grad fehl. Dieses
+									Talent kann nur einmal pro Runde genutzt werden und funktioniert daher nicht bei
+									einem Wirbelangriff, Zweiwaffenführung oder Angriffen als Reaktion.</td>
+							</tr>
+							<tr>
+								<td>Durchdrungenes Wissen</td>
+								<td>Int 40, Wissen (mindestens eines)</td>
+								<td>Der Charakter wurde mit einem umfassenden Wissen ausgestattet, entweder durch
+									strenge noetische Techniken oder geheime arkane Methoden der Bewahrer von
+									Technologie und Wissen. Er gilt als im Besitz aller Allgemeinwissen- und
+									Gelehrtenwissen-Fertigkeiten auf Rang 1 (Bekannt)—er weiß im Grunde etwas über
+									alles. Möchte er später seine Wissensfertigkeiten verbessern, müssen diese wie
+									gewohnt mit Erfahrungspunkten (ab Rang 1) erworben werden. Zudem erhält er einen
+									zusätzlichen Erfolgsgrad bei erfolgreichen Allgemein- oder Gelehrtenwissen-Tests
+									dank seiner umfassenden Schulung.</td>
+							</tr>
+							<tr>
+								<td>Inspirierende Aura</td>
+								<td>Heiliger der Befehlsführer</td>
+								<td>Der Charakter kann mit der Sonderanwendung „Einschüchtern“ der Befehlsfertigkeit
+									(siehe Seite 101 des Grundregelwerks von Dark Heresy) nicht nur Untergebene, sondern
+									alle Verbündeten beeinflussen. Dies muss nicht durch Drohungen oder Einschüchterung
+									geschehen, sondern kann auch inspirierende Worte, Ermutigung oder schiere
+									Standhaftigkeit im Angesicht furchterregender Feinde darstellen.</td>
+							</tr>
+							<tr>
+								<td>Werkzeug Seines Willens</td>
+								<td>WP 50</td>
+								<td>Nach einem erfolgreichen Angriff gegen einen Dämon (einschließlich eines Treffers
+									durch eine psionische Kraft) kann der Charakter einen Schicksalspunkt ausgeben, um
+									den Schaden des ersten Treffers dieses Angriffs um das Doppelte seines
+									Willenskraft-Bonus zu erhöhen. Dieser zusätzliche Schaden ignoriert Rüstung und
+									Zähigkeitsbonus.</td>
+							</tr>
+							<tr>
+								<td>Eiserner Glaube</td>
+								<td>Eiserne Entschlossenheit</td>
+								<td>Der Charakter ist immun gegen die Effekte der Eigenschaft „Verderbliche Präsenz“.
+								</td>
+							</tr>
+							<tr>
+								<td>Eiserne Kiefer</td>
+								<td>T 40</td>
+								<td>Der Charakter hat Schläge von Orks einstecken und ebenso hart zurückschlagen können,
+									ohne bleibende Schäden davon zu tragen. Wird der Charakter betäubt, kann er als
+									freie Aktion einen Herausfordernden (+0) Zähigkeitstest ablegen, um die Effekte zu
+									ignorieren.</td>
+							</tr>
+							<tr>
+								<td>Eiserne Entschlossenheit</td>
+								<td>Resistenz(Furcht), Abgestumpft</td>
+								<td>Nach einem misslungenen Furcht- oder Deckungstest kann der Charakter den Test mit
+									einem Malus von –10 erneut würfeln.</td>
+							</tr>
+							<tr>
+								<td>Abgestumpft</td>
+								<td>WP 40</td>
+								<td>Die weiten Reisen des Entdeckers haben ihm Wunder und Schrecken jenseits des
+									Verständnisses der meisten Menschen gezeigt. Die Galaxis hat ihm das Schlimmste
+									zugemutet, doch er zuckt nicht zusammen. Alltägliche Ereignisse, von grausamen
+									Massenmorden bis hin zu unvorstellbarem Foltern, zwingen ihn nicht dazu,
+									Wahnsinnspunkte zu erlangen oder Angsttests abzulegen. Er ignoriert die
+									Angstwertzahl von Xenosbestien; „normale“ Xenos werden jedoch als eine Stufe
+									niedriger behandelt (bei einem Angstwert (0) ignoriert der Entdecker den Angstwert).
+									Die Exposition gegenüber bestimmten Szenarien kann sogar dazu führen, dass der
+									Entdecker künftige solche Prüfungen vermeiden kann, da seine psychologischen
+									Barrieren nun auf das Kommende vorbereitet sind. Was als alltäglich gilt, liegt im
+									Ermessen des Spielleiters.</td>
+							</tr>
+							<tr>
+								<td>Scharfsinn</td>
+								<td>Int 35</td>
+								<td>Der Charakter ist darin geübt, Dinge zu bemerken, die unpassend oder verborgen
+									erscheinen. Dies erlaubt ihm, selbst kleinste Unregelmäßigkeiten aufzudecken und die
+									Häresie unter der Oberfläche zu enthüllen. Nach einem misslungenen
+									Aufmerksamkeitstest kann der Charakter den Test mit einem Malus von –10 erneut
+									würfeln.</td>
+							</tr>
+							<tr>
+								<td>Tödlicher Schlag</td>
+								<td>WS 50</td>
+								<td>Zu Beginn jeder Runde kann der Charakter einen Schicksalspunkt ausgeben, um einen
+									seiner Nahkampf-Standardangriffe für die Ausweich- und Abwehrfertigkeiten
+									unvermeidlich zu machen. Der Angriff muss vor dem Würfeln ausgewählt werden. Wenn
+									Zweiwaffenführung verwendet wird, muss auch die Waffe vor dem Würfeln gewählt
+									werden. Andere Mittel, um Angriffe zu vermeiden oder abzuwehren (wie Displacerfelder
+									oder fremde Schutzvorrichtungen), sind davon unberührt.</td>
+							</tr>
+							<tr>
+								<td>Aufspringen</td>
+								<td>Ag 30</td>
+								<td>Eine Kombination aus athletischer Fähigkeit und Geschwindigkeit ermöglicht es dem
+									Charakter, unter nahezu allen Umständen aufzuspringen. Er kann als freie Aktion
+									aufstehen.</td>
+							</tr>
+							<tr>
+								<td>Ausweichsprung</td>
+								<td>Ag 35, Rang 2 in Ausweichen</td>
+								<td>Der Charakter ist geübt darin, Waffen zu entkommen, die flächendeckenden Schaden
+									verursachen, von Flammenwerfern bis zu seltsamen Xenos-Geräten. Wenn er einen
+									Beweglichkeitstest ablegen müsste, um Angriffen von Waffen mit der Eigenschaft
+									„Spray“ auszuweichen, kann er stattdessen seine Fertigkeit „Ausweichen (Ag)“
+									verwenden.</td>
+							</tr>
+							<tr>
+								<td>Lexograf</td>
+								<td>Rang 3 in Linguistik (beliebig)</td>
+								<td>From years poring over dusty tomes and examining ancient ruins on forgotten
+									worlds—and perhaps even speaking face-toface with inhuman beings—the Acolyte has
+									become an expert in deciphering lost human languages as well as those of xenos.The
+									character can attempt any Linguistics skill in which he is not trained as an
+									untrained skill test as if it were not a Specialist skill.</td>
+							</tr>
+							<tr>
+								<td>Leichter Schlaf</td>
+								<td>Per 30</td>
+								<td>Schon die kleinste Veränderung der Bedingungen oder Störung bringt den Charakter aus
+									dem Schlaf zu voller Wachsamkeit und lässt ihn selbst im Schlaf aufmerksam bleiben.
+									Er gilt immer als wach, auch wenn er schläft, für Wahrnehmungsproben oder
+									Überraschung. Leider ist der Schlaf des Charakters nicht tief und kann häufig
+									gestört werden, was zu einer weniger fröhlichen Stimmung beim Aufwachen führt.</td>
+							</tr>
+							<tr>
+								<td>Blitzschneller Angriff</td>
+								<td>Schneller Angriff</td>
+								<td>Durch jahrelanges Studium staubiger Folianten, die Untersuchung antiker Ruinen auf
+									vergessenen Welten und vielleicht sogar Gespräche mit nichtmenschlichen Wesen hat
+									der Charakter eine Expertise im Entschlüsseln verlorener menschlicher und
+									Xenos-Sprachen entwickelt.Er kann jede Sprachkunde-Fertigkeit, in der er nicht
+									geschult ist, als untrainierten Fertigkeitstest behandeln, als wäre es keine
+									Spezialfertigkeit.</td>
+							</tr>
+							<tr>
+								<td>Luminen-Schockstoß</td>
+								<td>Luminen-Schock, Luminen-Kondensatoren, Mechanicus-Implantate</td>
+								<td>Die in den Luminen-Kondensatoren des Charakters gespeicherte Energie kann in einem
+									Fernkampfangriff abgegeben werden. Der Charakter gilt immer als mit einer Pistole
+									mit einer Reichweite von 10 m ausgerüstet. Diese kann nur im Einzelmodus verwendet
+									werden und verursacht 1W10 plus das Doppelte seines Willenskraft-Bonus an
+									Energieschaden mit Pen 0 und der Eigenschaft „Schockierend“. Der Charakter gilt
+									immer als im Umgang mit dieser Waffe geübt, und nach einem Angriff muss er einen
+									Zähigkeitstest bestehen oder 1 Stufe Erschöpfung erleiden.</td>
+							</tr>
+							<tr>
+								<td>Luminen Shock</td>
+								<td>Luminen-Kondensatoren, Mechanicus-Implantate</td>
+								<td>Die in den Luminen-Kondensatoren des Charakters gespeicherte Energie kann durch
+									Berührung eines Feindes freigesetzt werden. Der Charakter gilt immer als mit einer
+									Nahkampfwaffe ausgerüstet, die 1W10 plus seinen Willenskraft-Bonus an Energieschaden
+									mit Pen 0 und der Eigenschaft „Schockierend“ verursacht. Er gilt immer als im Umgang
+									mit dieser Waffe geübt, und nach einem Angriff muss er einen Zähigkeitstest bestehen
+									oder 1 Stufe Erschöpfung erleiden.</td>
+							</tr>
+							<tr>
+								<td>Maglev-Transzendenz</td>
+								<td>Maglev-Spulen, Mechanicus-Implantate</td>
+								<td>Der Charakter hat gelernt, seine implantierten Maglev-Spulen effektiver zu nutzen,
+									und kann für eine Anzahl von Minuten schweben, die 1W10 plus das Doppelte seines
+									Zähigkeitsbonus beträgt. Er kann seine Laufgeschwindigkeit bei einer
+									Halbe-Bewegung-Aktion erreichen und erleidet keinen Fallschaden, wenn die Spulen
+									aktiv sind. Jede Nutzung verbraucht die Hälfte der gespeicherten Energie in den
+									Spulen, wodurch sie zweimal verwendet werden können, bevor sie wieder aufgeladen
+									werden müssen.</td>
+							</tr>
+							<tr>
+								<td>Meisterschütze</td>
+								<td>BS 35</td>
+								<td>Die ruhige Hand und das scharfe Auge des Charakters ermöglichen es ihm, das
+									Zielvisier auf jedem Ziel stabil zu halten, unabhängig von der Entfernung. Er
+									erleidet keine Abzüge auf Ballistikfertigkeitstests bei großer oder extremer
+									Reichweite.</td>
+							</tr>
+							<tr>
+								<td>Meisterchirurg</td>
+								<td>Medicae Rang 2</td>
+								<td>Der Charakter erhält einen Bonus von +10 auf alle Medicae-Fertigkeiten. Wenn der
+									Charakter bei der Durchführung einer erweiterten Pflege einen Medicae-Test
+									fehlschlägt, reduziert er den Schaden, den seine Patienten aufgrund seines Fehlers
+									erleiden, um einen Betrag, der seinem Intelligenzbonus entspricht. Wenn der Patient
+									Gefahr läuft, ein Gliedmaß durch einen kritischen Treffer zu verlieren, gewährt der
+									Charakter dem Patienten einen Bonus von +20 auf den Zähigkeitstest, um den Verlust
+									des Gliedes zu verhindern.</td>
+							</tr>
+							<tr>
+								<td>Meisterschaft*</td>
+								<td>Rang 4 in der gewählten Fertigkeit</td>
+								<td>Der Charakter hat eine einzelne Fertigkeit perfektioniert. Er kann einen
+									Schicksalspunkt ausgeben, um einen Fertigkeitstest mit der gewählten Fertigkeit
+									automatisch zu bestehen, sofern der endgültige Modifikator des Tests Herausfordernd
+									(+0) oder besser ist. Er erzielt dabei eine Anzahl an Erfolgsgraden, die dem
+									Eigenschaftsbonus der mit der Fertigkeit verbundenen Eigenschaft entspricht. Dieses
+									Talent kann mehrfach gewählt werden, jedes Mal für eine andere Fertigkeit.</td>
+							</tr>
+							<tr>
+								<td>Mechadendrit-Nutzung*</td>
+								<td>Mechanicus Implantate</td>
+								<td>Der Charakter ist im Umgang mit einer bestimmten Art von Mechadendriten geschult,
+									ähnlich wie das Talent „Waffenkenntnis“ den Umgang mit Waffen ermöglicht. Obwohl es
+									viele verschiedene Arten von Mechadendriten gibt, teilt dieses Talent sie in zwei
+									Hauptkategorien ein:• Waffen: Mechadendriten dieser Art sind mit Fern- oder
+									Nahkampfwaffen ausgestattet und verfügen über die nötigen Energiequellen und
+									mechanischen Unterstützungen für den Kampf.• Utility: Dazu gehören Typen wie
+									Manipulator-, Medicae-, Utility-, Optik-Mechadendriten und viele andere. Diese
+									benötigen weniger robuste Befestigungen, funktionieren aber alle auf ähnliche Weise.
+								</td>
+							</tr>
+							<tr>
+								<td>Mächtiger Schuss</td>
+								<td>BS 40</td>
+								<td>Der Charakter kennt die Schwachstellen jeder Art von Rüstung und Material und hat
+									das Geschick, seine Schüsse genau dort landen zu lassen, wo sie den größten Schaden
+									anrichten. Er fügt den Schaden, den er mit Fernkampfwaffen verursacht, um die Hälfte
+									seines Ballistikfertigkeitsbonus (aufgerundet) hinzu.</td>
+							</tr>
+							<tr>
+								<td>Nachahmer</td>
+								<td>-</td>
+								<td>Um eine korrekte Imitation durchzuführen, muss der Charakter mindestens eine Stunde
+									lang die Sprachmuster des Zieles studieren und die gleiche Sprache sprechen. Der
+									Charakter kann die Stimme eines Xenos aufgrund physiologischer Unterschiede und der
+									subtilen Komplexität der meisten außerirdischen Sprachen nicht genau nachahmen.
+									Zuhörer müssen einen Scrutiny-Test mit einem Malus von –10 bestehen, um die
+									Täuschung zu durchschauen. Wenn der Charakter für sein Studium Vox-Aufzeichnungen
+									oder Kommunikationsgespräche anstelle von persönlichen Beobachtungen verwendet hat,
+									gibt es keinen Malus auf den Scrutiny-Test, um die Täuschung zu erkennen. Die
+									Täuschung des Charakters scheitert automatisch, wenn der Zuhörer ihn eindeutig sehen
+									kann.</td>
+							</tr>
+							<tr>
+								<td>Reiterkrieger*</td>
+								<td>Rang 2 Fahrzeugführen oder Rang 2 Überleben, BS 30 oder WS 30</td>
+								<td>Durch hart erkämpfte Erfahrung im Kampf vom Sattel oder aus einem Fahrzeug hat der
+									Charakter gelernt, sich an die Bewegungen des Gefährts anzupassen und mit ihm zu
+									bewegen, anstatt gegen es zu kämpfen. Beim Erwerb dieses Talents wählt der Charakter
+									die Spezialisierung, die mit dem Attribut und der Fertigkeit übereinstimmt, die für
+									den Erwerb erforderlich sind. Für jede erlernte Spezialisierung reduziert er jeden
+									Malus für Angriffe (Nahkampf oder Fernkampf) aus einem sich bewegenden Fahrzeug oder
+									Reittier um 10. Dies gilt sowohl für gewöhnliche Angriffsaktionen als auch für
+									Fahrzeugkampfangriffe wie „Angriff und Flucht“.</td>
+							</tr>
+							<tr>
+								<td>Unsterblich</td>
+								<td>WP 50, T 50</td>
+								<td>Der Wille des Charakters oder seine Hingabe an den Imperator kann ihn
+									aufrechterhalten, wenn sein sterbliches Fleisch versagt. Er kann einen
+									Schicksalspunkt ausgeben, um die Auswirkungen von Verletzungen (wie z. B. Kritischen
+									Schäden), Erschöpfung und Betäubung für einen einzelnen Kampf zu ignorieren, solange
+									sie ihn nicht sofort töten würden. Dieses Talent verhindert den Schaden nicht, lässt
+									ihn jedoch die Auswirkungen vorübergehend ignorieren, bis der Kampf endet. Nach dem
+									Ende der Begegnung wirken die Effekte wie gewohnt.</td>
+							</tr>
+							<tr>
+								<td>Nirgends Verstecken</td>
+								<td>Per 30</td>
+								<td>Das scharfe Auge des Charakters ermöglicht es ihm, selbst in der robustesten Deckung
+									Schwachstellen zu erkennen. Wenn er Deckung beschädigt (siehe Seite 229), fügt der
+									Charakter die Erfolgsgrade seines Angriffs zur Reduzierung des Rüstungswerts der
+									Deckung hinzu. Verwendet er eine Waffe, die keinen Fertigkeitstest erfordert, fügt
+									er stattdessen 1 hinzu.</td>
+							</tr>
+							<tr>
+								<td>Eins-gegen-Eins</td>
+								<td>WS 40</td>
+								<td>Wenn der Charakter in einem Nahkampf gegen einen einzelnen Gegner kämpft (d. h.
+									keine Verbündeten oder anderen Feinde sind im Kampf und keiner der Kämpfer war im
+									letzten Zug Ziel eines Fernangriffs), erzielt der Charakter zusätzliche Erfolgsgrade
+									bei erfolgreichen Waffenfertigkeitstests, die der Hälfte seines
+									Waffenfertigkeitsbonus (abgerundet) entsprechen.</td>
+							</tr>
+							<tr>
+								<td>Verbündeter*</td>
+								<td>Fel 30</td>
+								<td>Der Charakter weiß, wie er mit einer bestimmten sozialen Gruppe, Organisation oder
+									sogar einer Xenos-Rasse umgehen muss. Er erhält einen Bonus von +10 auf alle
+									Charisma- und Einfluss-Tests, wenn er mit dieser gewählten Gruppe interagiert, und
+									kann mit der Zustimmung des Spielleiters gelegentlich um Gefälligkeiten bitten. Der
+									Spielleiter und der Spieler können sich darauf einigen, dieses Talent je nach
+									Abenteuer oder Kampagne zu gewähren, wobei der Charakter die normalen
+									Erfahrungskosten für das Talent zahlen muss. Dieses Talent kann mehrmals für
+									dieselbe Gruppe vergeben werden, wobei es dann als Verbündeter (X) aufgelistet wird,
+									wobei X die Anzahl der vergebenen Talent-Punkte angibt. Dies kann verwendet werden,
+									um Gruppen darzustellen, die den Charakter besonders mögen und vielleicht sogar
+									treue Verbündete sind. In Spielbegriffszahlen steigt der Bonus auf Charisma-Tests
+									auf +10 mal X. Außerdem wird der Einfluss des Charakters bei Erwerb dieses Talents
+									um 1 erhöht.</td>
+							</tr>
+							<tr>
+								<td>Bußfertiger Psyker</td>
+								<td>Psy-Wertung, Starker Wille, WP 40</td>
+								<td>Psyker sind im Imperium gehasst und gemieden, selbst jene, die dem Imperator dienen,
+									kämpfen oft mit ihrem Fluch. Ob als verstoßener Psyker unter dem Schutz eines
+									Inquisitors oder als sanktionierter Psyker, dessen Glaube seine Fähigkeiten
+									verurteilt, entwickelt solch ein Individuum die Fähigkeit, als eine Art psionischer
+									Blitzableiter zu fungieren, indem er seinen eigenen Körper opfert, um seine
+									Verbündeten vor den Warp-gebundenen Kräften des Hexers und Wahnsinnigen zu
+									schützen.Wenn der Psyker oder ein Verbündeter innerhalb von 10 Metern das Ziel einer
+									psionischen Macht wird, kann der Psyker freiwillig beliebig viele Stufen Erschöpfung
+									erleiden. Jede Stufe der Erschöpfung gewährt dem Ziel einen +10 Bonus auf einen
+									entgegengesetzten Test, um die Macht zu widerstehen oder einen Ausweichtest, um den
+									Effekt zu vermeiden. Wenn das Ergebnis des Tests des Ziels zum Widerstand oder zur
+									Vermeidung der Macht eine Doppelzahl ist, erzeugt der Psyker Psionische Phänomene,
+									als ob er die Aktion „Fokussieren der Macht“ verwendet hätte.</td>
+							</tr>
+							<tr>
+								<td>Präzisionskiller*</td>
+								<td>BS 40 oder WS 40</td>
+								<td>Das Auge, die Hand und die Waffe des Charakters arbeiten nahtlos zusammen, um seine
+									Angriffe genau dorthin zu platzieren, wo er es beabsichtigt. Wenn dieses Talent
+									erworben wird, wählt der Charakter die Spezialisierung, die mit der Charakteristik
+									und den Fertigkeiten (Ballistikfertigkeit oder Waffenfertigkeit) übereinstimmt, die
+									für den Erwerb erforderlich sind. Bei einem gezielten Schuss (siehe Seite 219) mit
+									einem Nahkampf- oder Fernangriff (je nach Spezialisierung) erleidet er den üblichen
+									Malus von –20 nicht.</td>
+							</tr>
+							<tr>
+								<td>Übernatürliche Geschwindigkeit</td>
+								<td>WS 40, Ag 50</td>
+								<td>Der Charakter ist ein schnell bewegender Todesbringer, eine lebende, blutige Sense,
+									vor der Feinde fallen wie Korn vor dem Sensenmann. Bei einer Angriffsbewegung
+									verdoppelt er seine normale Bewegungsreichweite im Angriff (wenn er beispielsweise
+									einen Beweglichkeitsbonus von 3 hat und seine normale Angriffsbewegung 9 Meter
+									beträgt, wird sie mit diesem Talent auf 18 Meter verdoppelt).</td>
+							</tr>
+							<tr>
+								<td>Prosanguine</td>
+								<td>Autosanguine-Implantate, Mechanicus-Implantate</td>
+								<td>Durch den eisernen Willen des Charakters kann er die Funktion seines
+									Autosanguinators beschleunigen. Er muss 10 Minuten in Meditation verbringen und
+									einen Tech-Use-Test ablegen. Bei Erfolg entfernt er 1d5 Schadenspunkte. Wenn er eine
+									96 oder höher würfelt, verliert er die Fähigkeit, seinen Autosanguinator für eine
+									Woche zu verwenden.</td>
+							</tr>
+							<tr>
+								<td>Reiner Hass*</td>
+								<td>Hass (Any)</td>
+								<td>Der Charakter hat seinen Hass zu einer scharfen Waffe geschliffen, rein und
+									ungetrübt von Mitleid oder Zweifel. Wenn er dem Objekt seines Hasses gegenübersteht,
+									sei es der Hexer, Mutant, Häretiker oder Verräter, ist der Charakter ein Instrument
+									des Willens des Imperators, das Urteil über die Feinde der Menschheit zu
+									vollstrecken, als ob seine Hand selbst geführt wäre.Bei der Auswahl dieses Talents
+									wählt der Charakter eine bestimmte Gruppe, für die er das Talent „Hass“ besitzt.
+									Gegen Gegner dieser Gruppe erhalten die Angriffe des Charakters die Eigenschaft
+									„Rachsüchtig (9)“. Besitzt die Waffe des Charakters oder seine Angriffe bereits
+									diese Eigenschaft, verringert sich der Wert um 1 (auf mindestens 1).</td>
+							</tr>
+							<tr>
+								<td>Grenzen überschreiten</td>
+								<td>Rang 2 in Überleben oder eine Fahrzeugführung-Fertigkeit, Tech-Use</td>
+								<td>Durch Studium, Übung oder reiner Intuition ist der Charakter sich der Grenzen seines
+									Fahrzeugs oder seiner Reittiere bewusst und weiß, wie er diese bis zum Äußersten
+									ausreizen kann. Obwohl das Überlasten eines Tieres oder das Ausführen von extremen
+									Wendungen einen großen Vorteil im Kampf oder bei der Verfolgung verschaffen kann,
+									kann ein einziger falscher Schritt katastrophale Folgen haben, den Piloten verletzen
+									oder das Fahrzeug auseinanderreißen.Einmal pro Runde kann der Charakter +20 zu einem
+									Fahrzeugfü-Test (oder Überlebenstest im Fall eines lebenden Reittiers) hinzufügen;
+									wenn der Test jedoch um 4 oder mehr Fehlgrade fehlschlägt, würfelt der Charakter 1W5
+									auf Tabelle 7–32: Kritische Treffer-Effekte für Motorkraft auf Seite 257 des Dark
+									Heresy Core Rulebooks und wendet das Ergebnis an. Falls er ein lebendes Reittier
+									reitet, würfelt er 1W5 auf Tabelle 7–18: Kritische Auswirkungen – Beine auf Seite
+									239 des Dark Heresy Core Rulebooks und wendet das Ergebnis an.</td>
+							</tr>
+							<tr>
+								<td>Schnellziehen</td>
+								<td>-</td>
+								<td>Der Charakter hat so oft mit seinen Waffen geübt, dass sie praktisch auf einen
+									einfachen Gedanken hin in seine Hände springen. Als freie Aktion kann der Charakter
+									eine Pistole oder eine Basiswaffe oder eine einhändige Nahkampfwaffe ziehen und
+									bereithalten.</td>
+							</tr>
+							<tr>
+								<td>Strahlende Präsenz</td>
+								<td>-</td>
+								<td>Jeder innerhalb von 20 Metern, der den Charakter sehen kann, fühlt sich allein durch
+									seine Nähe inspiriert und erträgt die Auswirkungen von Dingen, die sie normalerweise
+									beunruhigen würden, besser. Die Betroffenen erhalten +10 auf Willenskraft-Tests, um
+									gegen Angst, Fixierung oder Einschüchterungsversuche Widerstand zu leisten. Diese
+									Fähigkeit betrifft alle Verbündeten in der Nähe des Charakters, jedoch nicht den
+									Charakter selbst.</td>
+							</tr>
+							<tr>
+								<td>Schnelle Reaktion</td>
+								<td>Ag 30</td>
+								<td>Bei Überraschung oder einem Hinterhalt ermöglicht ein erfolgreicher Agilitätstest
+									dem Charakter, normal zu handeln.</td>
+							</tr>
+							<tr>
+								<td>Schnell Nachladen</td>
+								<td>-</td>
+								<td>Die Schießstände und Waffenkammern sind der ständige Aufenthaltsort des Charakters.
+									Stunden des Nachladens unzähliger Magazine oder Energiezellen haben ihn darin
+									geschult, diese ohne Hinsehen und ohne Nachdenken zu ersetzen, selbst mitten im
+									Kampf. Er halbiert alle Nachladezeiten, abgerundet. Eine halbe Aktion zum Nachladen
+									wird so zu einer freien Aktion, eine volle Aktion zum Nachladen wird zu einer halben
+									Aktion usw.</td>
+							</tr>
+							<tr>
+								<td>Resistenz*</td>
+								<td>-</td>
+								<td>Der Hintergrund, die Erfahrung, das Training, die Exposition oder einfach der
+									Starrsinn des Charakters haben eine Widerstandskraft in ihm entwickelt. Jedes Mal,
+									wenn er dieses Talent auswählt, wählt er einen Widerstandsbereich. Er erhält einen
+									+10 Bonus bei Tests, um die Auswirkungen dieses Typs zu widerstehen. Der Spielleiter
+									kann für bestimmte Wahlmöglichkeiten eine Genehmigung oder eine Begründung basierend
+									auf der Vergangenheit des Charakters verlangen.</td>
+							</tr>
+							<tr>
+								<td>Rituale der Verbannung</td>
+								<td>Allgemeinwissen (Imperialer Glaube) +10 oder Verbotenes Wissen (Daemonologie)</td>
+								<td>Einmal pro Runde als halbe Aktion kann der Charakter die Litaneien und Invokationen
+									sprechen, um Daemons zu stören. Bis zum Beginn seines nächsten Zuges erleiden
+									Daemons innerhalb einer Entfernung, die dem doppelten Willensbonus des Charakters in
+									Metern entspricht, einen –10 Malus auf Willpower-Tests.</td>
+							</tr>
+							<tr>
+								<td>Heilige Reinheit</td>
+								<td>Daemonologe, Vom Warp begünstigt, WP 50</td>
+								<td>Wenn der Charakter bei der Manifestation einer Macht aus der Sanctic Daemonologie
+									Disziplin Psionische Phänomene auslöst, kann er einen Schicksalspunkt ausgeben, um
+									das Ergebnis vollständig zu negieren.</td>
+							</tr>
+							<tr>
+								<td>Schildmauer</td>
+								<td>Beidhändigkeit, WS 40</td>
+								<td>Wenn der Charakter mit einem Schild bewaffnet ist, kann er einmal pro Runde einen
+									fehlgeschlagenen Ausweichtest zum Parieren eines Angriffs erneut würfeln.</td>
+							</tr>
+							<tr>
+								<td>Geschickter Fahrer</td>
+								<td>Rang 2 in einer Fahrzeugführung-Fertigkeit</td>
+								<td>Oft ist die beste Art, dem Häretiker zu begegnen, gnadenlose Geschwindigkeit, und
+									viele Charaktere setzen Fahrzeuge und Reittiere intensiv ein, um die Feinde der
+									Menschheit zu verfolgen. Ob der Charakter sein geschätztes Bike so gut beherrscht,
+									dass es sich wie eine Verlängerung seines eigenen Körpers anfühlt, oder die
+									notwendige Erfahrung besitzt, um sich sofort an die ungewöhnlichen Reittiere und
+									Fahrzeuge im Askellon-Sektor anzupassen, das Wechseln vom Sattel oder Fahrersitz ist
+									für ihn zweiter Natur.Wann immer der Charakter aus seinem Fahrzeug geworfen wird
+									oder darin hin- und hergeschleudert wird, legt er einen normalen (+10)
+									Beweglichkeitstest ab. Bei Erfolg kann der Charakter entscheiden, entweder sicher
+									auf seinen Füßen zu landen oder seine ursprüngliche Position im Fahrzeug zu
+									behalten. Zusätzlich kann der Charakter einmal pro Runde einen normalen (+10)
+									Beweglichkeitstest ablegen, um ein Fahrzeug als freie Aktion zu besteigen oder
+									abzusteigen.</td>
+							</tr>
+							<tr>
+								<td>Solide Konstitution</td>
+								<td>-</td>
+								<td>Der Charakter erhält eine zusätzliche Verwundung. Er kann dieses Talent bis zu
+									zweimal seines Zähigkeitsbonus zusätzlich kaufen. Wenn er dieses Talent mehrfach
+									erwirbt, notiere die Anzahl der Male, die es genommen wurde, nach dem Talent, wie
+									zum Beispiel Solide Konstitution (3).</td>
+							</tr>
+							<tr>
+								<td>Sprinten</td>
+								<td>-</td>
+								<td>Der Charakter bewegt sich mit großer Geschwindigkeit und kann bei einer vollen
+									Bewegungsaktion eine zusätzliche Anzahl an Metern zurücklegen, die seinem
+									Beweglichkeitsbonus entspricht. Außerdem kann er bei einer Laufaktion die doppelte
+									Entfernung zurücklegen. Hat er dies in der vorherigen Runde getan, erleidet er
+									jedoch 1 Punkt Ermüdung.</td>
+							</tr>
+							<tr>
+								<td>Ausweichen</td>
+								<td>Agilität 40, Ausweichen oder Parieren</td>
+								<td>Indem der Charakter seinen Körper aus dem Angriffspfad bewegt, lässt er den Schuss
+									durch die Luft sausen oder dreht seine Klinge im Schwung, um einen Schlag
+									abzulenken. Er kann einmal pro Runde einen zusätzlichen Ausweichversuch (entweder
+									Ausweichen oder Parieren) machen. Dies gewährt ihm eine zweite Reaktion, die nur für
+									Ausweichen oder Parieren verwendet werden kann, sodass er pro Runde zwei
+									Ausweichversuche, zwei Parierversuche oder einen Ausweich- und einen Parierversuch
+									durchführen kann. Er kann jedoch immer nur einen Ausweich- oder Parierversuch gegen
+									einen einzelnen Angriff machen.</td>
+							</tr>
+							<tr>
+								<td>Straßenkampf</td>
+								<td>WS 30</td>
+								<td>Fügt bei Angriffen mit Messern oder bloßen Händen halb seinen Waffenfertigkeitsbonus
+									zum kritischen Schaden hinzu.</td>
+							</tr>
+							<tr>
+								<td>Starker Wille</td>
+								<td>WP 30, Resistenz(Psychische Kräfte)</td>
+								<td>Der Charakter hat einen starken Geist, der gegen psychische Angriffe wie eine
+									Festung wirkt. Er kann fehlgeschlagene Willenskrafttests zum Widerstand gegen
+									psychische Kräfte, die seinen Geist beeinflussen, erneut würfeln. Dieses Talent
+									wirkt sich jedoch nicht auf psychische Kräfte aus, die eine physische Wirkung haben,
+									wie z.B. "Smite" oder "Assail".</td>
+							</tr>
+							<tr>
+								<td>Überlegener Chirurg</td>
+								<td>Rang 2 in Medicae</td>
+								<td>Durch seine fortgeschrittene medizinische Ausbildung kann der Charakter Wunden
+									geschickt behandeln, was für die Behandlung von Kampfschäden unerlässlich ist. Seine
+									außergewöhnliche Ausbildung im Umgang mit Narthecium, Med-Slate und unterstützenden
+									Medikamenten verschafft seinen Patienten einen enormen Vorteil. Er erhält einen +20
+									Bonus auf alle Medicae-Tests. Bei der Ersten Hilfe ignoriert er die Strafen für
+									schwer beschädigte Patienten und erleidet nur eine –10 Strafe bei Patienten mit
+									Kritischen Schäden.</td>
+							</tr>
+							<tr>
+								<td>Schneller Angriff</td>
+								<td>WS 30</td>
+								<td>Die Fähigkeit des Charakters mit Waffen ist legendär, was ihm erlaubt, in Nahkampf
+									mit außergewöhnlicher Geschwindigkeit anzugreifen. Er kann die Aktion "Schneller
+									Angriff" durchführen</td>
+							</tr>
+							<tr>
+								<td>Verfluchter Psyker</td>
+								<td>Psy-Rating, Rang 2 in Psyniscience, 10 Korruptionspunkte</td>
+								<td>Obwohl alle Psyker ihre Macht aus dem Warp schöpfen, lehrt die Scholastica Psykana,
+									dass der Warp etwas ist, vor dem man Angst haben sollte. Einige Psyker ignorieren
+									diese Warnungen, sei es, weil sie als Wyrds den Schwarzen Schiffen entkommen sind,
+									als Gelehrte des unheiligen Wissens oder sogar als sanctionierte Psyker, die vom Weg
+									abgekommen sind. Diese verfluchten Psyker umarmen das wahre Potenzial, das der Warp
+									bietet, und hören sogar auf die geflüsterten Versprechungen der Wesen des Warp nach
+									größerer Macht.Bei einem Fokus-Power-Test kann der Charakter eine Anzahl an
+									Korruptionspunkten bis zu seinem Psy-Rating erhalten. Für jeden Punkt, den er auf
+									diese Weise erhält, bekommt er einen +10 Bonus auf den Fokus-Test, fügt jedoch +5 zu
+									den Würfen auf Psionische Phänomene</td>
+							</tr>
+							<tr>
+								<td>Niederschlagen</td>
+								<td>-</td>
+								<td>Bei einer Standard-Angriffs- oder Sturm-Aktion kann der Charakter erklären, dass er
+									versucht, sein Ziel zu Boden zu bringen. Er würfelt wie gewohnt, um zu treffen
+									(unter Verwendung seiner Waffenfertigkeit), wobei alle regulären Modifikatoren für
+									die Angriffsaktion angewendet werden. Wenn der Charakter trifft und mindestens 1
+									Punkt Schaden verursachen würde (nach Reduktion durch Rüstung und Zähigkeit), werden
+									keine Verwundungen verursacht. Stattdessen muss der Gegner einen herausfordernden
+									(+0) Zähigkeitstest ablegen oder wird für 1 Runde betäubt und zu Boden geworfen.
+									Außerdem leidet der Charakter bei der Durchführung einer Betäubungs-Aktion nicht
+									unter der normalen –20 Strafe auf seine Waffenfertigkeit.</td>
+							</tr>
+							<tr>
+								<td>Zielauswahl</td>
+								<td>BS 50</td>
+								<td>Der erschreckende Blick des Charakters markiert sein gewähltes Opfer, und selbst das
+									chaotische Durcheinander im Nahkampf kann ihn nicht stören. Er kann ohne Strafe in
+									den Nahkampf schießen. Wenn er außerdem eine Zielen-Aktion vorher ausführt,
+									verhindert er, dass er versehentlich freundliche Ziele trifft.</td>
+							</tr>
+							<tr>
+								<td>Technischer Schlag</td>
+								<td>Int 30</td>
+								<td>Durch langjährige Übung oder das richtige Ritual, um den Maschinengeist einer Waffe
+									zu besänftigen, kann der Charakter Blockaden mit einem einfachen Schlag oder Klopfen
+									auf die Waffe beseitigen. Einmal pro Runde kann er versuchen, eine Waffe als Halbe
+									Aktion zu entjammern, anstatt eine Volle Aktion zu verwenden. Er muss die Waffe
+									berühren, um dieses Talent zu nutzen.</td>
+							</tr>
+							<tr>
+								<td>Donnernder Angriff</td>
+								<td>S 50</td>
+								<td>Der Charakter stürmt in den Nahkampf und nutzt seinen Körper als zusätzliche Waffe.
+									Getrieben von Wut und Schwung kann der Aufprall eines solchen Angriffs Feinde durch
+									die Luft schleudern oder sie zu Boden zwingen. Wenn er eine Sturm-Aktion ausführt,
+									kann er durch Feinde hindurch stürmen, um sein Ziel zu erreichen. Der Charakter
+									führt einen Opponierten Stärke-Test gegen jeden Feind in seinem Weg (jene, an denen
+									seine Bewegung vorbeiführt oder durch die er hindurchgeht). Jeder Feind, der den
+									Opponierten Test verliert, wird zu Boden geworfen. Nach der Auflösung dieser Tests
+									wird die Sturm-Aktion gegen das ursprüngliche Ziel wie gewohnt fortgesetzt.</td>
+							</tr>
+							<tr>
+								<td>Fotografisches Gedächtnis</td>
+								<td>Int 35</td>
+								<td>Bei detaillierteren, komplexeren oder obskuren Fakten, wie zum Beispiel dem genauen
+									Aufbau eines Verteidigungsnetzwerks, kann der GM einen erfolgreichen
+									Intelligenz-Test verlangen, um sich an die Informationen zu erinnern.</td>
+							</tr>
+							<tr>
+								<td>Wahres Durchhaltevermögen</td>
+								<td>T 40</td>
+								<td>Der Charakter kann Wunden abwehren, die schwächere Männer zu Fall bringen würden.
+									Immer wenn er Kritischen Schaden erleidet (nach Reduktion durch Rüstung und
+									Zähigkeit), wird der Schaden um seinen Zähigkeitsbonus reduziert (auf mindestens 1
+									Schaden).</td>
+							</tr>
+							<tr>
+								<td>Zwei-Waffen-Meister*</td>
+								<td>Ag 45, Beidhändigkeit, BS 40 oder WS 40, Zwei-Waffen-Kämpfer (Nahkampf, Fernkampf)
+								</td>
+								<td>Der Charakter hat die schwierige Fähigkeit gemeistert, mit einer Waffe in jeder Hand
+									zu kämpfen, wodurch er sowohl im Nahkampf als auch bei Kurzstreckenangriffen tödlich
+									wird. Wenn er mit zwei einhändigen Waffen (z. B. einer Pistole oder einem Schwert in
+									jeder Hand) bewaffnet ist, ignoriert er die –20 Strafe für den Zwei-Waffen-Kampf
+								</td>
+							</tr>
+							<tr>
+								<td>Zwei-Waffen-Kämpfer*</td>
+								<td>-</td>
+								<td>Durch intensive Ausbildung kann der Charakter mit einer Waffe in jeder Hand kämpfen.
+									Wenn er mit zwei einhändigen Waffen (entweder Nahkampf- oder Fernkampfwaffen)
+									bewaffnet ist, kann er nach einem Halb-Aktionsangriff (dies kann ein
+									Standardangriff, ein Schnellangriff oder ein Blitzangriff mit einer Nahkampfwaffe
+									oder ein Einzelgeschoss, Halbautomatik- oder Vollautomatik-Feuer mit einer
+									Fernkampfwaffe sein) einen weiteren Halb-Aktionsangriff mit der anderen Waffe als
+									Frei-Aktion durchführen. In der Praxis ermöglicht dies, zweimal pro Runde
+									anzugreifen, einmal mit jeder Waffe. Beide Angriffe zählen als Teil der gleichen
+									Halb-Aktion und beide Angriffstests erleiden eine –20 Strafe.Dieses Talent kann
+									zweimal gewählt werden, jeweils mit einer anderen Spezialisierung (Nahkampf oder
+									Fernkampf). Wenn beide Talente gewählt werden, kann der Charakter mit einer
+									Nahkampf- und einer Fernkampfwaffe kämpfen. Wenn dieses Talent mit
+									Nahkampf-Spezialisierung gewählt wird, gilt es als hätte der Charakter die
+									Fertigkeiten Waffenfertigkeit und Geschicklichkeit, und bei der
+									Fernkampfspezialisierung als hätte er die Fertigkeiten Ballistische Fertigkeit und
+									Geschicklichkeit.</td>
+							</tr>
+							<tr>
+								<td>Unbewaffneter Spezialist</td>
+								<td>Beidhändigkeit, Ag 35, WS 35</td>
+								<td>Nach umfangreichem Training hat der Charakter seinen Körper zu einer gefährlichen
+									Waffe gemacht. Er erhält den Tödliche Natürliche Waffen-Vorteil (siehe Seite 135)
+									und zählt auch dann als bewaffnet, wenn er ohne Waffe gegen bewaffnete Gegner
+									kämpft. Während er unbewaffnet kämpft, darf er den Schaden, den er verursacht,
+									einmal neu würfeln.</td>
+							</tr>
+							<tr>
+								<td>Schrecken des Weltraums</td>
+								<td>Abgestumpft</td>
+								<td>Senkt die Furchtbewertung von Xenos um zwei Stufen; bei 0 oder niedriger ist der
+									Charakter immun.</td>
+							</tr>
+							<tr>
+								<td>Weltraum Taktiker</td>
+								<td>Int 35</td>
+								<td>+10 auf Ballistische Fertigkeitsproben beim Feuern von Raumschiffsgeschützen im
+									Kampf.</td>
+							</tr>
+							<tr>
+								<td>Warp-Kanal</td>
+								<td>Psy-Rating, Starker Wille, WP 50</td>
+								<td>Die immense Kraft des Geistes des Charakters ermöglicht es ihm, gewaltige Mengen an
+									Warp-Energie zu kanalisieren, wenn er es wählt. Beim Pushing (siehe Seite 194) kann
+									der Charakter vor dem Würfeln seines Focus Power-Tests einen Schicksalspunkt
+									ausgeben, um zusätzlich 1d5 zum effektiven Psy-Rating der Macht hinzuzufügen. Das
+									Kanalisieren solch gewaltiger Energiemengen ist jedoch gefährlich, weshalb er bei
+									Würfen auf Psychische Phänomene einen Bonus von +30 erhält.</td>
+							</tr>
+							<tr>
+								<td>Warp-Sperre</td>
+								<td>Psy-Rating, Starker Wille, WP 50</td>
+								<td>Der Charakter hat gelernt, sich schnell vom Warp zu trennen, um sich vor Schaden zu
+									schützen. Einmal pro Spielsitzung kann er ein Psychischen Phänomen das er gewürfelt
+									hat vollständig ignorieren und seine Auswirkungen negieren. Diese schnelle Trennung
+									vom Warp ist jedoch stressig und traumatisch für seinen Geist. Er erleidet 1d5
+									Energieschaden am Kopf (nicht reduziert durch Rüstung oder Zähigkeit) und kann bis
+									zu Beginn seines nächsten Zuges keine Focus Power-Tests ablegen oder andere
+									psychische Kräfte aufrechterhalten.</td>
+							</tr>
+							<tr>
+								<td>Warp-Sinn</td>
+								<td>Psy-Rating, Psyniscience, Wahrnehmung 30</td>
+								<td>Die Sinne des Charakters haben sich so entwickelt, dass er den Warp parallel zur
+									physischen Welt wahrnimmt. Der Charakter kann die Psyniscience-Fertigkeit als Freie
+									Aktion anstatt als Halbe Aktion einsetzen. Er kann auch passiv psychische Effekte
+									und Wesen erkennen, ohne aktiv nach ihnen suchen zu müssen. Wann immer der Charakter
+									ein solches Warp-Signal oder ein Wesen wahrnehmen könnte, kann der GM ihm erlauben,
+									einen Psyniscience-Fertigkeitstest abzulegen, um es zu erkennen, ähnlich wie er
+									Wahrnehmung nutzen könnte, um einen Hinterhalt zu entdecken, ohne zu wissen, dass er
+									dort ist.</td>
+							</tr>
+							<tr>
+								<td>Waffenintuition</td>
+								<td>Exotische Waffenkenntnis (beliebig)</td>
+								<td>Im Einsatz gegen das Xenos führt der Charakter die seltsamsten und seltensten Waffen
+									des Adeptus Mechanicus, und vielleicht sogar die Waffen der Xenos selbst, um diese
+									besser zu bekämpfen. Durch jahrelange Erfahrung kann der Charakter die
+									Abzugsmechanismen und das Gleichgewicht selbst der ungewöhnlichsten Waffen schnell
+									erkennen, unabhängig von ihrer Herkunft. Der Charakter verringert die Strafe für den
+									Einsatz einer Waffe ohne die richtige Ausbildung um 10.</td>
+							</tr>
+							<tr>
+								<td>Waffentraining</td>
+								<td>-</td>
+								<td>Der Charakter kann alle Waffen aus der Gruppe, die er mit diesem Talent gewählt hat,
+									verwenden. Wenn ein Charakter versucht, eine Waffe zu benutzen, für die er das
+									passende Waffentraining nicht besitzt, erleidet er eine Strafe von -20 auf alle
+									relevanten Waffenfertigkeits- oder Ballistische Fertigkeitstests. Der Charakter kann
+									Waffen der Klasse: Schwer nur ohne diese Strafe verwenden, wenn er sowohl das
+									passende Waffentraining für die Gruppe als auch Waffentraining (Schwer) besitzt.
+									Dieses Talent kann mehrmals gewählt werden, jeweils mit einer anderen
+									Spezialisierung. Beachte, dass ein Charakter ohne das Talent „Waffentraining
+									(Low-Tech)“, der eine Waffe bedient, die in bestimmten Umständen als Low-Tech-Waffe
+									gilt, diese Strafe nicht erleidet, solange er das entsprechende Waffentraining für
+									die Waffe besitzt (z.B. „Power“ für ein Energieschwert).</td>
+							</tr>
+							<tr>
+								<td>Waffen-Technik</td>
+								<td>Technologie-Nutzung Rang 2, Int 40</td>
+								<td>Der Charakter ruft den Segen des Omnissiah an, kanalisiert seinen Glauben in seine
+									Waffe und führt Rüstungsrituale durch, um seine Feinde schneller zu besiegen. Einmal
+									pro Kampfrunde kann dieser Charakter als freie Aktion jede von ihm persönlich
+									geführte Melta-, Plasma-, Power- oder Exotenwaffe verstärken. Dies erhöht den
+									Schaden und die Durchdringung der Waffe um einen Betrag, der dem Intelligenzbonus
+									des Charakters entspricht, bis zum Ende der Runde.</td>
+							</tr>
+							<tr>
+								<td>Wirbelwind des Todes</td>
+								<td>WS 40</td>
+								<td>Wenn der Charakter massierte Gegner im Nahkampf konfrontiert, wird er zu einer Serie
+									von Schlägen, bewegt sich, hackt, zerschmettert und köpft seine Feinde mit
+									unaufhörlicher Wut. Als halbe Aktion kann der Charakter eine Standard-Angriffsaktion
+									mit einer Nahkampfwaffe gegen einen Gegner ausführen und zusätzlich eine weitere
+									Standard-Angriffsaktion gegen jeden weiteren Gegner, der ebenfalls im Nahkampf mit
+									dem Charakter engagiert ist (bis zu einer maximalen Anzahl von Angriffen, die seinem
+									Waffenfertigkeitsbonus entspricht).</td>
+							</tr>
+							<tr>
+								<td>Hexenjäger</td>
+								<td>Rang 2 in Verbotenen Wissen (Psyker), WP 45</td>
+								<td>Um Hexer, Wyrds und Zauberer aufzuspüren, muss ein Inquisitor oder Akoluth in der
+									Lage sein, die Zeichen und Spuren eines Psykers zu erkennen und zu verfolgen. Einige
+									sind selbst Psyker oder nutzen die Dienste solcher, andere schulen ihre eigenen
+									Sinne und ihren Verstand, um selbst die subtilsten Spuren psychischer Aktivität zu
+									entdecken. Der Charakter zählt als besitzend des Psyniscience-Fertigkeit auf Rang 1
+									(Bekannt), obwohl er kein Psyker ist. Beachte, dass er keine Erfahrungspunkte
+									ausgeben kann, um zusätzliche Ränge in dieser Fertigkeit zu erwerben.</td>
+							</tr>
+							<tr>
+								<td>Xenokundiger</td>
+								<td>Rang 3 in Verbotenem Wissen (Xenos–beliebig)</td>
+								<td>Im Studium und in der Bekämpfung der xenos Bedrohung hat der Akoluth ein tiefes
+									Wissen über die verschiedenen fremden Rassen erlangt, die die Menschheit bedrohen.
+									Der Charakter kann jeden Test auf Verbotenes Wissen (Xenos), in dem er nicht
+									ausgebildet ist, als untrainierten Fertigkeitstest ablegen, als ob es keine
+									Spezialfertigkeit wäre.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>
